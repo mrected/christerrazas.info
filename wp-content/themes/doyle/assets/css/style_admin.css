@@ -1,0 +1,53 @@
+#redux-header .rAds{
+	display: none !important;
+	opacity: 0;
+	z-index: -9;
+}
+/* Theme options */
+#customize-controls .description{
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+}
+/* Meta options */
+#fw-option-page-option .fw-options-tabs-list ul li a.nav-tab,
+#fw-option-post-option .fw-options-tabs-list ul li a.nav-tab{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#fw-option-page-option .fw-options-tabs-list ul li a:before,
+#fw-option-post-option .fw-options-tabs-list ul li a:before{
+    content: "\f108";
+	font-family: dashicons;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 0;
+    margin-right: 5px;
+	display: inline-block;
+    vertical-align: sub;
+}
+#fw-option-page-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-page-header"] a:before{
+	content: "\f313";
+}
+#fw-option-page-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-page-titlebar"] a:before{
+	content: "\f230";
+}
+#fw-option-page-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-page-footer"] a:before{
+	content: "\f488";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-gallery"] a:before{
+	content: "\f232";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-video"] a:before{
+	content: "\f235";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-audio"] a:before{
+	content: "\f521";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-quote"] a:before{
+	content: "\f122";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-link"] a:before{
+	content: "\f103";
+}
+
