@@ -1,0 +1,120 @@
+
+
+/* main grid -----------------------------------------------*/
+
+#brand{
+	grid-area: brand;
+}
+
+#nav{
+	grid-area: nav;
+}
+
+#articles{
+	grid-area: articles;
+}
+
+#about{
+	grid-area: about;
+}
+
+#web{
+	grid-area: web;
+}
+
+#photo{
+	grid-area: photo;
+}
+
+#graphics{
+	grid-area: graphics;
+}
+
+#contact{
+	grid-area: contact;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+
+.wrapper{
+	height: 100vh;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: minmax(60px, auto);
+	grid-template-areas: 
+	"brand brand brand"
+	"nav nav nav"
+	"about about about"
+	"articles articles articles"
+	"web web web"
+	"photo photo photo"
+	"graphics graphics graphics"
+	"contact contact contact"
+	"footer footer footer";
+}
+
+.gridItem{
+
+}
+
+/* sections -----------------------------------------------*/
+
+	/*nav section*/
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	border:0;
+	padding:0;
+}
+
+
+	/*articles section*/
+
+.articleInfo{
+	display: inline-flex;
+}
+
+	/*web section*/
+
+.siteInfo{
+	display: inline-flex;
+	margin: 2rem 0;
+}
+
+	/*web section*/
+
+#photoBlock{
+	width:95%;
+	max-width: 1000rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+	grid-gap: 1rem;
+	transition: 2s;
+}
+
+.photo{
+  display:flex;
+  flex-direction:column;
+}
+
+/* media queries -----------------------------------------------*/
+
+@media (min-width: 500px){
+	.wrapper{
+		grid-template-areas: 
+			"brand nav nav"
+			"about about articles"
+			"web web articles"
+			"photo photo articles"
+			"graphics graphics contact"
+			"footer footer footer";
+	}
+}
+
+
