@@ -1,172 +1,112 @@
+/*
+
+COLORS--------------
+light grey:		#E6E8E6		230,232,230
+grey:			#CED0CE		206 208 206
+light green:	#9FB8AD		159 184 173
+dark green:		#475841		71, 88, 65
+dark grey:		#3F403F		63,64,63
+
+/*
+
+
 /*		font-family: 'Titillium Web', sans-serif;
 		font-family: 'Comfortaa', cursive;
-		font-family: 'Domine', serif;
+		
 */
-
 /**{
 	border:dashed .5px rgba(80,80,80,.5);
 }*/
+body {
+  /*background-color: #005173;*/
+  font-family: "Domine", serif;
+  font-size: 10px; }
 
-body{
-	/*background-color: #005173;*/
-	font-family: 'Domine', serif;
-	font-size: 10px;
-}
+h1, h2 {
+  font-family: "Titillium Web", sans-serif; }
 
-h1,h2{
-	font-family: 'Titillium Web', sans-serif;
-}
-
-.sectionTitle{
-	font-size: 2.5rem;
-	color:#100894;
-	text-align: center;
-}
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #100894;
+  text-align: center; }
 
 /* brand styles -----------------------------------------------*/
-
-#brand{
-	background-color: #100894;
-	padding-left: 1rem;
-}
+#brand {
+  background-color: #100894;
+  padding-left: 1rem; }
 
 /* nav styles -----------------------------------------------*/
+#nav {
+  background-color: #100894; }
 
-#nav{
-	background-color: #100894;
-}
+.navLink a {
+  font: 1.25rem "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none; }
 
-#navLogo{
+.navlink a:link, .navLink a:visited, .navlink a:active {
+  color: #0E6BA8; }
 
-}
-
-.navLink a{
-	font: 1.25rem 'Titillium Web', sans-serif;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-.navlink a:link, .navLink a:visited, .navlink a:active{
-	color: #0E6BA8;
-
-}
-
-.navLink a:hover{
-	color:#A6E1FA;
-}
-
+.navLink a:hover {
+  color: #A6E1FA; }
 
 /* article styles -----------------------------------------------*/
+#articles h2 {
+  text-align: center;
+  color: #0D2D3F;
+  font-size: 2rem; }
 
-#articles{
+.articleBlock {
+  /*border: solid .5px rgba(166,255,250,.3);*/
+  margin: 0 25px; }
 
-}
+.articleTitle {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  background-color: #100894;
+  color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px 0; }
 
-#articles h2{
-	text-align: center;
-	color:#0D2D3F;
-	font-size: 2rem;
-}
+.articleInfo {
+  background-color: rgba(166, 255, 250, 0.3); }
 
-.articleBlock{
-	/*border: solid .5px rgba(166,255,250,.3);*/
-	margin: 0 25px;
-}
+.articleImg {
+  display: block;
+  margin: 0 auto; }
 
-.articleTitle{
-	text-align: center;
-	font-size: 1.25rem;
-	margin-bottom:0;
-	background-color: #100894;
-	color:white;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	padding:5px 0;
-}
+.articleDescription {
+  font: .75rem 'Comfortaa', cursive;
+  padding: 0 10px; }
 
-.articleInfo{
-	background-color: rgba(166,255,250,.3);
-}
-
-.articleImg{
-	display: block;
-	margin: 0 auto;
-}
-
-.articleDescription{
-	font: .75rem 'Comfortaa', cursive;
-	padding:0 10px;
-}
-
-.articleDescription::first-line{
-	font-size: 1rem ;
-}
+.articleDescription::first-line {
+  font-size: 1rem; }
 
 /* about styles -----------------------------------------------*/
-
-#about{
-
-}
-
 /* web styles -----------------------------------------------*/
+#web {
+  padding: 15px; }
 
-#web{
-	padding:15px;
-}
+.siteTitle {
+  font: 2rem "Titillium Web", sans-serif;
+  color: #100894;
+  margin: 0; }
 
-.siteTitle{
-	font: 2rem 'Titillium Web', sans-serif;
-	color:#100894;
-	margin:0;
-}
-
-.siteImg{
-
-}
-
-.siteDescription{
-	font: .85rem 'Domine', serif;
-	color:#100894;
-	margin: 0 1rem;
-}
+.siteDescription {
+  font: 0.85rem "Domine", serif;
+  color: #100894;
+  margin: 0 1rem; }
 
 /* photo styles -----------------------------------------------*/
-
-#photo{
-
-}
-
-.photoTitle{
-	text-align: center;
-}
+.photoTitle {
+  text-align: center; }
 
 /* graphics styles -----------------------------------------------*/
-
-#graphics{
-
-}
-
 /* contact styles -----------------------------------------------*/
-
-#contact{
-
-}
-
 /* footer styles -----------------------------------------------*/
+#footer {
+  background-color: #100894; }
 
-#footer{
-	background-color: #100894;
-}
-
-footer{
-	
-}
-
-
-
-
-@media (min-width: 500px){
-
-}
-
-
+/*# sourceMappingURL=style.css.map */

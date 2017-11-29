@@ -1,20 +1,38 @@
+$main-text-font:'Domine', serif;
+$heading-font:'Titillium Web', sans-serif;
+
+/*
+
+COLORS--------------
+light grey:		#E6E8E6		230,232,230
+grey:			#CED0CE		206 208 206
+light green:	#9FB8AD		159 184 173
+dark green:		#475841		71, 88, 65
+dark grey:		#3F403F		63,64,63
+
+/*
+
+
 /*		font-family: 'Titillium Web', sans-serif;
 		font-family: 'Comfortaa', cursive;
-		font-family: 'Domine', serif;
+		
 */
 
 /**{
 	border:dashed .5px rgba(80,80,80,.5);
 }*/
 
+
+
+
 body{
 	/*background-color: #005173;*/
-	font-family: 'Domine', serif;
+	font-family: $main-text-font;
 	font-size: 10px;
 }
 
 h1,h2{
-	font-family: 'Titillium Web', sans-serif;
+	font-family:$heading-font;
 }
 
 .sectionTitle{
@@ -41,7 +59,7 @@ h1,h2{
 }
 
 .navLink a{
-	font: 1.25rem 'Titillium Web', sans-serif;
+	font: 1.25rem $heading-font;
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -115,7 +133,7 @@ h1,h2{
 }
 
 .siteTitle{
-	font: 2rem 'Titillium Web', sans-serif;
+	font: 2rem $heading-font;
 	color:#100894;
 	margin:0;
 }
@@ -125,7 +143,7 @@ h1,h2{
 }
 
 .siteDescription{
-	font: .85rem 'Domine', serif;
+	font: .85rem $main-text-font;
 	color:#100894;
 	margin: 0 1rem;
 }
