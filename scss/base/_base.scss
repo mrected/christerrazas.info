@@ -1,0 +1,15 @@
+body{
+	background-color: $bg-color;
+	font-family: $main-text-font;
+	font-size: 10px;
+}
+
+h1,h2{
+	font-family:$heading-font;
+}
+
+.sectionTitle{
+	font-size: 2.5rem;
+	color:$main-font-color;
+	text-align: center;
+}

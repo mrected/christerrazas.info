@@ -1,0 +1,47 @@
+.articleInfo{
+	display: inline-flex;
+}
+
+#articles{
+	h2{
+		text-align: center;
+		color:$main-font-color;
+		font-size: 2rem;
+	}
+}
+
+
+
+.articleBlock{
+	/*border: solid .5px rgba(166,255,250,.3);*/
+	margin: 0 25px;
+}
+
+.articleTitle{
+	text-align: center;
+	font-size: 1.25rem;
+	margin-bottom:0;
+	background-color: $bg-color;
+	color:white;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding:5px 0;
+}
+
+.articleInfo{
+	background-color: $footer-color;
+}
+
+.articleImg{
+	display: block;
+	margin: 0 auto;
+}
+
+.articleDescription{
+	font: $article-font;
+	padding:0 10px;
+}
+
+.articleDescription::first-line{
+	font-size: 1rem ;
+}

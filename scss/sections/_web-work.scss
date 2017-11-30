@@ -1,0 +1,24 @@
+.siteInfo{
+	display: inline-flex;
+	margin: 2rem 0;
+}
+
+#web{
+	padding:15px;
+}
+
+.siteTitle{
+	font: 2rem $heading-font;
+	color:$heading-font-color;
+	margin:0;
+}
+
+.siteImg{
+
+}
+
+.siteDescription{
+	font: .85rem $main-text-font;
+	color:#100894;
+	margin: 0 1rem;
+}

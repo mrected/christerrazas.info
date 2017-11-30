@@ -1,0 +1,70 @@
+#brand{
+	grid-area: brand;
+}
+
+#nav{
+	grid-area: nav;
+}
+
+#topImgDiv{
+	grid-area: topImgDiv;
+}
+
+#articles{
+	grid-area: articles;
+}
+
+#about{
+	grid-area: about;
+}
+
+#web{
+	grid-area: web;
+}
+
+#photo{
+	grid-area: photo;
+}
+
+#graphics{
+	grid-area: graphics;
+}
+
+#contact{
+	grid-area: contact;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+
+.wrapper{
+	height: 100vh;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: minmax(60px, auto);
+	grid-template-areas: 
+	"brand brand brand"
+	"topImgDiv topImgDiv topImgDiv"
+	"nav nav nav"
+	"about about about"
+	"articles articles articles"
+	"web web web"
+	"photo photo photo"
+	"graphics graphics graphics"
+	"contact contact contact"
+	"footer footer footer";
+	@media (min-width: 500px){
+		grid-template-areas: 
+			"brand nav nav"
+			"topImgDiv topImgDiv topImgDiv"
+			"about about articles"
+			"web web web"
+			"photo photo photo"
+			"graphics graphics graphics"
+			"contact contact contact"
+			"footer footer footer";
+	}
+}
+

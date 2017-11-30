@@ -1,0 +1,17 @@
+#photoBlock{
+	width:95%;
+	max-width: 1000rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+	grid-gap: 1rem;
+	transition: 2s;
+}
+
+.photo{
+  display:flex;
+  flex-direction:column;
+}
+
+.photoTitle{
+	text-align: center;
+}

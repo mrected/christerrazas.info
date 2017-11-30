@@ -1,0 +1,37 @@
+nav ul{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	border:0;
+	padding:0;
+}
+
+#nav{
+	background-color: $nav-color;
+}
+
+#navLogo{
+
+}
+
+.navLink a{
+	font: 1.25rem $heading-font;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.navlink a:link, .navLink a:visited, .navlink a:active{
+	color: $btn-font-color;
+
+}
+
+.navLink a:hover{
+	color:$accent-color;
+}	
+
+
+#brand{
+	background-color:$nav-color;
+	padding-left: 1rem;
+}
