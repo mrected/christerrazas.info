@@ -11,8 +11,11 @@ nav ul{
 	background-color: $nav-color;
 }
 
-#navLogo{
-
+#brand{
+	max-height: 50px;
+	max-width: 100%;
+	margin:auto 0;
+	padding:5px 0;
 }
 
 .navLink a{
