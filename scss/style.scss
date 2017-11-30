@@ -1,5 +1,16 @@
 $main-text-font:'Domine', serif;
 $heading-font:'Titillium Web', sans-serif;
+$article-font:'Comfortaa', cursive;
+
+/*Colors*/
+
+$bg-color:#E6E8E6;
+$nav-color:#100894;
+$footer-color:#9FB8AD;
+$main-font-color:#3F403F;
+$btn-font-color:#CED0CE;
+$accent-color:#475841;
+$heading-font-color:#575841;
 
 /*
 
@@ -10,23 +21,13 @@ light green:	#9FB8AD		159 184 173
 dark green:		#475841		71, 88, 65
 dark grey:		#3F403F		63,64,63
 
-/*
-
-
-/*		font-family: 'Titillium Web', sans-serif;
-		font-family: 'Comfortaa', cursive;
-		
 */
-
-/**{
-	border:dashed .5px rgba(80,80,80,.5);
-}*/
 
 
 
 
 body{
-	/*background-color: #005173;*/
+	background-color: $bg-color;
 	font-family: $main-text-font;
 	font-size: 10px;
 }
@@ -37,21 +38,21 @@ h1,h2{
 
 .sectionTitle{
 	font-size: 2.5rem;
-	color:#100894;
+	color:$main-font-color;
 	text-align: center;
 }
 
 /* brand styles -----------------------------------------------*/
 
 #brand{
-	background-color: #100894;
+	background-color:$nav-color;
 	padding-left: 1rem;
 }
 
 /* nav styles -----------------------------------------------*/
 
 #nav{
-	background-color: #100894;
+	background-color: $nav-color;
 }
 
 #navLogo{
@@ -65,13 +66,13 @@ h1,h2{
 }
 
 .navlink a:link, .navLink a:visited, .navlink a:active{
-	color: #0E6BA8;
+	color: $btn-font-color;
 
 }
 
 .navLink a:hover{
-	color:#A6E1FA;
-}
+	color:$accent-color;
+}	
 
 
 /* article styles -----------------------------------------------*/
@@ -82,7 +83,7 @@ h1,h2{
 
 #articles h2{
 	text-align: center;
-	color:#0D2D3F;
+	color:$main-font-color;
 	font-size: 2rem;
 }
 
@@ -95,7 +96,7 @@ h1,h2{
 	text-align: center;
 	font-size: 1.25rem;
 	margin-bottom:0;
-	background-color: #100894;
+	background-color: $bg-color;
 	color:white;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
@@ -103,7 +104,7 @@ h1,h2{
 }
 
 .articleInfo{
-	background-color: rgba(166,255,250,.3);
+	background-color: $footer-color;
 }
 
 .articleImg{
@@ -112,7 +113,7 @@ h1,h2{
 }
 
 .articleDescription{
-	font: .75rem 'Comfortaa', cursive;
+	font: $article-font;
 	padding:0 10px;
 }
 
@@ -134,7 +135,7 @@ h1,h2{
 
 .siteTitle{
 	font: 2rem $heading-font;
-	color:#100894;
+	color:$heading-font-color;
 	margin:0;
 }
 
