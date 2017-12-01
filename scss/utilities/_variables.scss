@@ -9,10 +9,31 @@ $article-font:'Comfortaa', cursive;
 //dark green:		#475841		71, 88, 65
 //dark grey:		#3F403F		63,64,63
 
-$bg-color:#475841;
+//almost black 		#242325
+//grey				#596475
+//orange			#f26419
+//yellow			#f6ae2d
+//lt blue			#86bbd8
+
+/*$bg-color:#475841;
 $nav-color:#3F403F;
 $footer-color:#9FB8AD;
 $main-font-color:#3F403F;
 $btn-font-color:#CED0CE;
-$accent-color:#475841;
-$heading-font-color:#575841;
+$accent-color:#9FB8AD;
+$heading-font-color:#575841;*/
+
+$bg-color:#596475; //grey
+$nav-color:#242325; //almost black
+$footer-color:#242325; //almost black
+$main-font-color:#3F403F;
+$btn-font-color:#CED0CE;
+$accent-color:#f26419;  //orange
+$heading-font-color:#f6ae2d; //yellow
+$btn-font-color:#f26419;  //orange
+$panel-color:#f6ae2d;
+$article-title-font:#86bbd8; //lt blue
+$white: #fffaff;
+
+$brand-height:50px;
+$standard-height:80px;

@@ -1,8 +1,16 @@
+/*$bg-color:#475841;
+$nav-color:#3F403F;
+$footer-color:#9FB8AD;
+$main-font-color:#3F403F;
+$btn-font-color:#CED0CE;
+$accent-color:#9FB8AD;
+$heading-font-color:#575841;*/
 #brand {
   grid-area: brand; }
 
 #nav {
-  grid-area: nav; }
+  grid-area: nav;
+  align-self: end; }
 
 #topImgDiv {
   grid-area: topImgDiv; }
@@ -32,14 +40,14 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(60px, auto);
+  grid-template-rows: minmax(80px, auto);
   grid-template-areas: "brand brand brand" "topImgDiv topImgDiv topImgDiv" "nav nav nav" "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
   @media (min-width: 500px) {
     .wrapper {
       grid-template-areas: "brand nav nav" "topImgDiv topImgDiv topImgDiv" "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
 
 body {
-  background-color: #475841;
+  background-color: #596475;
   font-family: "Domine", serif;
   font-size: 10px; }
 
@@ -51,6 +59,20 @@ h1, h2 {
   color: #3F403F;
   text-align: center; }
 
+#nav {
+  background-color: #242325;
+  height: 80px; }
+
+#brand {
+  background-color: #242325;
+  /*max-height: 50px;*/
+  max-width: 100%;
+  margin: auto 0;
+  padding: 20px 0 5px 20px;
+  height: 80px; }
+  #brand-logo {
+    height: 50px; }
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -59,29 +81,13 @@ nav ul {
   border: 0;
   padding: 0; }
 
-#nav {
-  background-color: #3F403F; }
-
-#brand {
-  max-height: 50px;
-  max-width: 100%;
-  margin: auto 0;
-  padding: 5px 0; }
-
 .navLink a {
   font: 1.25rem "Titillium Web", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none; }
-
-.navlink a:link, .navLink a:visited, .navlink a:active {
-  color: #CED0CE; }
-
-.navLink a:hover {
-  color: #475841; }
-
-#brand {
-  background-color: #3F403F;
-  padding-left: 1rem; }
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #f26419; }
+  .navLink a:hover {
+    color: #f6ae2d; }
 
 #topImgDiv {
   width: 100%;
@@ -108,16 +114,18 @@ nav ul {
 
 .articleTitle {
   text-align: center;
+  font-family: "Comfortaa", cursive;
   font-size: 1.25rem;
   margin-bottom: 0;
-  background-color: #475841;
-  color: white;
+  background-color: #f26419;
+  color: #fffaff;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   padding: 5px 0; }
 
 .articleInfo {
-  background-color: #9FB8AD; }
+  font-family: "Comfortaa", cursive;
+  background-color: #f6ae2d; }
 
 .articleImg {
   display: block;
@@ -139,7 +147,7 @@ nav ul {
 
 .siteTitle {
   font: 2rem "Titillium Web", sans-serif;
-  color: #575841;
+  color: #f6ae2d;
   margin: 0; }
 
 .siteDescription {
@@ -163,6 +171,7 @@ nav ul {
   text-align: center; }
 
 #footer {
-  background-color: #100894; }
+  background-color: #242325;
+  height: 80px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,17 +19,19 @@
 
 .articleTitle{
 	text-align: center;
+	font-family: $article-font;
 	font-size: 1.25rem;
 	margin-bottom:0;
-	background-color: $bg-color;
-	color:white;
+	background-color: $accent-color;
+	color:$white;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	padding:5px 0;
 }
 
 .articleInfo{
-	background-color: $footer-color;
+	font-family: $article-font;
+	background-color: $panel-color;
 }
 
 .articleImg{
