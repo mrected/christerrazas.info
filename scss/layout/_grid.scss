@@ -1,5 +1,6 @@
 #brand{
 	grid-area: brand;
+	align-self: center;
 }
 
 #nav{
@@ -11,12 +12,12 @@
 	grid-area: topImgDiv;
 }
 
-#articles{
-	grid-area: articles;
-}
-
 #about{
 	grid-area: about;
+}
+
+#articles{
+	grid-area: articles;
 }
 
 #web{
@@ -41,14 +42,13 @@
 
 
 .wrapper{
-	height: 100vh;
+	/*height: 100vh;*/
 	display:grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: minmax($standard-height, auto);
+	grid-template-columns: repeat(auto,1fr);
+	grid-auto-rows: minmax($standard-height, auto);
 	grid-template-areas: 
-	"brand brand brand"
+	"brand nav nav"
 	"topImgDiv topImgDiv topImgDiv"
-	"nav nav nav"
 	"about about about"
 	"articles articles articles"
 	"web web web"
@@ -56,7 +56,8 @@
 	"graphics graphics graphics"
 	"contact contact contact"
 	"footer footer footer";
-	@media (min-width: 500px){
+	@media (min-width: $bp-xsmall){
+		grid-template-columns: repeat(3,1fr);
 		grid-template-areas: 
 			"brand nav nav"
 			"topImgDiv topImgDiv topImgDiv"

@@ -1,1 +1,3 @@
-console.log("connected");
+$('#menuToggle').click(function(){
+  $(this).toggleClass('open');
+})
