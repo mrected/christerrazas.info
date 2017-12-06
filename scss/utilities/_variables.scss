@@ -36,12 +36,14 @@ $article-title-font:#86bbd8; //lt blue
 $white: #fffaff;
 
 $brand-height:80px;
-$standard-height:140px;
+$brand-height-small:80px;
+$standard-height:100px;
+$standard-height-small:60px;
 
 
 //BREAKPOINTS-------------
 
-$bp-xsmall:555px;
+$bp-xsmall:475px;
 $bp-small:768px;
 $bp-medium:970px;
 $bp-large:1200px;

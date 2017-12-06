@@ -4,12 +4,6 @@
 }
 
 #navbarLinks{
-	display: none;
-	@media(min-width: $bp-xsmall){
-		display: inline-block;
-		width: 100%;
-	}
-
 	ul{
 		display: flex;
 		flex-direction: row;
@@ -17,7 +11,10 @@
 		flex-wrap: nowrap;
 		justify-content: space-around;
 		align-items: flex-end;
-		height:$standard-height;
+		height:$standard-height-small;
+		@media(min-width: $bp-small){
+			height:$standard-height;
+		}
 		border:0;
 		margin:0 0 .5rem 0;
 		padding:0;
@@ -25,24 +22,20 @@
 }
 
 .navLink a{
-	font: .8rem $heading-font;
+	display: none;
+	font: 1.1rem $heading-font;
 	text-transform: lowercase;
 	text-decoration: none;
 	color:$btn-font-color;
 	&:hover{
 		color:$panel-color;
 	}
+	@media(min-width:$bp-xsmall){
+		display:initial;
+	}
 	@media(min-width: $bp-small){
 		font-size:1.25rem;
 	}
-	/*@media(min-width: $bp-medium){
-		padding:2rem;
-	};
-	@media(min-width: $bp-large){
-		padding:3rem;
-	}*/
-
-
 }
 
 
