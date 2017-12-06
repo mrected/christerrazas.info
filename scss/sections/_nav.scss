@@ -1,23 +1,6 @@
 #nav{
 	background-color: $nav-color;
-	height:$brand-height;
-	padding-top: 50px;
-}
-
-#brand{
-	background-color:$nav-color;
-	max-height: 50px;
-	max-width: 100%;
-	padding:30px 0 20px 50px;
-	height:$standard-height;
-	&-logo{
-		height: 40px;
-	}
-	@media(min-width: $bp-small){
-		&-logo{
-			height: $brand-height;
-		}
-	}
+	border-bottom: solid 5px $heading-font-color;
 }
 
 #navbarLinks{
@@ -29,13 +12,14 @@
 
 	ul{
 		display: flex;
+		flex-direction: row;
 		list-style-type: none;
 		flex-wrap: nowrap;
 		justify-content: space-around;
 		align-items: flex-end;
-		height:50px;
+		height:$standard-height;
 		border:0;
-		margin:-5px 0 0 0;
+		margin:0 0 .5rem 0;
 		padding:0;
 	}
 }
@@ -45,20 +29,18 @@
 	text-transform: lowercase;
 	text-decoration: none;
 	color:$btn-font-color;
-	padding:.5rem;
 	&:hover{
 		color:$panel-color;
 	}
 	@media(min-width: $bp-small){
-		padding:.8rem;
 		font-size:1.25rem;
 	}
-	@media(min-width: $bp-medium){
+	/*@media(min-width: $bp-medium){
 		padding:2rem;
 	};
 	@media(min-width: $bp-large){
 		padding:3rem;
-	}
+	}*/
 
 
 }

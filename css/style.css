@@ -7,7 +7,7 @@ $accent-color:#9FB8AD;
 $heading-font-color:#575841;*/
 #brand {
   grid-area: brand;
-  align-self: center; }
+  align-self: start; }
 
 #nav {
   grid-area: nav;
@@ -41,7 +41,7 @@ $heading-font-color:#575841;*/
   /*height: 100vh;*/
   display: grid;
   grid-template-columns: repeat(auto, 1fr);
-  grid-auto-rows: minmax(80px, auto);
+  grid-auto-rows: minmax(140px, auto);
   grid-template-areas: "brand nav nav" "topImgDiv topImgDiv topImgDiv" "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
   @media (min-width: 555px) {
     .wrapper {
@@ -142,22 +142,26 @@ h1, h2 {
   transition: .25s ease-in-out;
   transition-delay: .375s; }
 
+#brand {
+  border-bottom: solid 5px #f6ae2d; }
+
+#brand-logo-div {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #242325;
+  height: 140px;
+  padding: 0 0 .5rem 0; }
+
+#brand-logo {
+  flex: 1;
+  max-height: 80px; }
+
 #nav {
   background-color: #242325;
-  height: 50px;
-  padding-top: 50px; }
-
-#brand {
-  background-color: #242325;
-  max-height: 50px;
-  max-width: 100%;
-  padding: 30px 0 20px 50px;
-  height: 80px; }
-  #brand-logo {
-    height: 40px; }
-  @media (min-width: 768px) {
-    #brand-logo {
-      height: 50px; } }
+  border-bottom: solid 5px #f6ae2d; }
 
 #navbarLinks {
   display: none; }
@@ -167,13 +171,14 @@ h1, h2 {
       width: 100%; } }
   #navbarLinks ul {
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: flex-end;
-    height: 50px;
+    height: 140px;
     border: 0;
-    margin: -5px 0 0 0;
+    margin: 0 0 .5rem 0;
     padding: 0; }
 
 .navLink a {
@@ -181,19 +186,17 @@ h1, h2 {
   text-transform: lowercase;
   text-decoration: none;
   color: #f26419;
-  padding: .5rem; }
+  /*@media(min-width: $bp-medium){
+  	padding:2rem;
+  };
+  @media(min-width: $bp-large){
+  	padding:3rem;
+  }*/ }
   .navLink a:hover {
     color: #f6ae2d; }
   @media (min-width: 768px) {
     .navLink a {
-      padding: .8rem;
       font-size: 1.25rem; } }
-  @media (min-width: 970px) {
-    .navLink a {
-      padding: 2rem; } }
-  @media (min-width: 1200px) {
-    .navLink a {
-      padding: 3rem; } }
 
 #topImgDiv {
   width: 100%;
@@ -278,6 +281,6 @@ h1, h2 {
 
 #footer {
   background-color: #242325;
-  height: 80px; }
+  height: 140px; }
 
 /*# sourceMappingURL=style.css.map */

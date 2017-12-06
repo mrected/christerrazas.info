@@ -1,0 +1,19 @@
+#brand{
+	border-bottom: solid 5px $heading-font-color;
+}
+
+#brand-logo-div{
+	padding-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color:$nav-color;
+	height: $standard-height;
+	padding:0 0 .5rem 0;
+}
+
+#brand-logo{
+	flex:1;
+	max-height: $brand-height;
+}
