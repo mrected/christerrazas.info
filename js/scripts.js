@@ -1,8 +1,3 @@
-$('#menuToggle').click(function(){
-  $(this).toggleClass('open');
-  $('#nav').toggleClass('open');
-})
-
 const imgHeight = $('#selectedTopImg').height();
 const imgWidth = $('#selectedTopImg').width();
 $('#selectedTopImg').height(Math.round(imgHeight)).width(Math.round(imgWidth));
