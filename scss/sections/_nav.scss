@@ -5,7 +5,7 @@
 */
 
 #nav{
-
+	background-color: $nav-color;
 }
 
 #navbarLinks{
@@ -13,14 +13,20 @@
 	justify-content: center;
 	align-items: center;
 	height: $standard-height;
-	height:200px;
-	background-color: $nav-color;
+	/*height:200px;*/
+	
 
 	ul{
-		
+		display: flex;
+		flex-direction: column;
 		list-style-type: none;
 		margin:0;
 		padding: 0;
+		@media(min-width: $bp-xsmall){
+			width:100%;
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
 	}
 
 }
@@ -32,7 +38,8 @@
 		display: inline-block;
 		
 		text-decoration: none;
-		font: .5rem $heading-font;
+		font: .75rem $heading-font;
+		line-height: 1rem;
 	}
 
 	& a:visited, & a:link{

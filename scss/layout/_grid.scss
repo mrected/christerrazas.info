@@ -8,7 +8,7 @@
 
 #nav{
 	grid-area: nav;justify-self: center;
-	align-self: center;
+	align-self: start;
 	height: $standard-height;
 	width: 100%;
 }
@@ -49,8 +49,8 @@
 .wrapper{
 	/*height: 100vh;*/
 	display:grid;
-	/*grid-template-columns: repeat(2,1fr);*/
-	/*grid-template-rows: minmax($standard-height-small $standard-height auto);*/
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: minmax($standard-height $standard-height auto);
 	grid-template-areas: 
 	"brand brand brand"
 	"nav nav nav"
