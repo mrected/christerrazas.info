@@ -13,8 +13,8 @@
 	width: 100%;
 }
 
-#topImgDiv{
-	grid-area: topImgDiv;
+#topImg{
+	grid-area: topImg;
 }
 
 #about{
@@ -54,7 +54,7 @@
 	grid-template-areas: 
 	"brand brand brand"
 	"nav nav nav"
-	"topImgDiv topImgDiv topImgDiv"
+	"topImg topImg topImg"
 	"about about about"
 	"articles articles articles"
 	"web web web"
@@ -67,7 +67,7 @@
 		grid-auto-rows: minmax($standard-height, auto);
 		grid-template-areas: 
 			"brand nav nav"
-			"topImgDiv topImgDiv topImgDiv"
+			"topImg topImg topImg"
 			"about about articles"
 			"web web web"
 			"photo photo photo"

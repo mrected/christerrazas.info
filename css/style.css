@@ -19,8 +19,8 @@ $heading-font-color:#575841;*/
   height: 80px;
   width: 100%; }
 
-#topImgDiv {
-  grid-area: topImgDiv; }
+#topImg {
+  grid-area: topImg; }
 
 #about {
   grid-area: about; }
@@ -46,6 +46,7 @@ $heading-font-color:#575841;*/
 .wrapper {
   /*height: 100vh;*/
   display: grid;
+<<<<<<< HEAD
   /*grid-template-columns: repeat(2,1fr);*/
   /*grid-template-rows: minmax($standard-height-small $standard-height auto);*/
   grid-template-areas: "brand brand brand" "nav nav nav" "topImgDiv topImgDiv topImgDiv" "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
@@ -54,6 +55,16 @@ $heading-font-color:#575841;*/
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: minmax(80px, auto);
       grid-template-areas: "brand nav nav" "topImgDiv topImgDiv topImgDiv" "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
+=======
+  grid-template-columns: repeat(auto, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg" "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
+  @media (min-width: 768px) {
+    .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: "brand nav nav" "topImg topImg topImg" "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
+>>>>>>> 3e6bf1590abd71036c9f3f315f11ad34756d6fbb
 
 * {
   box-sizing: border-box; }
@@ -199,16 +210,18 @@ h1, h2 {
   transition: .25s ease-in-out;
   transition-delay: .375s; }
 
-#topImgDiv {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  overflow: hidden; }
-  #topImgDiv img {
-    max-width: 200%;
-    position: absolute;
-    left: -200px;
-    top: -300px; }
+#topImg {
+  background-color: red; }
+  #topImgDiv {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden; }
+    #topImgDiv img {
+      max-width: 200%;
+      position: absolute;
+      left: -775px;
+      top: -310px; }
 
 .articleInfo {
   display: inline-flex; }

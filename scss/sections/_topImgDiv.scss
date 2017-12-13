@@ -1,12 +1,16 @@
-#topImgDiv{
-	width:100%;
-	height: 400px;
-	position: relative;
-	overflow: hidden;
-	img{
-		max-width: 200%;
-		position: absolute;
-		left: -200px;
-		top:-300px;
+#topImg{
+	background-color: red;
+
+	&Div{
+		width:100%;
+		height: 400px;
+		position: relative;
+		overflow: hidden;
+		img{
+			max-width: 200%;
+			position: absolute;
+			left: -775px;
+			top:-310px;
+		}
 	}
 }
