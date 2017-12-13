@@ -13,8 +13,8 @@ $heading-font-color:#575841;*/
   grid-area: nav;
   align-self: end; }
 
-#topImgDiv {
-  grid-area: topImgDiv; }
+#topImg {
+  grid-area: topImg; }
 
 #about {
   grid-area: about; }
@@ -42,12 +42,12 @@ $heading-font-color:#575841;*/
   display: grid;
   grid-template-columns: repeat(auto, 1fr);
   grid-auto-rows: minmax(60px, auto);
-  grid-template-areas: "brand brand brand" "nav nav nav" "topImgDiv topImgDiv topImgDiv" "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
+  grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg" "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
   @media (min-width: 768px) {
     .wrapper {
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: minmax(100px, auto);
-      grid-template-areas: "brand nav nav" "topImgDiv topImgDiv topImgDiv" "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
+      grid-template-areas: "brand nav nav" "topImg topImg topImg" "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
 
 body {
   background-color: #596475;
@@ -203,16 +203,18 @@ h1, h2 {
   transition: .25s ease-in-out;
   transition-delay: .375s; }
 
-#topImgDiv {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  overflow: hidden; }
-  #topImgDiv img {
-    max-width: 200%;
-    position: absolute;
-    left: -200px;
-    top: -300px; }
+#topImg {
+  background-color: red; }
+  #topImgDiv {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden; }
+    #topImgDiv img {
+      max-width: 200%;
+      position: absolute;
+      left: -200px;
+      top: -300px; }
 
 .articleInfo {
   display: inline-flex; }
