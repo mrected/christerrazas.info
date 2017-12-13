@@ -213,8 +213,8 @@ h1, h2 {
     #topImgDiv img {
       max-width: 200%;
       position: absolute;
-      left: -200px;
-      top: -300px; }
+      left: -775px;
+      top: -310px; }
 
 .articleInfo {
   display: inline-flex; }
