@@ -1,28 +1,12 @@
-#brand{
-	@media(min-width: $bp-small){
-		border-bottom: solid 5px $heading-font-color;
-	}
-}
-
 #brand-logo-div{
-	padding:1rem 0 0 0;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
-	background-color:$nav-color;
-	height: $standard-height-small;
-	@media(min-width: $bp-small){
-		padding:0 1rem .5rem 0;
-		height: $standard-height;
-	}
-	
+	align-items: center;
+	height: $standard-height;
+	background-color: $nav-color;
 }
 
 #brand-logo{
-	flex:1;
-	max-height: $brand-height-small;
-	@media(min-width: $bp-small){
-		max-height: $brand-height;
-	}
+	height: $brand-height;
+	width: 90%;
 }

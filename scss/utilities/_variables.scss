@@ -29,16 +29,18 @@ $footer-color:#242325; //almost black
 $main-font-color:#3F403F;
 $btn-font-color:#CED0CE;
 $accent-color:#f26419;  //orange
-$heading-font-color:#f6ae2d; //yellow
+$accent-color2:#f6ae2d; //yellow
 $btn-font-color:#f26419;  //orange
 $panel-color:#f6ae2d;
 $article-title-font:#86bbd8; //lt blue
 $white: #fffaff;
 
-$brand-height:80px;
-$brand-height-small:80px;
-$standard-height:100px;
-$standard-height-small:60px;
+$heading-font-color: $accent-color2;
+
+$brand-height:70px;
+$brand-height-lg:80px;
+$standard-height:80px;
+$standard-height-lg:100px;
 
 
 //BREAKPOINTS-------------

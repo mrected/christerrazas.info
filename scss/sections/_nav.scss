@@ -1,42 +1,51 @@
+/*#nav - containing grid item
+#navbarLinks - div containing ul for nav
+.navLink - individual li containing link for nav
+
+*/
+
 #nav{
-	background-color: $nav-color;
-	border-bottom: solid 5px $heading-font-color;
+
 }
 
 #navbarLinks{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: $standard-height;
+	height:200px;
+	background-color: $nav-color;
+
 	ul{
-		display: flex;
-		flex-direction: row;
+		
 		list-style-type: none;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-		align-items: flex-end;
-		height:$standard-height-small;
-		@media(min-width: $bp-small){
-			height:$standard-height;
+		margin:0;
+		padding: 0;
+	}
+
+}
+
+.navLink{
+	text-align: center;
+	/*display: block;*/
+	& a{
+		display: inline-block;
+		
+		text-decoration: none;
+		font: .5rem $heading-font;
+	}
+
+	& a:visited, & a:link{
+		color:$accent-color;
+	};
+
+	& a:hover, & a:active{
+		color:$accent-color2;
+	}
+	@media(min-width: $bp-xsmall){
+		display: inline-block;
+		& a{
+			font-size: 1rem;
 		}
-		border:0;
-		margin:0 0 .5rem 0;
-		padding:0;
 	}
 }
-
-.navLink a{
-	display: none;
-	font: 1.1rem $heading-font;
-	text-transform: lowercase;
-	text-decoration: none;
-	color:$btn-font-color;
-	&:hover{
-		color:$panel-color;
-	}
-	@media(min-width:$bp-xsmall){
-		display:initial;
-	}
-	@media(min-width: $bp-small){
-		font-size:1.25rem;
-	}
-}
-
-
-
