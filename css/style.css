@@ -130,14 +130,20 @@ h1, h2 {
   background-color: red; }
   #topImgDiv {
     width: 100%;
-    height: 400px;
+    height: 200px;
     position: relative;
     overflow: hidden; }
+    @media (min-width: 1200px) {
+      #topImgDiv {
+        height: 400px; } }
     #topImgDiv img {
-      max-width: 200%;
+      width: 200%;
       position: absolute;
-      left: 0px;
-      top: 0px; }
+      left: -50%;
+      top: -75%; }
+      @media (min-width: 1200px) {
+        #topImgDiv img {
+          top: -75%; } }
 
 .articleInfo {
   display: inline-flex; }
