@@ -60,15 +60,25 @@ $heading-font-color:#575841;*/
 
 body {
   background-color: #596475;
-  font-family: "Domine", serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 10px; }
 
 h1, h2 {
   font-family: "Titillium Web", sans-serif; }
 
+h1 {
+  font-size: 4rem;
+  color: #fffaff;
+  text-align: center; }
+
+p {
+  font-size: 1.75rem;
+  padding: 0 2rem;
+  color: #242325; }
+
 .sectionTitle {
   font-size: 2.5rem;
-  color: #3F403F;
+  color: #242325;
   text-align: center; }
 
 #brand-logo-div {
@@ -150,7 +160,7 @@ h1, h2 {
 
 #articles h2 {
   text-align: center;
-  color: #3F403F;
+  color: #242325;
   font-size: 2rem; }
 
 .articleBlock {
@@ -196,7 +206,7 @@ h1, h2 {
   margin: 0; }
 
 .siteDescription {
-  font: 0.85rem "Domine", serif;
+  font: 0.85rem "Quicksand", sans-serif;
   color: #100894;
   margin: 0 1rem; }
 
