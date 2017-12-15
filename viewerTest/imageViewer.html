@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="someElement">
+	<h1>Something goes here</h1>
+</div>
+<div id="mainContainerDiv">
+	<div id="secondContainerDiv">
+		<div id="hiddenBorder">
+			<img src="arches.jpg" id="imageDiv">
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$("#imageDiv").draggable({containment:"parent"});
+	// $("#secondContainerDiv").on('mousemove',function(e){
+	// 	$('#imageDiv').css({left: e.pageX, top: e.pageY});
+	// });
+</script>
+</body>
+</html>
