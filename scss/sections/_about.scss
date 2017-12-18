@@ -1,0 +1,17 @@
+#about p{
+	padding:0 1rem;
+	color:$main-font-color;
+	@media(min-width: $bp-xsmall){
+		line-height: 1.5rem;
+	}
+	@media(min-width: $bp-small){
+		font-size: 1.15rem;
+		padding-left: 3rem;
+		padding-bottom: 1rem;
+		line-height: 2rem;
+	}
+	.big-text{
+		font-size: 2rem;
+		display: inline-block;
+	}
+}

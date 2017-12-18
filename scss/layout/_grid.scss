@@ -3,6 +3,9 @@
 	justify-self: center;
 	align-self: center;
 	height: $standard-height;
+	@media(min-width: $bp-medium){
+		height: $standard-height-md;
+	}
 	width: 100%;
 }
 
@@ -10,6 +13,9 @@
 	grid-area: nav;justify-self: center;
 	align-self: start;
 	height: $standard-height;
+	@media(min-width: $bp-medium){
+		height: $standard-height-md;
+	}
 	width: 100%;
 }
 
@@ -63,7 +69,7 @@
 	"contact contact contact"
 	"footer footer footer";
 	@media (min-width: $bp-small){
-		grid-template-columns: repeat(3,1fr);
+		grid-template-columns: repeat(2,1fr) 300px;
 		grid-auto-rows: minmax($standard-height, auto);
 		grid-template-areas: 
 			"brand nav nav"

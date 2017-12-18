@@ -4,6 +4,9 @@
 	align-items: center;
 	height: $standard-height;
 	background-color: $nav-color;
+	@media(min-width: $bp-medium){
+		height: $standard-height-md;
+	}
 }
 
 #brand-logo{

@@ -1,5 +1,6 @@
 .articleInfo{
 	display: inline-flex;
+	flex-direction: column;
 }
 
 #articles{
@@ -17,21 +18,23 @@
 	margin: 0 25px;
 }
 
+
 .articleTitle{
+	@include article-title-border;
 	text-align: center;
 	font-family: $article-font;
-	font-size: 1.25rem;
+	font-size: .75rem;
 	margin-bottom:0;
-	background-color: $accent-color;
-	color:$white;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	padding:5px 0;
+	color:$article-title-font;
+	padding:10px 0;
 }
 
 .articleInfo{
+	@include article-info-border;
+	padding-top: 10px;
 	font-family: $article-font;
-	background-color: $panel-color;
+	background-color: $article-bg-color;
+	color: $article-font-color;
 }
 
 .articleImg{
