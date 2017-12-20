@@ -19,11 +19,14 @@
 
 </style>
 <h1 style="text-align: center; margin-bottom: 6rem;">Use this to generate CSX show card data</h1>
-<h2>Enter some numbers seperated by returns, leave a comma between the name and the amount, click the button = done</h2>
+<h2>Enter data seperated by returns, leave a tab between the name and the amount, click the button, done</h2>
+<p>Format:</p>
+<pre>CAMO KNIT CAP	 $8.95 
+GRAY/BLACK KNIT CAP	 $3.80 
+NEON CAP	 $3.00</pre>
 <h3>Note - Use this for single price items only. For multiple priced items like apparel, <a href="#">click here</a>.</h3>
 <ol>
 	<li><textarea rows="10" cols="100" placeholder="Dump return seperated numbers here" id="importData"></textarea></li>
-	<li><label for="dollarAmt">Enter dollar amount: $<input type="te" name="dollarAmt" id="dollarAmt" maxlength=4 size=4>.00</label></li>
 	<li><button type="button" name="sendNumbers" onclick="parseData()">Click to generate formatted numbers</button><button type="button" name="clearData" onclick="clearData()">Clear Data</button></li>
 </ol>
 <h3>Once you have the data, replace everything in <mark>data.csv</mark> with the text generated below, use <mark>GiftCertificateBoilerPLate.indd</mark> and update links.</h3>
@@ -33,7 +36,7 @@
 <script type="text/javascript">
 	
 	const headerInfo = `desc1,price1,desc2,price2,desc3,price3,desc4,price4`;
-	const numberOfLoops = 4;
+	const numberOfCards = 4;
 
 	// const endString = `${dateString},$${setAmount}.00\n`;
 
@@ -42,66 +45,71 @@
 	let trimmedDataArray = [];
 	let dataString = "";
 	let tempArray = [];
-	let dataTable = {};
+	let dataTable = [];
 
-
-	//variable to hold raw data
-	//object constructor that holds name and amount in name as key and value as amount
-	//
 
 	function parseData(string){
 		rawData = document.getElementById("importData").value;
-		dataArray = rawData.split(/\n|\$/gm);
+		dataArray = rawData.split(/\n|\t/gm);
 		trimWhiteSpace(dataArray);
-		addDollarSign(dataArray);
-		showNewData();
-		
+		splitToDataTable(dataArray);
+		fillInTheBlanks(dataTable);
+		showNewData(dataTable);
 	}
 
 			function trimWhiteSpace(arrToTrim){
 				dataArray = arrToTrim.map(function(i){
 					return i.trim();
-				})
+				});
 			}
 
-			function addDollarSign(addTo){
-				//adds dollar sign back onto dollar amounts
-				//populates key:value of object as name:amount
-				let key = "";
-				let value = "";
+			function splitToDataTable(addTo){
+			
 				dataArray = addTo.map(function(i){
-
-					if(/\d/.test(i.charAt(0))){
-						value = `$${i}`;
+					if(i.charAt(0)==="$"){
+						tempArray[1] = i;
+						dataTable.push(tempArray);
+						tempArray=[];
 					}
 					else{
-						key = i;
+						tempArray[0] = i;
 					}
-					dataTable[key] = value;
-				})
-				console.log(dataTable);
+				});
+				// console.log(tempArray);
 			}
 
-	function showNewData(){
-	const loops = Object.keys(dataTable).length/numberOfLoops;
-	console.log(Object.keys(dataTable).length);
-	dataString += `${headerInfo}<br>`;
-	for(let i=0;i<loops;i++){
-		// for(i=0;i<numberOfLoops;i++){
-			
-		// }
-	}
+				function fillInTheBlanks(arr){
+					console.log(arr.length);
+					while((arr.length-1)%4){
+						dataTable.push(["null","null"]);
+					}
 
-	// document.getElementById("gcNumbers").innerHTML=numberString;
-}
+				}
 
-	
+			function showNewData(arr){
+				dataString += `${headerInfo} <br>`;
+				for(let i=0;i<arr.length;i++){
+					if(i>1&&i%4===0){
+						dataString += `${arr[i]}<br>`;
+					}
+					else{
+						dataString += `${arr[i]},`
+					}
+					
+				}
+				document.getElementById("gcNumbers").innerHTML=dataString;
+			}
 
 	
 
 	function clearData(){
 		document.getElementById("gcNumbers").innerHTML="";
-		numberString = "";
+		rawData = "";
+		dataArray = [];
+		trimmedDataArray = [];
+		dataString = "";
+		tempArray = [];
+		dataTable = [];
 	}
 
 
