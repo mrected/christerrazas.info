@@ -64,7 +64,6 @@ NEON CAP	 $3.00</pre>
 			}
 
 			function splitToDataTable(addTo){
-			
 				dataArray = addTo.map(function(i){
 					if(i.charAt(0)==="$"){
 						tempArray[1] = i;
@@ -75,27 +74,23 @@ NEON CAP	 $3.00</pre>
 						tempArray[0] = i;
 					}
 				});
-				// console.log(tempArray);
 			}
 
 				function fillInTheBlanks(arr){
-					console.log(arr.length);
 					while((arr.length-1)%4){
 						dataTable.push(["null","null"]);
 					}
-
 				}
 
 			function showNewData(arr){
 				dataString += `${headerInfo} <br>`;
 				for(let i=0;i<arr.length;i++){
-					if(i>1&&i%4===0){
+					if(i>0&&i%4===0){
 						dataString += `${arr[i]}<br>`;
 					}
 					else{
 						dataString += `${arr[i]},`
 					}
-					
 				}
 				document.getElementById("gcNumbers").innerHTML=dataString;
 			}
