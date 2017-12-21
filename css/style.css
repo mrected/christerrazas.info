@@ -240,8 +240,12 @@ p {
   color: #f6ae2d; }
 
 .articleImg {
+  transition: box-shadow .3s;
   display: block;
   margin: 0 auto; }
+
+.articleImg:hover {
+  box-shadow: 0 0 18px #86bbd8; }
 
 .articleDescription {
   font: "Comfortaa", cursive;
@@ -262,9 +266,12 @@ p {
   color: #f6ae2d;
   margin: 0; }
 
+.siteImg {
+  max-width: 300px; }
+
 .siteDescription {
-  font: 0.85rem "Quicksand", sans-serif;
-  color: #100894;
+  font: 1.25rem "Quicksand", sans-serif;
+  color: #E6E8E6;
   margin: 0 1rem; }
 
 #photoBlock {

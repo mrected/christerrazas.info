@@ -14,11 +14,12 @@
 }
 
 .siteImg{
-
+	max-width: 300px;
 }
 
+
 .siteDescription{
-	font: .85rem $main-text-font;
-	color:#100894;
+	font: 1.25rem $main-text-font;
+	color:$main-font-color;
 	margin: 0 1rem;
 }

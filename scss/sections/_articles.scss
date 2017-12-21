@@ -38,8 +38,13 @@
 }
 
 .articleImg{
+	transition: box-shadow .3s;
 	display: block;
 	margin: 0 auto;
+}
+
+.articleImg:hover{
+	box-shadow: 0 0 18px $accent-color3; 
 }
 
 .articleDescription{
