@@ -47,15 +47,23 @@ NEON CAP	 $3.00				NEON CAP, $3.00
 </div>
 <script type="text/javascript">
 	
-	const headerInfo = `desc1,price1,desc2,price2,desc3,price3,desc4,price4`;
+	
 	const numberOfCards = 4;
 
+	let headerInfo = "";
 	let rawData = "";
 	let dataArray = [];
 	let trimmedDataArray = [];
 	let dataString = "";
 	let tempArray = [];
 	let dataTable = [];
+
+	for(let i=0;i<numberOfCards;i++){
+		headerInfo+=`desc${i+1},price${i+1}`;
+		if(i!==numberOfCards-1){
+			headerInfo+=`,`;
+		}
+	}
 
 
 	function parseData(string){
@@ -86,11 +94,11 @@ NEON CAP	 $3.00				NEON CAP, $3.00
 				});
 			}
 
-				function fillInTheBlanks(arr){
-					while((arr.length)%numberOfCards){
-						dataTable.push(["null","null"]);
-					}
+			function fillInTheBlanks(arr){
+				while((arr.length)%numberOfCards){
+					dataTable.push(["null","null"]);
 				}
+			}
 
 			function showNewData(arr){
 				dataString += `${headerInfo} <br>`;
@@ -102,12 +110,14 @@ NEON CAP	 $3.00				NEON CAP, $3.00
 						dataString+=`,`;
 					}
 					
-					dataString += `${arr[i]}`
+					dataString += `${arr[i]}`;
 
 				}
-				console.log(dataString);
 				document.getElementById("gcNumbers").innerHTML=dataString;
 			}
+
+
+			
 
 	
 
