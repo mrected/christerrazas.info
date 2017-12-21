@@ -17,19 +17,31 @@
 		text-decoration: initial;
 	}
 
+	.instructions{
+		margin:0;
+		font-weight: bold;
+	}
+
 </style>
 <h1 style="text-align: center; margin-bottom: 6rem;">Use this to generate CSX show card data</h1>
-<h2>Enter data seperated by returns, leave a tab between the name and the amount, click the button, done</h2>
+<ol>
+	<li class="instructions">Enter data seperated by returns</li>
+	<li class="instructions">leave a tab or comma between the name and the amount</li>
+	<li class="instructions">Make sure the dollar amount has a "$" in front of it</li>
+	<li class="instructions">click the button</li>
+	<li class="instructions">done</li>
+</ol>
 <p>Format:</p>
-<pre>CAMO KNIT CAP	 $8.95 
-GRAY/BLACK KNIT CAP	 $3.80 
-NEON CAP	 $3.00</pre>
+<pre>CAMO KNIT CAP	 $8.95 				CAMO KNIT CAP, $8.95
+GRAY/BLACK KNIT CAP	 $3.80      or    	GRAY/BLACK KNIT CAP, $3.80
+NEON CAP	 $3.00				NEON CAP, $3.00
+</pre>
 <h3>Note - Use this for single price items only. For multiple priced items like apparel, <a href="#">click here</a>.</h3>
 <ol>
 	<li><textarea rows="10" cols="100" placeholder="Dump return seperated numbers here" id="importData"></textarea></li>
 	<li><button type="button" name="sendNumbers" onclick="parseData()">Click to generate formatted numbers</button><button type="button" name="clearData" onclick="clearData()">Clear Data</button></li>
 </ol>
-<h3>Once you have the data, replace everything in <mark>data.csv</mark> with the text generated below, use <mark>GiftCertificateBoilerPLate.indd</mark> and update links.</h3>
+<h3>Once you have the data, replace everything in <mark>data.csv</mark> with the text generated below, use <mark>CSX Showcard BP.indd</mark> and update the data source.</h3>
 <div id="gcNumbers">
 <!-- "NumPos1,NumPos2,NumPos3,date,amt\n" -->
 </div>
@@ -37,8 +49,6 @@ NEON CAP	 $3.00</pre>
 	
 	const headerInfo = `desc1,price1,desc2,price2,desc3,price3,desc4,price4`;
 	const numberOfCards = 4;
-
-	// const endString = `${dateString},$${setAmount}.00\n`;
 
 	let rawData = "";
 	let dataArray = [];
@@ -50,7 +60,7 @@ NEON CAP	 $3.00</pre>
 
 	function parseData(string){
 		rawData = document.getElementById("importData").value;
-		dataArray = rawData.split(/\n|\t/gm);
+		dataArray = rawData.split(/\n|\t|,/gm);
 		trimWhiteSpace(dataArray);
 		splitToDataTable(dataArray);
 		fillInTheBlanks(dataTable);
@@ -77,7 +87,7 @@ NEON CAP	 $3.00</pre>
 			}
 
 				function fillInTheBlanks(arr){
-					while((arr.length-1)%4){
+					while((arr.length)%numberOfCards){
 						dataTable.push(["null","null"]);
 					}
 				}
@@ -85,13 +95,17 @@ NEON CAP	 $3.00</pre>
 			function showNewData(arr){
 				dataString += `${headerInfo} <br>`;
 				for(let i=0;i<arr.length;i++){
-					if(i>0&&i%4===0){
-						dataString += `${arr[i]}<br>`;
+					if(i>0&&i%numberOfCards===0){
+						dataString += `<br>`;
 					}
-					else{
-						dataString += `${arr[i]},`
+					else if(i!==0){
+						dataString+=`,`;
 					}
+					
+					dataString += `${arr[i]}`
+
 				}
+				console.log(dataString);
 				document.getElementById("gcNumbers").innerHTML=dataString;
 			}
 
