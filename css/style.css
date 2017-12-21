@@ -35,7 +35,8 @@ $heading-font-color:#575841;*/
   grid-area: articles; }
 
 #web {
-  grid-area: web; }
+  grid-area: web;
+  width: 100%; }
 
 #photo {
   grid-area: photo; }
@@ -70,8 +71,10 @@ body {
   font-size: 10px; }
 
 h1, h2 {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: normal; }
+  font-family: "Arvo", serif;
+  letter-spacing: .35rem;
+  font-weight: bold;
+  text-transform: lowercase; }
 
 h1 {
   font-size: 2.5rem; }
@@ -80,7 +83,7 @@ p {
   font-size: 1rem; }
 
 .sectionTitle {
-  color: #86bbd8;
+  color: #f6ae2d;
   background-color: rgba(36, 35, 37, 0.3);
   text-align: center;
   padding: 3rem 0;
@@ -134,13 +137,14 @@ p {
   .navLink a {
     display: inline-block;
     text-decoration: none;
-    font: 0.75rem "Titillium Web", sans-serif;
+    font: 0.75rem "Arvo", serif;
+    text-transform: lowercase;
     line-height: 1rem; }
   .navLink a:visited, .navLink a:link {
     color: #f26419; }
   .navLink a:hover, .navLink a:active {
     color: #f6ae2d;
-    transition: 1s; }
+    transition: .5s; }
   @media (min-width: 475px) {
     .navLink {
       display: inline-block; }
@@ -262,7 +266,7 @@ p {
   padding: 15px; }
 
 .siteTitle {
-  font: 2rem "Titillium Web", sans-serif;
+  font: 2rem "Arvo", serif;
   color: #f6ae2d;
   margin: 0; }
 

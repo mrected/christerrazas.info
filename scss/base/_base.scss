@@ -10,7 +10,9 @@ body{
 
 h1,h2{
 	font-family:$heading-font;
-	font-weight: normal;
+	letter-spacing: .35rem;
+	font-weight: bold;
+	text-transform: lowercase;
 }
 
 h1{

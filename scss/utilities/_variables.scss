@@ -1,7 +1,7 @@
 //variables
 
 $main-text-font:'Quicksand', sans-serif;
-$heading-font:'Titillium Web', sans-serif;
+$heading-font:'Arvo', serif;
 $article-font:'Comfortaa', cursive;
 
 //COLORS--------------
@@ -38,7 +38,7 @@ $accent-color3:#86bbd8; //lt blue
 $btn-font-color:#f26419;  //orange
 $article-bg-color:#14141e;
 $title-bg-color:rgba(36,35,37,.3); //3% of dark grey
-$title-font-color: #86bbd8; //lt blue
+$title-font-color: #f6ae2d; //yellow
 $article-title-font:#86bbd8; //lt blue
 $article-font-color:#f6ae2d;
 $white: #fffaff;
@@ -78,11 +78,9 @@ $bp-large:1200px;
 	border-bottom-left-radius: 5px;
 }
 
-@mixin article-image-shadow{
-	-webkit-box-shadow: inset -14px 19px 43px -16px rgba(0,0,0,0.56);
-	-moz-box-shadow: inset -14px 19px 43px -16px rgba(0,0,0,0.56);
-	box-shadow: inset -14px 19px 43px -16px rgba(0,0,0,0.56);
-}
+
+
+
 
 
 
