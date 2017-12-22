@@ -9,13 +9,16 @@
 
 	<link rel="shortcut icon" href="images/brand-Favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Quicksand: 600,700|Titillium+Web|Arvo:400,700" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
 
-		<section class="gridItem" id="brand">
+		<section id="brand">
 			<div id="brand-logo-div">
 				<img src="images/brand-darkBg.svg" id="brand-logo">
 			</div>
@@ -23,7 +26,7 @@
 
 
 
-		<nav class="gridItem" id="nav">
+		<nav id="nav">
 			<div id="navbar">
 				
 			</div>
@@ -109,63 +112,20 @@
 		<section class="gridItem" id="photo" name="photo">
 			<h1 class="sectionTitle">Photos</h1>
 			<div id="photos">
-				<div id="photoBlock">
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
-					<div class="photo">
-						<div>
-							<img class="photoImg" src="https://picsum.photos/220/220/?random">
-						</div>
-						<p class="photoTitle">Title</p>
-					</div>
+				<div id="photoBlock" class="fotorama" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="100%">
+					<img src="images/photo/reflective.jpg">
+					<img src="images/photo/guy.jpg">
+					<img src="images/photo/kids.jpg">
+					<img src="images/photo/becky.jpg">
+					<img src="images/photo/marie.jpg">
+					<img src="images/photo/frog2.jpg">
+					<img src="images/photo/female2.jpg">
+					<img src="images/photo/fan.jpg">
+					<img src="images/photo/cat.jpg">
+					<img src="images/photo/couple.jpg">
+					<img src="images/photo/danielle.jpg">
+					<img src="images/photo/josh.jpg">
 				</div>
-
 			</div>
 		</section>
 
@@ -250,6 +210,7 @@
 
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
