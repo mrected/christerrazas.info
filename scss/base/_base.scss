@@ -32,3 +32,14 @@ p{
 	border-top: .05rem solid $accent-color3;
 	border-bottom: .05rem solid $accent-color3;
 }
+
+.heading-description{
+	font-size: .85rem;
+	font-family: $article-font;
+	letter-spacing: initial;
+	line-height: 1;
+	font-weight: normal;
+	text-transform: none;
+	color:$accent-color3;
+
+}

@@ -32,7 +32,8 @@ $heading-font-color:#575841;*/
   grid-area: about; }
 
 #articles {
-  grid-area: articles; }
+  grid-area: articles;
+  justify-items: center; }
 
 #web {
   grid-area: web;
@@ -49,6 +50,9 @@ $heading-font-color:#575841;*/
 
 #footer {
   grid-area: footer; }
+
+#main-body {
+  grid-area: main-body; }
 
 #wrapper-head {
   /*height: 100vh;*/
@@ -75,6 +79,20 @@ $heading-font-color:#575841;*/
       grid-template-columns: repeat(2, 1fr) 300px;
       /*grid-auto-rows: minmax($standard-height, auto);*/
       grid-template-areas: "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
+
+#wrapper-body-sub {
+  /*height: 100vh;*/
+  margin: 0 auto;
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: minmax($standard-height $standard-height auto);*/
+  grid-template-areas: "articles articles articles" "footer footer footer"; }
+  @media (min-width: 768px) {
+    #wrapper-body-sub {
+      grid-template-columns: repeat(2, 1fr) 300px;
+      /*grid-auto-rows: minmax($standard-height, auto);*/
+      grid-template-areas: "articles articles articles" "footer footer footer"; } }
 
 * {
   box-sizing: border-box; }
@@ -104,6 +122,15 @@ p {
   margin: 2rem 1rem 1rem;
   border-top: 0.05rem solid #86bbd8;
   border-bottom: 0.05rem solid #86bbd8; }
+
+.heading-description {
+  font-size: .85rem;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: initial;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: none;
+  color: #86bbd8; }
 
 #brand-logo-div {
   display: flex;
@@ -205,19 +232,17 @@ p {
 
 #about p {
   padding: 0 1rem;
-  color: #E6E8E6; }
+  color: #E6E8E6;
+  font-size: 2rem;
+  display: inline-block; }
   @media (min-width: 475px) {
     #about p {
       line-height: 1.5rem; } }
   @media (min-width: 768px) {
     #about p {
       font-size: 1.15rem;
-      padding-left: 3rem;
       padding-bottom: 1rem;
       line-height: 2rem; } }
-  #about p .big-text {
-    font-size: 2rem;
-    display: inline-block; }
 
 .articleInfo {
   display: inline-flex;
@@ -258,11 +283,13 @@ p {
   color: #f6ae2d; }
 
 .articleImg {
-  transition: box-shadow .3s;
   display: block;
   margin: 0 auto; }
 
-.articleImg:hover {
+.imgGlow {
+  transition: box-shadow .3s; }
+
+.imgGlow:hover {
   box-shadow: 0 0 18px #86bbd8; }
 
 .articleDescription {
@@ -271,6 +298,22 @@ p {
 
 .articleDescription::first-line {
   font-size: 1rem; }
+
+.subPage {
+  padding: 0 1rem;
+  color: #E6E8E6;
+  font-size: 2rem;
+  display: inline-block; }
+  @media (min-width: 475px) {
+    .subPage {
+      line-height: 1.5rem; } }
+  @media (min-width: 768px) {
+    .subPage {
+      font-size: 1.15rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+  .subPage img {
+    width: 50%; }
 
 .siteInfo {
   display: inline-flex;

@@ -38,14 +38,19 @@
 }
 
 .articleImg{
-	transition: box-shadow .3s;
 	display: block;
 	margin: 0 auto;
 }
 
-.articleImg:hover{
+.imgGlow{
+	transition: box-shadow .3s;
+}
+
+.imgGlow:hover{
 	box-shadow: 0 0 18px $accent-color3; 
 }
+
+
 
 .articleDescription{
 	font: $article-font;
@@ -54,4 +59,13 @@
 
 .articleDescription::first-line{
 	font-size: 1rem ;
+}
+
+.subPage{
+	@include main-body-font;
+	@include big-text;
+
+	img{
+		width:50%;
+	}
 }

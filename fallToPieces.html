@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>yellooo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="need to add this">
+	<meta name="keywords" content="this too">
+
+	<link rel="shortcut icon" href="images/brand-Favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Quicksand: 600,700|Titillium+Web|Arvo:400,700" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper-head">
+
+		<section id="brand">
+			<div id="brand-logo-div">
+				<img src="images/brand-darkBg.svg" id="brand-logo">
+			</div>
+		</section>
+
+
+
+		<nav id="nav">
+			<div id="navbar">
+				
+			</div>
+			<div id="navbarLinks">
+				<ul>
+					<li class="navLink"><a href="#">About</a></li>
+					<li class="navLink"><a href="#">Web Work</a></li>
+					<li class="navLink"><a href="#">Photo</a></li>
+					<li class="navLink"><a href="#">Graphics</a></li>
+					<li class="navLink"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<div id="topImg">
+			<div id="topImgDiv">
+				<!-- <img src="images/arches.jpg" id="selectedTopImg"/> -->
+				<div id="selectedTopImg"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="wrapper-body-sub">
+
+		<section id="articles" class="subPage">
+			<h1 class="sectionTitle">Don't Fall to Pieces <br><span class="heading-description">With a little help from Patsy Cline, an explaination of why you can't just switch ink colors when you're dealing with 1 color art.</span></h1>
+
+			<p>"Why can’t I just switch white ink to black ink when printing a shirt?" If you set up an imprint for a t-shirt, or anything really, say something light on something dark, you’re client will almost always say they want to change a shirt color and do something lighter than you intended, or vice versa.</p>
+
+			<p>Most of the time if you’re dealing with a logo or something more than 1 color, this is fine. The problems typically start when you do this with something that has a face.</p>
+
+			<img src="images/patsyvspatsy.png" alt="patsy cline - light and dark" class="articleImg">
+
+			<p>Take this image of Patsy Cline. With Patsy on the left, we’re printing her in ink lighter than her surroundings, and she looks ok. The white ink makes up her skin tones, whites of her eyes and the highlights of the image. Patsy on the right is the exact same imprint, except now she’s darker than her surroundings, and looks a little… crazy.</p>
+
+			<p>Usually it’s anything with eyes, because when the colors shift beyond to the other end of the shade of the background, it ends up making the image look more like a negative. The only real solution to this problem is to let the background color show thru where the ink is and print where it doesn’t. You can usually resolve this by putting an outline around the profile of your art, filling in where the negative space and deleting what printed before, thus flipping what prints the highlights or shadows and makes up the image. Assuming your art is vector, and if you’re screen printing chances are it is anyway, here’s an easy way to get this to work before you go all to pieces.</p>
+
+			<p>Let’s assume you have the original image and you made this print. For your sake I hope so. If you have the original, copy all your art, highlights, shadows, all colors, everything, make any strokes into outlines, copy it, and paste in front or below your art (cmd-f for front, cmd-b for back), or on a new layer, somewhere you can work with it and it’s not going to get mixed up with the original. Now go into your Pathfinder palette and click “Merge”. This will take everything and smash it into a silhouette of your image.</p>
+
+			<p>In some cases your art won’t be a solid shape. You’ll need to go thru it and anywhere there is positive or negative space, delete the paths. You’ll also need to go around the edges and draw in anywhere that didn’t fill. What you’re shooting for is if you had a perfect shadow if your image.</p>
+
+			<p>Once you’ve got this, copy it yet again and paste it in front. You might need this unbroken path later so hide (cmd-3 hides, cmd-alt-3 unhides) or lock it ( cmd-2, cmd-alt-2 respectively). Now, take your path that’s still showing, and while it’s behind your original art, Pathfinder > Trim should give you your positive and negative space in 2 separate colors. You can also do this with Pathfinder > Divide, but Divide cuts every path into it’s own shape where Trim does a better job of keeping similar colors in solid shapes.</p>
+
+			<p>Now that you’ve got this, delete “or save because you’ll probably end up needing it) the unwanted highlight or shadow portion of the image, and what your left with is the negative of what you started with. Remember that path you saved from earlier? If your art ends up getting lost where there’s no border to it anymore, turn this back on and you’ve got a perfect outline to separate this from your background.</p>
+		</section>
+
+
+		<footer class="gridItem" id="footer">
+			<h2>Footer</h2>
+		</footer>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
