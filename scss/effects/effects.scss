@@ -6,9 +6,13 @@
     margin-top: -.8em;
     text-align: center;
     line-height: 1.6em;
+   	color: $accent-color3;
+   	font-size: initial;
   }
 
 #slider{
-	width:600px;
+	width:100%;
+	max-width: 600px;
 	margin:0 auto;
+
 }

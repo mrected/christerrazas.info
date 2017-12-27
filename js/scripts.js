@@ -5,8 +5,9 @@ $( function() {
         handle.text( $( this ).slider( "value" ) );
       },
       slide: function( event, ui ) {
+      	let colorVal = Math.ceil(ui.value*2.55);
         handle.text( ui.value );
-        $('#patsyColorChangeDiv').css('background-color', 'rgba(255,255,255,' + (ui.value/100));
+        $('#patsyColorChangeDiv').css('background-color', 'rgb(' + colorVal + ',' + colorVal + ',' + colorVal + ')');
       }
     });
   } );

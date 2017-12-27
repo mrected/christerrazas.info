@@ -100,10 +100,13 @@ $heading-font-color:#575841;*/
   top: 50%;
   margin-top: -.8em;
   text-align: center;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  color: #86bbd8;
+  font-size: initial; }
 
 #slider {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto; }
 
 * {
@@ -327,7 +330,7 @@ p {
   .subPage img {
     width: 50%; }
   .subPage #patsyColorChangeDiv {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: black;
     width: 100%;
     max-width: 500px;
     height: 400px;
@@ -336,6 +339,16 @@ p {
       display: block;
       height: 100%;
       margin: 0 auto; }
+  .subPage .captionBox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px; }
+    .subPage .captionBox p {
+      width: 60%;
+      padding: 0 1rem;
+      font-size: .85rem; }
 
 .siteInfo {
   display: inline-flex;
