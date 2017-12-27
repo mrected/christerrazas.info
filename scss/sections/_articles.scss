@@ -68,4 +68,18 @@
 	img{
 		width:50%;
 	}
+
+	#patsyColorChangeDiv{
+		background-color: rgba(255,255,255,0);
+		width:100%;
+		max-width:500px;
+		height: 400px;
+		margin:0 auto;
+		img{
+			display: block;
+			height:100%;
+			margin:0 auto;
+		}
+	}
+
 }

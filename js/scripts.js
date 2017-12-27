@@ -1,3 +1,17 @@
+$( function() {
+    var handle = $( "#custom-handle" );
+    $( "#slider" ).slider({
+      create: function() {
+        handle.text( $( this ).slider( "value" ) );
+      },
+      slide: function( event, ui ) {
+        handle.text( ui.value );
+        $('#patsyColorChangeDiv').css('background-color', 'rgba(255,255,255,' + (ui.value/100));
+      }
+    });
+  } );
+
+
 // const imgHeight = $('#selectedTopImg').height();
 // const imgWidth = $('#selectedTopImg').width();
 // $('#selectedTopImg').height(Math.round(imgHeight)).width(Math.round(imgWidth));

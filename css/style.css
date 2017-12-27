@@ -94,6 +94,18 @@ $heading-font-color:#575841;*/
       /*grid-auto-rows: minmax($standard-height, auto);*/
       grid-template-areas: "articles articles articles" "footer footer footer"; } }
 
+#custom-handle {
+  width: 3em;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -.8em;
+  text-align: center;
+  line-height: 1.6em; }
+
+#slider {
+  width: 600px;
+  margin: 0 auto; }
+
 * {
   box-sizing: border-box; }
 
@@ -314,6 +326,16 @@ p {
       line-height: 2rem; } }
   .subPage img {
     width: 50%; }
+  .subPage #patsyColorChangeDiv {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    margin: 0 auto; }
+    .subPage #patsyColorChangeDiv img {
+      display: block;
+      height: 100%;
+      margin: 0 auto; }
 
 .siteInfo {
   display: inline-flex;

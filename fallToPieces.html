@@ -10,6 +10,8 @@
 	<link rel="shortcut icon" href="images/brand-Favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -57,6 +59,8 @@
 		<section id="articles" class="subPage">
 			<h1 class="sectionTitle">Don't Fall to Pieces <br><span class="heading-description">With a little help from Patsy Cline, an explaination of why you can't just switch ink colors when you're dealing with 1 color art.</span></h1>
 
+			<h2>Problem</h2>
+
 			<p>"Why can’t I just switch white ink to black ink when printing a shirt?" If you set up an imprint for a t-shirt, or anything really, say something light on something dark, you’re client will almost always say they want to change a shirt color and do something lighter than you intended, or vice versa.</p>
 
 			<p>Most of the time if you’re dealing with a logo or something more than 1 color, this is fine. The problems typically start when you do this with something that has a face.</p>
@@ -65,7 +69,20 @@
 
 			<p>Take this image of Patsy Cline. With Patsy on the left, we’re printing her in ink lighter than her surroundings, and she looks ok. The white ink makes up her skin tones, whites of her eyes and the highlights of the image. Patsy on the right is the exact same imprint, except now she’s darker than her surroundings, and looks a little… crazy.</p>
 
-			<p>Usually it’s anything with eyes, because when the colors shift beyond to the other end of the shade of the background, it ends up making the image look more like a negative. The only real solution to this problem is to let the background color show thru where the ink is and print where it doesn’t. You can usually resolve this by putting an outline around the profile of your art, filling in where the negative space and deleting what printed before, thus flipping what prints the highlights or shadows and makes up the image. Assuming your art is vector, and if you’re screen printing chances are it is anyway, here’s an easy way to get this to work before you go all to pieces.</p>
+			<p>For a better example of this, drag the slider below the image to see what I'm talking about. Patsy stays the same shade of grey, only the background changes color.</p>
+
+			<div id="patsyColorChangeDiv">
+				<img src="images/patsy.svg">
+			</div>
+			<div id="slider">
+			  <div id="custom-handle" class="ui-slider-handle"></div>
+			</div>
+
+			<p>Usually it’s anything with eyes, because when the background colors shift beyond to the shade of the art, it ends up making the image look more like a negative. If you're satisfied knowing the answer, you're done here. If you want to know how to fix this, read on...</p>
+
+			<h2>Solution</h2>
+
+			<p>The only real way to resolve this problem is to reverse what prints so the background color show thru where the ink is now and prints where it isn’t. You can usually resolve this by putting an outline around the profile of your art, filling in where the negative space and deleting what printed before, thus flipping what prints the highlights or shadows and makes up the image. Assuming your art is vector, and if you’re screen printing chances are it is anyway, here’s an easy way to get this to work before you go all to pieces.</p>
 
 			<p>Let’s assume you have the original image and you made this print. For your sake I hope so. If you have the original, copy all your art, highlights, shadows, all colors, everything, make any strokes into outlines, copy it, and paste in front or below your art (cmd-f for front, cmd-b for back), or on a new layer, somewhere you can work with it and it’s not going to get mixed up with the original. Now go into your Pathfinder palette and click “Merge”. This will take everything and smash it into a silhouette of your image.</p>
 
@@ -83,6 +100,7 @@
 
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
