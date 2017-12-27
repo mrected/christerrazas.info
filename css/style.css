@@ -50,17 +50,31 @@ $heading-font-color:#575841;*/
 #footer {
   grid-area: footer; }
 
-.wrapper {
+#wrapper-head {
   /*height: 100vh;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(100px 100px auto);
-  grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg" "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
+  grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg"; }
   @media (min-width: 768px) {
-    .wrapper {
+    #wrapper-head {
       grid-template-columns: repeat(2, 1fr) 300px;
       grid-auto-rows: minmax(100px, auto);
-      grid-template-areas: "brand nav nav" "topImg topImg topImg" "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
+      grid-template-areas: "brand nav nav" "topImg topImg topImg"; } }
+
+#wrapper-body {
+  /*height: 100vh;*/
+  margin: 0 auto;
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-rows: minmax($standard-height $standard-height auto);*/
+  grid-template-areas: "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
+  @media (min-width: 768px) {
+    #wrapper-body {
+      grid-template-columns: repeat(2, 1fr) 300px;
+      /*grid-auto-rows: minmax($standard-height, auto);*/
+      grid-template-areas: "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
 
 * {
   box-sizing: border-box; }
