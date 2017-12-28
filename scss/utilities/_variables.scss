@@ -32,6 +32,7 @@ $nav-color:#14141e; //almost black
 $footer-color:#242325; //almost black
 $main-font-color:#E6E8E6; //light grey
 $btn-font-color:#CED0CE;
+$code-bg-color:rgba(230,232,230,.3);
 $accent-color:#f26419;  //orange
 $accent-color2:#f6ae2d; //yellow
 $accent-color3:#86bbd8; //lt blue
@@ -85,7 +86,7 @@ $bp-large:1200px;
 		line-height: 1.5rem;
 	}
 	@media(min-width: $bp-small){
-		font-size: 1.15rem;
+		font-size: 1rem;
 		padding-bottom: 1rem;
 		line-height: 2rem;
 	}

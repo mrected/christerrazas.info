@@ -1,0 +1,46 @@
+//change jquery.ui slider radius-----------------------------------
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 25px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 25px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 25px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 25px;
+}
+
+//remove jquery.ui slider outline on focus-----------------------------------
+
+:focus {
+    outline: none;
+    outline-color: none;
+    outline-style: none;
+    outline-width: 0;
+}
+
+
+//change style jquery.ui slider-----------------------------------
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid $accent-color3;
+    background: $bg-color;
+    font-weight: normal;
+    color: #555555;
+}
+

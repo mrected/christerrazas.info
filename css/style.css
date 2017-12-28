@@ -101,13 +101,49 @@ $heading-font-color:#575841;*/
   margin-top: -.8em;
   text-align: center;
   line-height: 1.6em;
-  color: #86bbd8;
+  color: #f26419;
   font-size: initial; }
 
 #slider {
   width: 100%;
   max-width: 600px;
   margin: 0 auto; }
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 25px; }
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  border-top-right-radius: 25px; }
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  border-bottom-left-radius: 25px; }
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  border-bottom-right-radius: 25px; }
+
+:focus {
+  outline: none;
+  outline-color: none;
+  outline-style: none;
+  outline-width: 0; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #86bbd8;
+  background: #040414;
+  font-weight: normal;
+  color: #555555; }
 
 * {
   box-sizing: border-box; }
@@ -146,6 +182,16 @@ p {
   font-weight: normal;
   text-transform: none;
   color: #86bbd8; }
+
+.code {
+  font-family: monospace;
+  background-color: rgba(230, 232, 230, 0.3);
+  border-radius: 25px;
+  padding: 0 .15rem; }
+  @media (min-width: 768px) {
+    .code {
+      padding: .15rem .35rem;
+      border: solid 0.15rem #f6ae2d; } }
 
 #brand-logo-div {
   display: flex;
@@ -255,7 +301,7 @@ p {
       line-height: 1.5rem; } }
   @media (min-width: 768px) {
     #about p {
-      font-size: 1.15rem;
+      font-size: 1rem;
       padding-bottom: 1rem;
       line-height: 2rem; } }
 
@@ -317,14 +363,13 @@ p {
 .subPage {
   padding: 0 1rem;
   color: #E6E8E6;
-  font-size: 2rem;
-  display: inline-block; }
+  /*@include big-text;*/ }
   @media (min-width: 475px) {
     .subPage {
       line-height: 1.5rem; } }
   @media (min-width: 768px) {
     .subPage {
-      font-size: 1.15rem;
+      font-size: 1rem;
       padding-bottom: 1rem;
       line-height: 2rem; } }
   .subPage img {
@@ -346,9 +391,19 @@ p {
     width: 100%;
     max-width: 600px; }
     .subPage .captionBox p {
+      margin: 0 auto;
       width: 60%;
       padding: 0 1rem;
-      font-size: .85rem; }
+      /*font-size: .85rem;*/
+      text-align: center; }
+  .subPage li img {
+    width: 90%;
+    display: block;
+    margin: 1rem 0; }
+    @media (min-width: 475px) {
+      .subPage li img {
+        width: initial;
+        margin: .5rem 0; } }
 
 .siteInfo {
   display: inline-flex;

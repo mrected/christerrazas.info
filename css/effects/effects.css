@@ -1,5 +1,5 @@
 /*
-Error: Undefined variable: "$accent-color3".
+Error: Undefined variable: "$btn-font-color".
         on line 9 of scss/effects/effects.scss
 
 4:     height: 1.6em;
@@ -7,7 +7,7 @@ Error: Undefined variable: "$accent-color3".
 6:     margin-top: -.8em;
 7:     text-align: center;
 8:     line-height: 1.6em;
-9:    	color: $accent-color3;
+9:    	color: $btn-font-color;
 10:    	font-size: initial;
 11:   }
 12: 
@@ -69,4 +69,4 @@ scss/effects/effects.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$accent-color3\".\A         on line 9 of scss/effects/effects.scss\A \A 4:     height: 1.6em;\A 5:     top: 50%;\A 6:     margin-top: -.8em;\A 7:     text-align: center;\A 8:     line-height: 1.6em;\A 9:    	color: $accent-color3;\A 10:    	font-size: initial;\A 11:   }\A 12: \A 13: #slider{\A 14: 	width:100%;"; }
+  content: "Error: Undefined variable: \"$btn-font-color\".\A         on line 9 of scss/effects/effects.scss\A \A 4:     height: 1.6em;\A 5:     top: 50%;\A 6:     margin-top: -.8em;\A 7:     text-align: center;\A 8:     line-height: 1.6em;\A 9:    	color: $btn-font-color;\A 10:    	font-size: initial;\A 11:   }\A 12: \A 13: #slider{\A 14: 	width:100%;"; }

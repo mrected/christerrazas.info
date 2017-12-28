@@ -63,7 +63,7 @@
 
 .subPage{
 	@include main-body-font;
-	@include big-text;
+	/*@include big-text;*/
 
 	img{
 		width:50%;
@@ -89,10 +89,24 @@
 		width:100%;
 		max-width:600px;
 		p{
+			margin:0 auto;
 			width:60%;
 			padding:0 1rem;
-			font-size: .85rem;
+			/*font-size: .85rem;*/
+			text-align: center;
+		}
+	}
+
+	li img{
+		width:90%;
+		display: block;
+		margin:1rem 0;
+		@media(min-width: $bp-xsmall){
+			width:initial;
+			margin:.5rem 0;
 		}
 	}
 
 }
+
+

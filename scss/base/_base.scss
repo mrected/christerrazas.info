@@ -43,3 +43,15 @@ p{
 	color:$accent-color3;
 
 }
+
+.code{
+	font-family: monospace;
+	background-color: $code-bg-color;
+	border-radius: 25px;
+	padding:0 .15rem;
+	
+	@media(min-width: $bp-small){
+		padding:.15rem .35rem;
+		border:solid .15rem $accent-color2;
+	}
+}
