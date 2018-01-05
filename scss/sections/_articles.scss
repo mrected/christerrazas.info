@@ -65,6 +65,11 @@
 	@include main-body-font;
 	/*@include big-text;*/
 
+	.titleImage{
+		display: block;
+		margin:1rem auto;
+	}
+
 	img{
 		width:50%;
 	}

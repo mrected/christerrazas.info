@@ -12,7 +12,7 @@
 #nav{
 	grid-area: nav;justify-self: center;
 	align-self: start;
-	height: $standard-height;
+	/*height: $standard-height;*/
 	@media(min-width: $bp-medium){
 		height: $standard-height-md;
 	}
@@ -34,7 +34,6 @@
 
 #web{
 	grid-area: web;
-	width: 100%;
 }
 
 #photo{
@@ -65,9 +64,10 @@
 
 #wrapper-head{
 	/*height: 100vh;*/
+
 	display:grid;
 	grid-template-columns: repeat(2,1fr);
-	grid-template-rows: minmax($standard-height $standard-height auto);
+	grid-template-rows: minmax($standard-height auto);
 	grid-template-areas: 
 	"brand brand brand"
 	"nav nav nav"
@@ -100,6 +100,7 @@
 	@media (min-width: $bp-small){
 		grid-template-columns: repeat(2,1fr) 300px;
 		/*grid-auto-rows: minmax($standard-height, auto);*/
+		width: 100%;
 		grid-template-areas: 
 			"about about articles"
 			"web web web"

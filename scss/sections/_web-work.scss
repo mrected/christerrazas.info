@@ -1,6 +1,11 @@
 .siteInfo{
-	display: inline-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 2rem 0;
+	@media(min-width: $bp-small){
+		flex-direction: row;
+	}
 }
 
 #web{
@@ -8,18 +13,27 @@
 }
 
 .siteTitle{
-	font: 2rem $heading-font;
+	font: 1rem $heading-font;
 	color:$heading-font-color;
 	margin:0;
 }
 
 .siteImg{
-	max-width: 300px;
+	max-width: 200px;
+	@media(min-width: $bp-xsmall){
+		max-width: 400px;
+	}
+	@media(min-width: $bp-medium){
+		max-width: 600px;
+	}
 }
 
 
 .siteDescription{
-	font: 1.25rem $main-text-font;
+	font: 1rem $main-text-font;
 	color:$main-font-color;
 	margin: 0 1rem;
+	@media(min-width: $bp-xsmall){
+		font-size: 1.25rem;
+	}
 }

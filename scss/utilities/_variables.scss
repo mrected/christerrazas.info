@@ -27,7 +27,7 @@ $btn-font-color:#CED0CE;
 $accent-color:#9FB8AD;
 $heading-font-color:#575841;*/
 
-$bg-color:#040414; //grey
+$bg-color:#14141e; //almost black
 $nav-color:#14141e; //almost black
 $footer-color:#242325; //almost black
 $main-font-color:#E6E8E6; //light grey
@@ -93,8 +93,9 @@ $bp-large:1200px;
 }
 
 @mixin big-text{
-		font-size: 2rem;
+		font-size: 1.75rem;
 		display: inline-block;
+		/*@media(min-width: )*/
 }
 
 

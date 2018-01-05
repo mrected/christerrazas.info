@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>yellooo</title>
+	<title>Chris Terrazas - designer/developer</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="need to add this">
@@ -27,18 +27,34 @@
 
 
 		<nav id="nav">
-			<div id="navbar">
-				
-			</div>
+
+			<div id="menuOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
 			<div id="navbarLinks">
 				<ul>
 					<li class="navLink"><a href="#">About</a></li>
 					<li class="navLink"><a href="#">Web Work</a></li>
 					<li class="navLink"><a href="#">Photo</a></li>
 					<li class="navLink"><a href="#">Graphics</a></li>
-					<li class="navLink"><a href="#">Contact</a></li>
+					<li class="navLink"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
+
+			<div id="navbarLinks-mobile">
+				<ul>
+					<li class="navLink"><a href="#">About</a></li>
+					<li class="navLink"><a href="#">Web Work</a></li>
+					<li class="navLink"><a href="#">Photo</a></li>
+					<li class="navLink"><a href="#">Graphics</a></li>
+					<li class="navLink"><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+
 		</nav>
 
 
@@ -56,7 +72,7 @@
 
 		<section class="gridItem" id="about" name="about">
 			<h1 class="sectionTitle">About</h1>
-			<p><span class="big-text">Hi, I’m Chris Terrazas.</span> I’ve been a Graphic Artist/Photographer/Art Director for a long time. A few years ago I realized I was bored with it. Nothing needs figuring out. Every problem is easily solvable. In short, it’s boring.</p>
+			<p><span class="big-text">Hi, I’m Chris Terrazas.</span><br> I’ve been a Graphic Artist/Photographer/Art Director for a long time. A few years ago I realized I was bored with it. Nothing needs figuring out. Every problem is easily solvable. In short, it’s boring.</p>
 
 			<p>I decided to move into programming. So far it’s been constantly challenging and I enjoy programming much more than I thought I would (I’m not a “math person” has been a goto excuse for a while now). I’ve been focused more in Web Development. I’m pretty well versed in HTML5, JavaScript, jQuery, CSS and I’m currently making some headway into WordPress and Python.</p>
 
@@ -91,7 +107,7 @@
 
 		<section class="gridItem" id="web" name="web">
 			<h1 class="sectionTitle">Web Work</h1>
-			<h3 class="siteTitle">Central Ave. Shirt Co.com</h3>
+			<h3 class="siteTitle">CentralAveShirtCo.com</h3>
 			<div class="siteInfo">
 				<div>
 					<img class="siteImg" src="images/cascSite.png">
@@ -100,7 +116,7 @@
 					<p class="siteDescription">Central Ave Shirt Co makes use of bootstrap 3, updates price lists and color charts based on user interaction, has a plugin apparel designer, the ability to chat with a representative and a number of other features. <a href="cascsite.html">Details about Central Ave Shirt Co</a></p>
 				</div>
 			</div>
-			<h3 class="siteTitle">AutoPlate</h3>
+			<h3 class="siteTitle">AutoPlate.net</h3>
 			<div class="siteInfo">
 				<div>
 					<img class="siteImg" src="images/autoplateSite.png">
@@ -116,19 +132,19 @@
 		<section class="gridItem" id="photo" name="photo">
 			<h1 class="sectionTitle">Photos</h1>
 			<div id="photos">
-				<div id="photoBlock" class="fotorama" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="100%">
-					<img src="images/photo/reflective.jpg">
-					<img src="images/photo/guy.jpg">
-					<img src="images/photo/kids.jpg">
-					<img src="images/photo/becky.jpg">
-					<img src="images/photo/marie.jpg">
-					<img src="images/photo/frog2.jpg">
-					<img src="images/photo/female2.jpg">
-					<img src="images/photo/fan.jpg">
-					<img src="images/photo/cat.jpg">
-					<img src="images/photo/couple.jpg">
-					<img src="images/photo/danielle.jpg">
-					<img src="images/photo/josh.jpg">
+				<div id="photoBlock" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="100%">
+				  <a href="images/photo/reflective.jpg"><img src="images/photo/reflective-thumb.jpg"></a>
+				  <a href="images/photo/guy.jpg"><img src="images/photo/guy-thumb.jpg"></a>
+				  <a href="images/photo/kids.jpg"><img src="images/photo/kids-thumb.jpg"></a>
+				  <a href="images/photo/marie.jpg"><img src="images/photo/marie-thumb.jpg"></a>
+				  <a href="images/photo/frog2.jpg"><img src="images/photo/frog2-thumb.jpg"></a>
+				  <a href="images/photo/becky.jpg"><img src="images/photo/becky-thumb.jpg"></a>
+				  <a href="images/photo/female2.jpg"><img src="images/photo/female2-thumb.jpg"></a>
+				  <a href="images/photo/josh.jpg"><img src="images/photo/josh-thumb.jpg"></a>
+				  <a href="images/photo/fan.jpg"><img src="images/photo/fan-thumb.jpg"></a>
+				  <a href="images/photo/cat.jpg"><img src="images/photo/cat-thumb.jpg"></a>
+				  <a href="images/photo/couple.jpg"><img src="images/photo/couple-thumb.jpg"></a>
+				  <a href="images/photo/danielle.jpg"><img src="images/photo/danielle-thumb.jpg"></a>
 				</div>
 			</div>
 		</section>
@@ -139,19 +155,18 @@
 			<h1 class="sectionTitle">Graphic Work</h1>
 			<div id="graphicWork">
 				
-				<div id="photoBlock" class="fotorama" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="100%">
-					<img src="images/art/bbcs16.png">
-					<img src="images/art/breweryPrints.png">
-					<img src="images/art/bbbs15.png">
-					<img src="images/art/stPeteAir.png">
-					<img src="images/art/3daughters.png">
-					<img src="images/art/bbbs14.png">
-					<img src="images/art/ricks.png">
-					<img src="images/art/jdrf.png">
-					<img src="images/art/fksLogo.png">
-					<img src="images/art/bbbs16.png">
-					<img src="images/art/bbcs16.png">
-					<img src="images/art/vipHotSauce.png">
+				<div id="photoBlock" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="100%">
+					<a href="images/art/bbcs16.png">
+					<a href="images/art/breweryPrints.png">
+					<a href="images/art/bbbs15.png">
+					<a href="images/art/stPeteAir.png">
+					<a href="images/art/3daughters.png">
+					<a href="images/art/bbbs14.png">
+					<a href="images/art/ricks.png">
+					<a href="images/art/jdrf.png">
+					<a href="images/art/fksLogo.png">
+					<a href="images/art/bbcs16.png">
+					<a href="images/art/vipHotSauce.png">
 					
 				</div>
 
@@ -162,12 +177,21 @@
 
 		<section class="gridItem" id="contact" name="contact">
 			<h1 class="sectionTitle">Contact</h1>
+			<ul>
+				<li>LinkedIn</li>
+				<li>Facebook</li>
+				<li>Email</li>
+				<li>Twitter</li>
+				<li>Google+</li>
+				<li>Instagram</li>
+				<li>Github</li>
+			</ul>
 		</section>
 
 
 
 		<footer class="gridItem" id="footer">
-			<h2>Footer</h2>
+			<h1 class="sectionTitle">Footer</h1>
 		</footer>
 
 	</div>

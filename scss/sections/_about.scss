@@ -1,4 +1,7 @@
 #about p{
 	@include main-body-font;
+}
+
+.big-text{
 	@include big-text;
 }

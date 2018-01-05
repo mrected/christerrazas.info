@@ -25,11 +25,11 @@ p{
 
 .sectionTitle{
 	color:$title-font-color;
-	background-color: $title-bg-color;
+	/*background-color: $title-bg-color;*/
 	text-align: center;
-	padding:3rem 0;
+	padding:3rem 0 1rem;
 	margin:2rem 1rem 1rem;
-	border-top: .05rem solid $accent-color3;
+/*	border-top: .05rem solid $accent-color3;*/
 	border-bottom: .05rem solid $accent-color3;
 }
 

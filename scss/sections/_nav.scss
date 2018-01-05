@@ -9,26 +9,51 @@
 }
 
 #navbarLinks{
-	display: flex;
+	display: hidden;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: $standard-height;
-	/*height:200px;*/
+	height: initial;
+
+	@media(min-width: $bp-xsmall){
+		display: flex;
+		height: $standard-height;
+	}
 	
 
 	ul{
-		display: flex;
-		flex-direction: column;
-		list-style-type: none;
-		margin:0;
-		padding: 0;
+		display: none;
+
 		@media(min-width: $bp-xsmall){
+			display: flex;
 			width:100%;
 			flex-direction: row;
 			justify-content: space-evenly;
+			list-style-type: none;
+			/*margin:0 0 1rem 0;*/
+			padding: 0;
 		}
 	}
 
+}
+
+#navbarLinks-mobile{
+	ul{
+		display: none;
+		flex-direction: column;
+		list-style-type: none;
+		margin:0 0 1rem 0;
+		padding: 0;
+		li{
+			padding: .5rem 0;
+		}
+		@media(min-width: $bp-xsmall){
+			display: none;
+		}
+	}
+	@media(min-width: $bp-xsmall){
+		display: none;
+	}
 }
 
 .navLink{
@@ -38,9 +63,8 @@
 		display: inline-block;
 		
 		text-decoration: none;
-		font: .75rem $heading-font;
+		font: 1.5rem $heading-font;
 		text-transform: lowercase;
-		line-height: 1rem;
 	}
 
 	& a:visited, & a:link{
