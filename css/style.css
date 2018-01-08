@@ -377,11 +377,21 @@ p {
       #topImgDiv {
         height: 400px; } }
 
+/*#selectedTopImg{
+	background-image: url(../images/arches.jpg);
+	position: relative;
+	height: inherit;
+}*/
 #selectedTopImg {
   background-image: url(../images/arches.jpg);
-  position: relative;
-  /*width: 200%;*/
-  height: inherit; }
+  /*background-position:is set via scripts*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  /*padding: 5rem 0 3rem 0;*/
+  margin-bottom: 6rem;
+  box-shadow: 0 0.5rem 1rem rgba(4, 42, 43, 0.8);
+  height: 60rem; }
 
 #about p {
   padding: 0 1rem;
