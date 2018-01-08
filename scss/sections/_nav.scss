@@ -8,6 +8,15 @@
 	background-color: $nav-color;
 }
 
+/*.sticky{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 11111;
+	height: 5rem;
+}*/
+
 #navbarLinks{
 	display: hidden;
 	flex-direction: row;

@@ -69,16 +69,17 @@
 	grid-template-columns: repeat(2,1fr);
 	grid-template-rows: minmax($standard-height auto);
 	grid-template-areas: 
+	"topImg topImg topImg"
 	"brand brand brand"
-	"nav nav nav"
-	"topImg topImg topImg";
+	"nav nav nav";
 
 	@media (min-width: $bp-small){
 		grid-template-columns: repeat(2,1fr) 300px;
 		grid-auto-rows: minmax($standard-height, auto);
 		grid-template-areas: 
-			"brand nav nav"
-			"topImg topImg topImg";
+			"brand brand brand"
+			"topImg topImg topImg"
+			"nav nav nav";
 	}
 }
 

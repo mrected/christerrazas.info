@@ -58,12 +58,12 @@ $heading-font-color:#575841;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(100px auto);
-  grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg"; }
+  grid-template-areas: "topImg topImg topImg" "brand brand brand" "nav nav nav"; }
   @media (min-width: 768px) {
     #wrapper-head {
       grid-template-columns: repeat(2, 1fr) 300px;
       grid-auto-rows: minmax(100px, auto);
-      grid-template-areas: "brand nav nav" "topImg topImg topImg"; } }
+      grid-template-areas: "brand brand brand" "topImg topImg topImg" "nav nav nav"; } }
 
 #wrapper-body {
   /*height: 100vh;*/
@@ -289,6 +289,14 @@ p {
 #nav {
   background-color: #14141e; }
 
+/*.sticky{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 11111;
+	height: 5rem;
+}*/
 #navbarLinks {
   display: hidden;
   flex-direction: row;

@@ -13,18 +13,40 @@ $(".navLink").click(function(){
 
 });
 
-let selectedTopImgX = -45;
-let selectedTopImgY = -12;
+let selectedTopImgX = -100;
+let selectedTopImgY = -30;
 $("#selectedTopImg").css(`background-position`,`${selectedTopImgX}rem ${selectedTopImgY}rem`);
 
 $(window).scroll(function(){
-	let x = ($(window).scrollTop()/20)+selectedTopImgX;
-	let y = ($(window).scrollTop()/50)+selectedTopImgY;
+	let currentScreenPos = $(window).scrollTop();
+	let x = ($(window).scrollTop()/50)+selectedTopImgX;
+	let y = ($(window).scrollTop()/150)+selectedTopImgY;
 	// console.log(`${x}rem ${y}rem`);
 	$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
-	console.log($(window).scrollTop());
+	// if($(window).scrollTop()>558){
+	// 	$("#nav").slideDown('slow',function(){
+	// 		$(this).addClass("sticky");
+	// 	});
+	// }
+	// else{
+	// 	$("#nav").slideUp('slow',function(){
+	// 		$(this).removeClass("sticky");
+	// 	});
+	// }
 });
 
+$("#nav").sticky({topSpacing:0});
+
+// $(function(){
+//   $(window).scroll(function(){
+//     var winTop = $(window).scrollTop();
+//     if(winTop >= 30){
+//       $("body").addClass("sticky-header");
+//     }else{
+//       $("body").removeClass("sticky-header");
+//     }//if-else
+//   });//win func.
+// });//ready func.
 
 
 //fixes jumpy scroll over fixed backround in ie11
