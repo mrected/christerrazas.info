@@ -35,7 +35,7 @@ $(window).scroll(function(){
 	// }
 });
 
-$("#nav").sticky({topSpacing:0});
+// $("#nav").sticky({topSpacing:0});
 
 // $(function(){
 //   $(window).scroll(function(){
