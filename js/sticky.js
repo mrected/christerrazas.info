@@ -1,12 +1,30 @@
 // Sticky Header
+
+
+
 $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 550) {
+    if($(window).width()>1200){
+        activateSticky(550);
+    }
+    else if($(window).width()>970){
+        activateSticky(475);
+    }
+    else if($(window).width()>768){
+        activateSticky(400);
+    }
+    else{
+        activateSticky(300);
+    }
+});
+
+function activateSticky(activate){
+    if ($(window).scrollTop() > activate) {
         $('.main_h').addClass('sticky');
     } else {
         $('.main_h').removeClass('sticky');
     }
-});
+}
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {

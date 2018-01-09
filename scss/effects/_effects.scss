@@ -23,7 +23,10 @@
   display: block;
   width: 60px;
   height: 45px;
-  position: relative;
+  /*position: relative;*/
+  position: absolute;
+  right: 22px;
+  top: 0;
   margin: 10px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -133,10 +136,10 @@
 .open-nav {
   max-height: 400px !important;
 }
-.open-nav .mobile-toggle {
+/*.open-nav .mobile-toggle {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
-}
+}*/
 
 .sticky {
   background-color: rgba(255, 255, 255, 0.93);

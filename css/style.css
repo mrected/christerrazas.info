@@ -23,7 +23,7 @@ $heading-font-color:#575841;*/
   width: 100%; }
   @media (min-width: 970px) {
     #nav {
-      height: 150px; } }
+      /*height: $standard-height-md;*/ } }
 
 #topImg {
   grid-area: topImg; }
@@ -58,12 +58,12 @@ $heading-font-color:#575841;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(100px auto);
-  grid-template-areas: "topImg topImg topImg" "brand brand brand" "nav nav nav"; }
+  grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg"; }
   @media (min-width: 768px) {
     #wrapper-head {
       grid-template-columns: repeat(2, 1fr) 300px;
       grid-auto-rows: minmax(100px, auto);
-      grid-template-areas: "brand brand brand" "topImg topImg topImg" "nav nav nav"; } }
+      grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg"; } }
 
 #wrapper-body {
   /*height: 100vh;*/
@@ -87,12 +87,12 @@ $heading-font-color:#575841;*/
   max-width: 1200px;
   grid-template-columns: 1fr;
   /*grid-template-rows: minmax($standard-height $standard-height auto);*/
-  grid-template-areas: "articles articles articles" "footer footer footer"; }
+  grid-template-areas: "main-body main-body main-body" "footer footer footer"; }
   @media (min-width: 768px) {
     #wrapper-body-sub {
       grid-template-columns: repeat(2, 1fr) 300px;
       /*grid-auto-rows: minmax($standard-height, auto);*/
-      grid-template-areas: "articles articles articles" "footer footer footer"; } }
+      grid-template-areas: "main-body main-body main-body" "footer footer footer"; } }
 
 #custom-handle {
   width: 3em;
@@ -113,7 +113,10 @@ $heading-font-color:#575841;*/
   display: block;
   width: 60px;
   height: 45px;
-  position: relative;
+  /*position: relative;*/
+  position: absolute;
+  right: 22px;
+  top: 0;
   margin: 10px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -204,10 +207,10 @@ $heading-font-color:#575841;*/
 .open-nav {
   max-height: 400px !important; }
 
-.open-nav .mobile-toggle {
+/*.open-nav .mobile-toggle {
   transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg); }
-
+  -webkit-transform: rotate(-90deg);
+}*/
 .sticky {
   background-color: rgba(255, 255, 255, 0.93);
   opacity: 1;
