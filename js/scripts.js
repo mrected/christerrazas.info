@@ -23,6 +23,8 @@ $(window).scroll(function(){
 	let y = ($(window).scrollTop()/150)+selectedTopImgY;
 	// console.log(`${x}rem ${y}rem`);
 	$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
+	$("#selectedTopImg").children().width($(this).width()+currentScreenPos);
+	$("#selectedTopImg").children().height($(this).height()-currentScreenPos);
 	// if($(window).scrollTop()>558){
 	// 	$("#nav").slideDown('slow',function(){
 	// 		$(this).addClass("sticky");
@@ -34,7 +36,7 @@ $(window).scroll(function(){
 	// 	});
 	// }
 });
-
+console.log($("#selectedTopImg").children())
 // $("#nav").sticky({topSpacing:0});
 
 // $(function(){

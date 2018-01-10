@@ -185,7 +185,7 @@ $heading-font-color:#575841;*/
   width: 0%;
   left: 50%; }
 
-.main_h {
+.stickyNav {
   position: fixed;
   top: 0px;
   max-height: 70px;
@@ -202,7 +202,7 @@ $heading-font-color:#575841;*/
   font-family: "Montserrat", sans-serif; }
 
 @media only screen and (max-width: 766px) {
-  .main_h {
+  .stickyNav {
     padding-top: 25px; } }
 .open-nav {
   max-height: 400px !important; }
