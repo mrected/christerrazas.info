@@ -120,12 +120,12 @@
   padding-top: 17px;
   background: none;
   overflow: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0;
   top: -100px;
   padding-bottom: 6px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $heading-font;
 }
 @media only screen and (max-width: 766px) {
   .stickyNav {
@@ -142,22 +142,23 @@
 }*/
 
 .sticky {
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: $nav-color;
   opacity: 1;
   top: 0px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: $accent-color3 1px solid;
 }
 
 .logo {
-  width: 50px;
-  font-size: 25px;
-  color: #8f8f8f;
-  text-transform: uppercase;
+  background-color: $title-bg-color;
+  width: 40px;
   float: left;
   display: block;
   margin-top: 0;
   line-height: 1;
   margin-bottom: 10px;
+  padding:5px;
+  border: $accent-color2 1px solid;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 766px) {
   .logo {
@@ -203,7 +204,7 @@ nav ul li {
 }
 nav ul a {
   color: #888888;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 12px;
 }
 
