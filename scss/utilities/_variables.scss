@@ -98,6 +98,17 @@ $bp-large:1200px;
 		/*@media(min-width: )*/
 }
 
+@mixin link{
+	& a:visited, & a:link{
+		color:$accent-color;
+	};
+
+	& a:hover, & a:active{
+		color:$accent-color2;
+		transition: .5s;
+	}
+}
+
 
 
 

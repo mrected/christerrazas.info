@@ -76,14 +76,8 @@
 		text-transform: lowercase;
 	}
 
-	& a:visited, & a:link{
-		color:$accent-color;
-	};
+	@include link;
 
-	& a:hover, & a:active{
-		color:$accent-color2;
-		transition: .5s;
-	}
 	@media(min-width: $bp-xsmall){
 		display: inline-block;
 		& a{

@@ -791,6 +791,31 @@ p {
 .photoTitle {
   text-align: center; }
 
+#contact p a:visited, #contact p a:link {
+  color: #f26419; }
+#contact p a:hover, #contact p a:active {
+  color: #f6ae2d;
+  transition: .5s; }
+#contact #contactList {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+  width: 100%; }
+  #contact #contactList li {
+    display: inline;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 10px; }
+    #contact #contactList li a:visited, #contact #contactList li a:link {
+      color: #f26419; }
+    #contact #contactList li a:hover, #contact #contactList li a:active {
+      color: #f6ae2d;
+      transition: .5s; }
+    #contact #contactList li .contactDesc {
+      font-size: .6rem; }
+
 #footer {
   background-color: #242325;
   height: 100px; }

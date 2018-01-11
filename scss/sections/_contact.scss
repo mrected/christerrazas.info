@@ -1,0 +1,24 @@
+#contact{
+	p{
+		@include link;
+	}
+
+	#contactList{
+		display: inline-flex;
+		justify-content: space-between;
+		list-style-type: none;
+		margin:0 0 30px 0;
+		padding:0;
+		width:100%;
+		li{
+			@include link;
+			display: inline;
+			font-size: 2rem;
+			text-align: center;
+			line-height: 10px;
+			.contactDesc{
+				font-size: .6rem;
+			}
+		}
+	}
+}

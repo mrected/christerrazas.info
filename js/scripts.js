@@ -14,13 +14,13 @@ $(".navLink").click(function(){
 });
 
 let selectedTopImgX = -70;
-let selectedTopImgY = -10;
+let selectedTopImgY = -20;
 $("#selectedTopImg").css(`background-position`,`${selectedTopImgX}rem ${selectedTopImgY}rem`);
 
 $(window).scroll(function(){
 	let currentScreenPos = $(window).scrollTop();
 	let x = ($(window).scrollTop()/10)+selectedTopImgX;
-	let y = ($(window).scrollTop()/170)+selectedTopImgY;
+	let y = ($(window).scrollTop()/50)+selectedTopImgY;
 	// console.log(`${x}rem ${y}rem`);
 	$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
 	$("#selectedTopImg").children().width($(this).width()+currentScreenPos);
