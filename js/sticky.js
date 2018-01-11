@@ -5,13 +5,13 @@
 $(window).scroll(function() {
 
     if($(window).width()>1200){
-        activateSticky(550);
+        activateSticky(580);
     }
     else if($(window).width()>970){
-        activateSticky(475);
+        activateSticky(410);
     }
     else if($(window).width()>768){
-        activateSticky(400);
+        activateSticky(340);
     }
     else{
         activateSticky(300);

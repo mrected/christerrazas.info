@@ -10,6 +10,7 @@
 
 #web{
 	padding:15px;
+	@include link;
 }
 
 .siteTitle{
