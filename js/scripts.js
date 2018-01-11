@@ -13,6 +13,7 @@ $(".navLink").click(function(){
 
 });
 
+
 let selectedTopImgX = -70;
 let selectedTopImgY = -20;
 $("#selectedTopImg").css(`background-position`,`${selectedTopImgX}rem ${selectedTopImgY}rem`);

@@ -36,16 +36,13 @@
 }
 
 .logo {
-  background-color: $title-bg-color;
-  width: 40px;
+  width: 50px;
   float: left;
   display: block;
   margin-top: 0;
   line-height: 1;
   margin-bottom: 10px;
   padding:5px;
-  border: $accent-color2 1px solid;
-  border-radius: 5px;
 }
 @media only screen and (max-width: 766px) {
   .logo {
@@ -63,6 +60,7 @@ nav {
   }
 }
 nav ul {
+	@include link;
   list-style: none;
   overflow: hidden;
   text-align: right;
@@ -90,10 +88,11 @@ nav ul li {
   }
 }
 nav ul a {
-  @include link;
-  /*color: #888888;*/
+  
+  text-decoration: none;
   text-transform: lowercase;
   font-size: 12px;
+
 }
 
 /*.mobile-toggle {

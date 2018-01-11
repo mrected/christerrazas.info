@@ -302,16 +302,13 @@ p {
   border-bottom: #86bbd8 1px solid; }
 
 .logo {
-  background-color: rgba(36, 35, 37, 0.3);
-  width: 40px;
+  width: 50px;
   float: left;
   display: block;
   margin-top: 0;
   line-height: 1;
   margin-bottom: 10px;
-  padding: 5px;
-  border: #f6ae2d 1px solid;
-  border-radius: 5px; }
+  padding: 5px; }
 
 @media only screen and (max-width: 766px) {
   .logo {
@@ -328,6 +325,11 @@ nav ul {
   overflow: hidden;
   text-align: right;
   float: right; }
+  nav ul a:visited, nav ul a:link {
+    color: #f26419; }
+  nav ul a:hover, nav ul a:active {
+    color: #f6ae2d;
+    transition: .5s; }
 
 @media only screen and (max-width: 766px) {
   nav ul {
@@ -347,14 +349,9 @@ nav ul li {
     padding: 7px 0;
     margin: 0; } }
 nav ul a {
-  /*color: #888888;*/
+  text-decoration: none;
   text-transform: lowercase;
   font-size: 12px; }
-  nav ul a a:visited, nav ul a a:link {
-    color: #f26419; }
-  nav ul a a:hover, nav ul a a:active {
-    color: #f6ae2d;
-    transition: .5s; }
 
 /*.mobile-toggle {
   display: none;
@@ -620,7 +617,7 @@ p {
 	height: inherit;
 }*/
 #selectedTopImg {
-  background-image: url(../images/arches.jpg);
+  background-image: url(../images/nyc.jpg);
   /*background-position:is set via scripts*/
   background-repeat: no-repeat;
   background-attachment: fixed;
