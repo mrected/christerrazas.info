@@ -25,6 +25,9 @@ $heading-font-color:#575841;*/
     #nav {
       /*height: $standard-height-md;*/ } }
 
+#navBrand {
+  grid-area: navBrand; }
+
 #topImg {
   grid-area: topImg; }
 
@@ -56,14 +59,16 @@ $heading-font-color:#575841;*/
 #wrapper-head {
   /*height: 100vh;*/
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: minmax(100px auto);
-  grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg"; }
-  @media (min-width: 768px) {
-    #wrapper-head {
-      grid-template-columns: repeat(2, 1fr) 300px;
-      grid-auto-rows: minmax(100px, auto);
-      grid-template-areas: "brand brand brand" "nav nav nav" "topImg topImg topImg"; } }
+  grid-template-areas: "navBrand navBrand navBrand" "topImg topImg topImg";
+  /*	@media (min-width: $bp-small){
+  		grid-template-columns: repeat(2,1fr) 300px;
+  		grid-auto-rows: minmax($standard-height, auto);
+  		grid-template-areas: 
+  			"navBrand navBrand navBrand"
+  			"topImg topImg topImg";
+  	}*/ }
 
 #wrapper-body {
   /*height: 100vh;*/
@@ -109,7 +114,7 @@ $heading-font-color:#575841;*/
   max-width: 600px;
   margin: 0 auto; }
 
-.menuOpen {
+#navToggle {
   display: block;
   width: 30px;
   height: 35px;
@@ -124,10 +129,10 @@ $heading-font-color:#575841;*/
   transition: .25s ease-in-out;
   cursor: pointer; }
   @media (min-width: 475px) {
-    .menuOpen {
+    #navToggle {
       display: none; } }
 
-.menuOpen span {
+#navToggle span {
   display: block;
   position: absolute;
   height: 1px;
@@ -454,6 +459,11 @@ nav ul a {
 @media (min-width: 475px) {
   #navbarLinks-mobile {
     display: none; } }
+
+#navBrandPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .navLink {
   text-align: center;
