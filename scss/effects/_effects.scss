@@ -19,7 +19,7 @@
 
 //hamburger
 
-.menuOpen{
+#navToggle{
   display: block;
   width: 30px;
   height: 35px;
@@ -38,7 +38,7 @@
   }
 }
 
-.menuOpen span{
+#navToggle span{
   display: block;
   position: absolute;
   height: 1px;
