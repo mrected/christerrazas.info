@@ -1,4 +1,4 @@
-#brand{
+/*#brand{
 	grid-area: brand;
 	justify-self: center;
 	align-self: center;
@@ -7,18 +7,18 @@
 		height: $standard-height-md;
 	}
 	width: 100%;
-}
+}*/
 
-#nav{
+/*#nav{
 	grid-area: nav;
 	justify-self: center;
 	align-self: start;
-	/*height: $standard-height;*/
+	
 	@media(min-width: $bp-medium){
-		/*height: $standard-height-md;*/
+		
 	}
 	width: 100%;
-}
+}*/
 
 #navBrand{
 	grid-area: navBrand;

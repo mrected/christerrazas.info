@@ -1,17 +1,60 @@
-//opens menu via hamburger
-  $('.menuOpen').click(function(){
-    $(this,"#navbarLinks-mobile").toggleClass('open');
-    $("#navbarLinks-mobile ul").slideToggle("slow");
+//global
 
+let offset=0;
+
+//opens menu via hamburger
+  $('#navToggle').click(function(){
+    $(this).toggleClass('open');
+    
+    // $("#nav").toggleClass('navOpen');
+    // $("#navBrandPanel").toggleClass('navBrandPanelOpen');
+    $("#nav").slideToggle("slow");
   });
 
-//closes menu and resets hamburger when link selected from navbarLinks-mobile
-$(".navLink").click(function(){
-      $("#navbarLinks-mobile ul").slideToggle('complete', function(){
-        $(".menuOpen").removeClass('open');
-      });
+function xsmallReset(){
+	$('#navToggle').removeClass('open');
+	$('#nav').css("display","flex");
+	offset = 270;
+}
 
+function smallReset(){
+	$('#nav').css("display","none");
+	offset = 0;
+}
+
+$(window).resize(function(){
+	if($(window).width()>475){
+		xsmallReset();
+	}
+	else{
+		smallReset();
+	}
 });
+
+
+
+
+
+// closes menu and resets hamburger when link selected from navbarLinks-mobile
+$(".navLink").click(function(){
+	if($(window).width()>475){
+		xsmallReset();
+	}
+	else{
+		smallReset();
+	}
+});
+
+$('#nav a').click(function(event) {
+	xsmallReset();
+    const id = $(this).attr("href");
+    const target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 1500);
+    event.preventDefault();
+});
+
 
 
 let selectedTopImgX = -70;
@@ -37,7 +80,7 @@ $(window).scroll(function(){
 	// 	});
 	// }
 });
-console.log($("#selectedTopImg").children())
+
 // $("#nav").sticky({topSpacing:0});
 
 // $(function(){

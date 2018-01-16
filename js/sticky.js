@@ -18,37 +18,35 @@ $(window).scroll(function() {
     }
 });
 
+// $(".unstuck").addClass('sticky');
+
 function activateSticky(activate){
     if ($(window).scrollTop() > activate) {
-        $('.stickyNav').addClass('sticky');
+        $("#navBrandPanel").children().appendTo($("#navBrandPanelSticky"));
+        $(".unstuck").addClass('sticky');
+        $(".sticky").removeClass('unstuck');
+        $("#navBrandPanel").empty();
     } else {
-        $('.stickyNav').removeClass('sticky');
+        $("#navBrandPanelSticky").children().appendTo($("#navBrandPanel"));
+        $(".sticky").addClass('unstuck');
+        $(".unstuck").removeClass('sticky');
+        $("#navBrandPanelSticky").empty();
     }
 }
 
 // Mobile Navigation
-$('.mobile-toggle').click(function() {
-    if ($('.stickyNav').hasClass('open-nav')) {
-        $('.stickyNav').removeClass('open-nav');
-    } else {
-        $('.stickyNav').addClass('open-nav');
-    }
-});
+// $('.mobile-toggle').click(function() {
+//     if ($('.stickyNav').hasClass('open-nav')) {
+//         $('.stickyNav').removeClass('open-nav');
+//     } else {
+//         $('.stickyNav').addClass('open-nav');
+//     }
+// });
 
-$('.stickyNav li a').click(function() {
-    if ($('.stickyNav').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.stickyNav').removeClass('open-nav');
-    }
-});
+// $('.stickyNav li a').click(function() {
+//     if ($('.stickyNav').hasClass('open-nav')) {
+//         $('.navigation').removeClass('open-nav');
+//         $('.stickyNav').removeClass('open-nav');
+//     }
+// });
 
-// navigation scroll lijepo radi materem
-$('nav a').click(function(event) {
-    var id = $(this).attr("href");
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate({
-        scrollTop: target
-    }, 500);
-    event.preventDefault();
-});

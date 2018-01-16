@@ -1,40 +1,124 @@
 #navBrandPanel{
+	height: initial;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-}
-
-.navLink{
-	text-align: center;
-	/*display: block;*/
-	& a{
-		display: inline-block;
-		
-		text-decoration: none;
-		font: 1.5rem $heading-font;
-		text-transform: lowercase;
-	}
-
-	@include link;
-
-	@media(min-width: $bp-xsmall){
-		display: inline-block;
-		& a{
-			font-size: 1rem;
-			padding:1rem;
-		}
-	}
-	@media(min-width: $bp-small){
-		& a{
-			font-size: 1.2rem;
-			padding:1.25rem;
-		}
-	}
 	@media(min-width: $bp-medium){
-		& a{
-			font-size: 1.5rem;
-			margin-top: 1rem;
-			padding:1.5rem;
-		}
+		height: $standard-height;
+		flex-direction: row;
 	}
 }
+
+
+	#brandDiv{
+		order:0;
+	}
+		#brand{
+			height:$brand-height;
+			margin:5px;
+		}
+
+
+	#navToggle{
+		z-index: 999;
+		order:1;
+		margin:20px 0 40px;
+		padding:15px;
+	}
+
+
+	#nav{
+		display: none;
+		order:2;
+		flex-grow: 2;
+		width:100%;
+		@media(min-width: $bp-xsmall){
+			display: flex;
+		}
+	}
+
+	#navBrandPanelSticky{
+		position: fixed;
+		max-height: 150px;
+		z-index: 999;
+		width: 100%;
+		padding-top: 17px;
+		overflow: hidden;
+		-webkit-transition: all 1s;
+		transition: all 1s;
+		padding-bottom: 6px;
+	}
+
+	#navBrandPanelSticky.unstuck{
+		top: -100px;
+		opacity: 0;
+		background: none;
+	}
+
+	.sticky{
+		background-color: $nav-color;
+		opacity: 1;
+		top: 0px;
+		border-bottom: $accent-color3 1px solid;
+	}
+
+	#navBrandPanel{
+		top:0;
+		opacity: 1;
+	}
+
+	#nav.sticky{
+		
+	}
+
+	#brandDiv.sticky{
+		
+	}
+
+		#nav ul{
+			display: flex;
+			flex-direction: column;
+			width:100%;
+			padding:0;
+			list-style-type: none;
+			@media(min-width: $bp-xsmall){
+				
+				flex-direction: row;
+				justify-content: space-around;
+			}
+		}
+
+			.navLink{
+				text-align: center;
+				padding: 0 0 20px 0;
+				& a{
+					text-decoration: none;
+
+					font: 1.3rem $heading-font;
+					text-transform: lowercase;
+				}
+
+				@include link;
+
+				@media(min-width: $bp-xsmall){
+					
+					& a{
+						font-size: .8rem;
+						padding:5px;
+					}
+				}
+				@media(min-width: $bp-small){
+					& a{
+						font-size: 1rem;
+					}
+				}
+				@media(min-width: $bp-medium){
+					margin-top: 80px;
+					& a{
+						font-size: 1.3rem;
+						
+					}
+				}
+			}

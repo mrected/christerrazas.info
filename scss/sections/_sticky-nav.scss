@@ -1,4 +1,4 @@
-.stickyNav {
+/*.stickyNav {
   position: fixed;
   top: 0px;
   max-height: 70px;
@@ -17,7 +17,7 @@
 
 .stickyNavPanel {
   width: 100%;
-  /*max-width: 2000px;*/
+  
   margin: 0 auto;
   padding:0 50px;
   position: relative;
@@ -46,8 +46,8 @@
   .logo {
     float: none;
   }
-}
-
+}*/
+/*
 nav {
   float: right;
   width: 60%;
@@ -56,15 +56,9 @@ nav {
   nav {
     width: 100%;
   }
-}
-nav ul {
-	@include link;
-  list-style: none;
-  overflow: hidden;
-  text-align: right;
-  float: right;
-}
-@media only screen and (max-width: 766px) {
+}*/
+
+/*@media only screen and (max-width: 766px) {
   nav ul {
     padding-top: 10px;
     margin-bottom: 22px;
@@ -72,8 +66,8 @@ nav ul {
     text-align: center;
     width: 100%;
   }
-}
-nav ul li {
+}*/
+/*nav ul li {
   display: inline-block;
   margin-left: 35px;
   line-height: 1.5;
@@ -84,14 +78,14 @@ nav ul li {
     padding: 7px 0;
     margin: 0;
   }
-}
-nav ul a {
+}*/
+/*nav ul a {
   
   text-decoration: none;
   text-transform: lowercase;
   font-size: 12px;
 
-}
+}*/
 
 
 
@@ -103,9 +97,6 @@ nav ul a {
 
 
 
-* {
-  box-sizing: border-box;
-}
 
 
 
