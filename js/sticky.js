@@ -3,7 +3,7 @@
 
 
 $(window).scroll(function() {
-    setTimeout(function(){
+
         if($(window).width()>1200){
             activateSticky(580);
         }
@@ -16,7 +16,7 @@ $(window).scroll(function() {
         else{
             activateSticky(300);
         }
-    },500);
+
    
 });
 
@@ -24,21 +24,11 @@ $(window).scroll(function() {
 
 function activateSticky(activate){
     if ($(window).scrollTop() > activate) {
-        $("#navBrandPanel").children().appendTo($("#navBrandPanelSticky"));
         $(".unstuck").addClass('sticky');
         $(".sticky").removeClass('unstuck');
-        $("#navBrandPanel").empty();
-        console.log('open');
     } else {
         $(".sticky").addClass('unstuck');
         $(".unstuck").removeClass('sticky');
-        setTimeout(function(){
-            $("#navBrandPanelSticky").children().appendTo($("#navBrandPanel"));
-            
-            $("#navBrandPanelSticky").empty();
-            console.log('closed');
-        },2000);
-
     }
 }
 

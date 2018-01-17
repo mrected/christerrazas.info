@@ -114,7 +114,7 @@ $heading-font-color:#575841;*/
   max-width: 600px;
   margin: 0 auto; }
 
-#navToggle {
+.navToggle {
   flex-grow: 2;
   display: block;
   width: 30px;
@@ -130,10 +130,10 @@ $heading-font-color:#575841;*/
   transition: .25s ease-in-out;
   cursor: pointer; }
   @media (min-width: 475px) {
-    #navToggle {
+    .navToggle {
       display: none; } }
 
-#navToggle span {
+.navToggle span {
   display: block;
   position: absolute;
   height: 1px;
@@ -151,20 +151,20 @@ $heading-font-color:#575841;*/
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
 
-#navToggle.open span {
+.navToggle.open span {
   background-color: #86bbd8; }
 
 /* Icon 3 */
-#navToggle span:nth-child(1) {
+.navToggle span:nth-child(1) {
   top: 0px; }
 
-#navToggle span:nth-child(2), #navToggle span:nth-child(3) {
+.navToggle span:nth-child(2), .navToggle span:nth-child(3) {
   top: 10px; }
 
-#navToggle span:nth-child(4) {
+.navToggle span:nth-child(4) {
   top: 20px; }
 
-#navToggle.open span:nth-child(1) {
+.navToggle.open span:nth-child(1) {
   top: 10px;
   width: 0%;
   left: 50%; }
@@ -173,19 +173,19 @@ $heading-font-color:#575841;*/
   height:300px;
 }
 */
-#navToggle.open span:nth-child(2) {
+.navToggle.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-#navToggle.open span:nth-child(3) {
+.navToggle.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-#navToggle.open span:nth-child(4) {
+.navToggle.open span:nth-child(4) {
   top: 10px;
   width: 0%;
   left: 50%; }
@@ -362,11 +362,13 @@ nav {
   font-size: 12px;
 
 }*/
-.menuOpen-sticky {
+/*
+.menuOpen-sticky{
   position: absolute;
   right: 22px;
-  top: 0; }
-
+  top: 0;
+}
+*/
 /*@-webkit-keyframes scroll {
   0% {
     opacity: 1;
@@ -470,80 +472,96 @@ nav {
 		display: none;
 	}
 }*/
-#navBrandPanel {
+.navBrandPanel {
   height: initial;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
   @media (min-width: 970px) {
-    #navBrandPanel {
+    .navBrandPanel {
       height: 100px;
       flex-direction: row; } }
 
-#brandDiv {
+.navBrandPanel.open {
+  height: 270px;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+
+.navBrandPanelSticky.open {
+  height: 470px; }
+
+.brandDiv {
   order: 0; }
 
-#brand {
+.brand {
   height: 70px;
   margin: 5px; }
 
-#navToggle {
+.miniBrand {
+  height: 30px;
+  float: left;
+  padding-left: 10px; }
+
+.navToggle {
   z-index: 999;
   order: 1;
-  margin: 20px 0 40px;
+  /*margin:20px 0 40px;*/
   padding: 15px; }
 
-#nav {
+.nav {
   display: none;
+  z-index: 1000;
   order: 2;
   flex-grow: 2;
-  width: 100%; }
+  width: 100%;
+  background-color: #14141e; }
   @media (min-width: 475px) {
-    #nav {
+    .nav {
       display: flex; } }
 
-#navBrandPanelSticky {
+.nav.open {
+  display: flex; }
+
+.navBrandPanelSticky {
+  display: flex;
+  flex-direction: column;
   background-color: #14141e;
   position: fixed;
   max-height: 150px;
   z-index: 999;
   width: 100%;
   padding-top: 17px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   -webkit-transition: all 1s;
   transition: all 1s;
   padding-bottom: 6px;
   border-bottom: #86bbd8 1px solid; }
 
-#navBrandPanelSticky.unstuck {
+.navBrandPanelSticky.unstuck {
   display: hidden;
   top: -100px;
   opacity: 0;
   background: none;
-  -webkit-transition: all 1s;
-  transition: all 1s; }
+  -webkit-transition: all .3s;
+  transition: all .3s; }
 
 .sticky {
   display: block;
   opacity: 1;
   top: 0px; }
 
-#navBrandPanel {
-  top: 0;
-  opacity: 1;
-  -webkit-transition: all 1s;
-  transition: all 1s; }
-
-#nav ul {
+.nav ul {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0;
   list-style-type: none; }
   @media (min-width: 475px) {
-    #nav ul {
+    .nav ul {
       flex-direction: row;
       justify-content: space-around; } }
 

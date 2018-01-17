@@ -1,66 +1,93 @@
-#navBrandPanel{
+.navBrandPanel{
 	height: initial;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	-webkit-transition: all 1s;
+	transition: all 1s;
 	@media(min-width: $bp-medium){
 		height: $standard-height;
 		flex-direction: row;
 	}
 }
 
+.navBrandPanel.open{
+	height:270px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
 
-	#brandDiv{
+.navBrandPanelSticky.open{
+	height:470px;
+}
+
+
+	.brandDiv{
 		order:0;
 	}
-		#brand{
+		.brand{
 			height:$brand-height;
 			margin:5px;
 		}
 
+		.miniBrand{
+			height:30px;
+			float:left;
+			padding-left: 10px;
+		}
 
-	#navToggle{
+
+
+
+	.navToggle{
 		z-index: 999;
 		order:1;
-		margin:20px 0 40px;
+		/*margin:20px 0 40px;*/
 		padding:15px;
 	}
 
 
-	#nav{
+	.nav{
 		display: none;
+		z-index: 1000;
 		order:2;
 		flex-grow: 2;
 		width:100%;
+		background-color: $nav-color;
 		@media(min-width: $bp-xsmall){
 			display: flex;
 		}
 	}
 
-	#navBrandPanelSticky{
-		
+	.nav.open{
+		display: flex;
+	}
+
+	.navBrandPanelSticky{
+		display: flex;
+		flex-direction: column;
 		background-color: $nav-color;
 		position: fixed;
 		max-height: 150px;
 		z-index: 999;
 		width: 100%;
 		padding-top: 17px;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		-webkit-transition: all 1s;
 		transition: all 1s;
 		padding-bottom: 6px;
 		border-bottom: $accent-color3 1px solid;
 	}
 
-	#navBrandPanelSticky.unstuck{
+	.navBrandPanelSticky.unstuck{
 		display: hidden;
 		top: -100px;
 		opacity: 0;
 		background: none;
-		-webkit-transition: all 1s;
-		transition: all 1s;
+		-webkit-transition: all .3s;
+		transition: all .3s;
 	}
 
 	.sticky{
@@ -70,22 +97,17 @@
 		
 	}
 
-	#navBrandPanel{
-		top:0;
-		opacity: 1;
-		-webkit-transition: all 1s;
-		transition: all 1s;
-	}
+	
 
-	#nav.sticky{
+	.nav.sticky{
 		
 	}
 
-	#brandDiv.sticky{
+	.brandDiv.sticky{
 		
 	}
 
-		#nav ul{
+		.nav ul{
 			display: flex;
 			flex-direction: column;
 			width:100%;

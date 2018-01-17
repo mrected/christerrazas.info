@@ -2,23 +2,29 @@
 
 let offset=0;
 
+//duplicates navBrandPanel and appends to the sticky version/popuates with sticky elements
+$(".navBrandPanel").children().clone().appendTo($(".navBrandPanelSticky"));
+$(".navBrandPanelSticky").find('.brandDiv').html('<img src="images/brand-logoOnly.svg" class="miniBrand">')
+
 //opens menu via hamburger
-  $('#navToggle').click(function(){
-    $(this).toggleClass('open');
-    
-    // $("#nav").toggleClass('navOpen');
+  $('.navToggle').click(function(){
+    $('.navToggle').toggleClass('open');
+    // $("#navBrandPanel").toggleClass('open');
+    // $("#navBrandPanelSticky").toggleClass('open');
     // $("#navBrandPanel").toggleClass('navBrandPanelOpen');
-    $("#nav").slideToggle("slow");
+    $(".nav").slideToggle("slow");
   });
 
+
+//resets for offsetting distance from anchor to top 
 function xsmallReset(){
-	$('#navToggle').removeClass('open');
-	$('#nav').css("display","flex");
+	$('.navToggle').removeClass('open');
+	$('.nav').css("display","flex");
 	offset = 270;
 }
 
 function smallReset(){
-	$('#nav').css("display","none");
+	$('.nav').css("display","none");
 	offset = 0;
 }
 
@@ -30,6 +36,20 @@ $(window).resize(function(){
 		smallReset();
 	}
 });
+
+//click a link and page scrolls to anchor
+
+$('.nav a').click(function(event) {
+	xsmallReset();
+    const id = $(this).attr("href");
+    const target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 1500);
+    event.preventDefault();
+});
+
+
 
 
 
@@ -45,15 +65,7 @@ $(".navLink").click(function(){
 	}
 });
 
-$('#nav a').click(function(event) {
-	xsmallReset();
-    const id = $(this).attr("href");
-    const target = $(id).offset().top - offset;
-    $('html, body').animate({
-        scrollTop: target
-    }, 1500);
-    event.preventDefault();
-});
+
 
 
 
