@@ -40,6 +40,8 @@
 	}
 
 	#navBrandPanelSticky{
+		
+		background-color: $nav-color;
 		position: fixed;
 		max-height: 150px;
 		z-index: 999;
@@ -49,24 +51,30 @@
 		-webkit-transition: all 1s;
 		transition: all 1s;
 		padding-bottom: 6px;
+		border-bottom: $accent-color3 1px solid;
 	}
 
 	#navBrandPanelSticky.unstuck{
+		display: hidden;
 		top: -100px;
 		opacity: 0;
 		background: none;
+		-webkit-transition: all 1s;
+		transition: all 1s;
 	}
 
 	.sticky{
-		background-color: $nav-color;
+		display: block;
 		opacity: 1;
 		top: 0px;
-		border-bottom: $accent-color3 1px solid;
+		
 	}
 
 	#navBrandPanel{
 		top:0;
 		opacity: 1;
+		-webkit-transition: all 1s;
+		transition: all 1s;
 	}
 
 	#nav.sticky{

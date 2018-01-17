@@ -505,6 +505,7 @@ nav {
       display: flex; } }
 
 #navBrandPanelSticky {
+  background-color: #14141e;
   position: fixed;
   max-height: 150px;
   z-index: 999;
@@ -513,22 +514,27 @@ nav {
   overflow: hidden;
   -webkit-transition: all 1s;
   transition: all 1s;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  border-bottom: #86bbd8 1px solid; }
 
 #navBrandPanelSticky.unstuck {
+  display: hidden;
   top: -100px;
   opacity: 0;
-  background: none; }
+  background: none;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
 
 .sticky {
-  background-color: #14141e;
+  display: block;
   opacity: 1;
-  top: 0px;
-  border-bottom: #86bbd8 1px solid; }
+  top: 0px; }
 
 #navBrandPanel {
   top: 0;
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
 
 #nav ul {
   display: flex;
