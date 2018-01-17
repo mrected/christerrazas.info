@@ -542,7 +542,7 @@ nav {
   border-bottom: #86bbd8 1px solid; }
 
 .navBrandPanelSticky.unstuck {
-  display: hidden;
+  /*display: hidden;*/
   top: -100px;
   opacity: 0;
   background: none;
@@ -564,6 +564,11 @@ nav {
     .nav ul {
       flex-direction: row;
       justify-content: space-around; } }
+
+@media (min-width: 475px) {
+  .navBrandPanelSticky .navLink a {
+    font-size: .6rem;
+    padding: 2px; } }
 
 .navLink {
   text-align: center;

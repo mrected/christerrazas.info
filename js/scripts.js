@@ -4,7 +4,7 @@ let offset=0;
 
 //duplicates navBrandPanel and appends to the sticky version/popuates with sticky elements
 $(".navBrandPanel").children().clone().appendTo($(".navBrandPanelSticky"));
-$(".navBrandPanelSticky").find('.brandDiv').html('<img src="images/brand-logoOnly.svg" class="miniBrand">')
+$(".navBrandPanelSticky").find('.brandDiv').html('<img src="images/brand-logoOnly.svg" class="miniBrand">');
 
 //opens menu via hamburger
   $('.navToggle').click(function(){
