@@ -9,9 +9,8 @@ $(".navBrandPanelSticky").find('.brandDiv').html('<img src="images/brand-logoOnl
 //opens menu via hamburger
   $('.navToggle').click(function(){
     $('.navToggle').toggleClass('open');
-    // $("#navBrandPanel").toggleClass('open');
-    // $("#navBrandPanelSticky").toggleClass('open');
-    // $("#navBrandPanel").toggleClass('navBrandPanelOpen');
+    $('.navBrandPanelSticky').toggleClass('open');
+    $('.navBrandPanelSticky .nav').toggleClass('open');
     $(".nav").slideToggle("slow");
   });
 
@@ -20,10 +19,11 @@ $(".navBrandPanelSticky").find('.brandDiv').html('<img src="images/brand-logoOnl
 function xsmallReset(){
 	$('.navToggle').removeClass('open');
 	$('.nav').css("display","flex");
-	offset = 270;
+	offset = 70;
 }
 
 function smallReset(){
+	$('.navToggle').removeClass('open');
 	$('.nav').css("display","none");
 	offset = 0;
 }

@@ -115,7 +115,9 @@ $heading-font-color:#575841;*/
   margin: 0 auto; }
 
 .navToggle {
-  flex-grow: 2;
+  z-index: 999;
+  order: 1;
+  padding: 15px;
   display: block;
   width: 30px;
   height: 35px;
@@ -486,14 +488,6 @@ nav {
       height: 100px;
       flex-direction: row; } }
 
-.navBrandPanel.open {
-  height: 270px;
-  -webkit-transition: all 1s;
-  transition: all 1s; }
-
-.navBrandPanelSticky.open {
-  height: 470px; }
-
 .brandDiv {
   order: 0; }
 
@@ -506,12 +500,6 @@ nav {
   float: left;
   padding-left: 10px; }
 
-.navToggle {
-  z-index: 999;
-  order: 1;
-  /*margin:20px 0 40px;*/
-  padding: 15px; }
-
 .nav {
   display: none;
   z-index: 1000;
@@ -521,14 +509,61 @@ nav {
   background-color: #14141e; }
   @media (min-width: 475px) {
     .nav {
-      display: flex; } }
+      display: flex;
+      justify-content: flex-end; } }
 
-.nav.open {
-  display: flex; }
+.nav ul {
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  list-style-type: none; }
+  @media (min-width: 475px) {
+    .nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; } }
+
+.navLink {
+  text-align: center;
+  align-self: center;
+  padding-bottom: 20px; }
+  .navLink a {
+    text-decoration: none;
+    font: 1.3rem "Arvo", serif;
+    text-transform: lowercase; }
+  .navLink a:visited, .navLink a:link {
+    color: #f26419; }
+  .navLink a:hover, .navLink a:active {
+    color: #f6ae2d;
+    transition: .5s; }
+  @media (min-width: 475px) {
+    .navLink {
+      align-self: flex-end; }
+      .navLink a {
+        font-size: .8rem;
+        padding: 5px; } }
+  @media (min-width: 768px) {
+    .navLink a {
+      font-size: 1rem; } }
+  @media (min-width: 970px) {
+    .navLink {
+      /*margin-top: 80px;*/ }
+      .navLink a {
+        font-size: 1.3rem; } }
+
+.sticky {
+  display: block;
+  opacity: 1;
+  top: 0px; }
+  .sticky ul {
+    max-width: 900px; }
+  @media (min-width: 475px) {
+    .sticky {
+      display: flex; } }
 
 .navBrandPanelSticky {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #14141e;
   position: fixed;
   max-height: 150px;
@@ -542,58 +577,40 @@ nav {
   border-bottom: #86bbd8 1px solid; }
 
 .navBrandPanelSticky.unstuck {
-  /*display: hidden;*/
+  display: hidden;
   top: -100px;
   opacity: 0;
   background: none;
   -webkit-transition: all .3s;
   transition: all .3s; }
 
-.sticky {
-  display: block;
-  opacity: 1;
-  top: 0px; }
+.navBrandPanelSticky.brandDiv.sticky {
+  position: fixed;
+  top: 20px; }
 
-.nav ul {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
-  list-style-type: none; }
-  @media (min-width: 475px) {
-    .nav ul {
-      flex-direction: row;
-      justify-content: space-around; } }
+.navBrandPanel.open {
+  height: 270px;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
 
+.navBrandPanelSticky.sticky.open {
+  flex-direction: column; }
+
+/*.navBrandPanelSticky.open{
+	height:470px;
+}*/
 @media (min-width: 475px) {
   .navBrandPanelSticky .navLink a {
-    font-size: .6rem;
-    padding: 2px; } }
-
-.navLink {
-  text-align: center;
-  padding: 0 0 20px 0; }
-  .navLink a {
-    text-decoration: none;
-    font: 1.3rem "Arvo", serif;
-    text-transform: lowercase; }
-  .navLink a:visited, .navLink a:link {
-    color: #f26419; }
-  .navLink a:hover, .navLink a:active {
-    color: #f6ae2d;
-    transition: .5s; }
-  @media (min-width: 475px) {
-    .navLink a {
-      font-size: .8rem;
-      padding: 5px; } }
-  @media (min-width: 768px) {
-    .navLink a {
-      font-size: 1rem; } }
-  @media (min-width: 970px) {
-    .navLink {
-      margin-top: 80px; }
-      .navLink a {
-        font-size: 1.3rem; } }
+    font-size: .8rem;
+    /*padding:2px;*/ } }
+@media (min-width: 768px) {
+  .navBrandPanelSticky .navLink a {
+    font-size: 1rem; } }
+@media (min-width: 970px) {
+  .navBrandPanelSticky .navLink {
+    /*margin-top: 80px;*/ }
+    .navBrandPanelSticky .navLink a {
+      font-size: 1.3rem; } }
 
 #topImg {
   border-bottom: solid 0.25rem #f6ae2d;

@@ -20,7 +20,6 @@ $(window).scroll(function() {
    
 });
 
-// $(".unstuck").addClass('sticky');
 
 function activateSticky(activate){
     if ($(window).scrollTop() > activate) {

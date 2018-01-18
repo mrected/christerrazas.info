@@ -20,7 +20,13 @@
 //navToggle
 
 .navToggle{
-  flex-grow: 2;
+    
+  }
+
+.navToggle{
+  z-index: 999;
+  order:1;
+  padding:15px;
   display: block;
   width: 30px;
   height: 35px;
