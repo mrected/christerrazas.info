@@ -20,50 +20,39 @@
 <body>
 	<div id="wrapper-head">
 
-		<section id="brand">
-			<div id="brand-logo-div">
-				<img src="images/brand-darkBg.svg" id="brand-logo">
+		<div id="navBrand">
+			<div class="navBrandPanelSticky unstuck">
+				
 			</div>
-		</section>
-
-
-
-		<nav id="nav">
-
-			<div id="menuOpen">
+			<div class="navBrandPanel">
+				<div class="brandDiv unstuck">
+					<a href="index.html">
+						<img src="images/brand-darkBg.svg" class="brand">
+					</a>
+				</div><!-- brandDiv -->
+				<div class="navToggle">
 					<span></span>
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
+				<nav class="nav unstuck">
+					<ul>
+						<li class="navLink"><a href="index.html#about">About</a></li>
+						<li class="navLink"><a href="index.html#articles">Articles</a></li>
+						<li class="navLink"><a href="index.html#web">Web Work</a></li>
+						<li class="navLink"><a href="index.html#photo">Photo</a></li>
+						<li class="navLink"><a href="index.html#graphics">Graphics</a></li>
+						<li class="navLink"><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav><!-- nav -->
+			</div><!-- navBrandPanel -->
 
-			<div id="navbarLinks">
-				<ul>
-					<li class="navLink"><a href="#">About</a></li>
-					<li class="navLink"><a href="#">Web Work</a></li>
-					<li class="navLink"><a href="#">Photo</a></li>
-					<li class="navLink"><a href="#">Graphics</a></li>
-					<li class="navLink"><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-
-			<div id="navbarLinks-mobile">
-				<ul>
-					<li class="navLink"><a href="#">About</a></li>
-					<li class="navLink"><a href="#">Web Work</a></li>
-					<li class="navLink"><a href="#">Photo</a></li>
-					<li class="navLink"><a href="#">Graphics</a></li>
-					<li class="navLink"><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-
-		</nav>
-
+		</div><!-- navBrand -->
 
 
 		<div id="topImg">
 			<div id="topImgDiv">
-				<!-- <img src="images/arches.jpg" id="selectedTopImg"/> -->
 				<div id="selectedTopImg"></div>
 			</div>
 		</div>
@@ -143,6 +132,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/sticky.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>

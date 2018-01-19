@@ -4,7 +4,10 @@ let offset=0;
 
 //duplicates navBrandPanel and appends to the sticky version/popuates with sticky elements
 $(".navBrandPanel").children().clone().appendTo($(".navBrandPanelSticky"));
-$(".navBrandPanelSticky").find('.brandDiv').html('<img src="images/brand-logoOnly.svg" class="miniBrand">');
+$(".navBrandPanelSticky").find('.brandDiv').html(
+		`<a href="index.html" alt="links to home">
+			<img src="images/brand-logoOnly.svg" class="miniBrand">
+		</a>`);
 
 //opens menu via hamburger
   $('.navToggle').click(function(){
@@ -42,7 +45,7 @@ $(window).resize(function(){
 	offsetResets()
 });
 
-//click a link and page scrolls to anchor
+//click a link and page scrolls to anchor based on offsetReset
 
 $('.navLink a').click(function(event) {
 	offsetResets()
@@ -52,9 +55,9 @@ $('.navLink a').click(function(event) {
     
     $('html, body').animate({
         scrollTop: target
-    }, 1500);
+    }, 350);
     event.preventDefault();
-    console.log(`target: ${target} | offset: ${offset}`);
+    
 });
 
 
@@ -85,34 +88,13 @@ $(window).scroll(function(){
 	let currentScreenPos = $(window).scrollTop();
 	let x = ($(window).scrollTop()/10)+selectedTopImgX;
 	let y = ($(window).scrollTop()/50)+selectedTopImgY;
-	// console.log(`${x}rem ${y}rem`);
 	$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
 	$("#selectedTopImg").children().width($(this).width()+currentScreenPos);
 	$("#selectedTopImg").children().height($(this).height()-currentScreenPos);
-	// if($(window).scrollTop()>558){
-	// 	$("#nav").slideDown('slow',function(){
-	// 		$(this).addClass("sticky");
-	// 	});
-	// }
-	// else{
-	// 	$("#nav").slideUp('slow',function(){
-	// 		$(this).removeClass("sticky");
-	// 	});
-	// }
+
 });
 
-// $("#nav").sticky({topSpacing:0});
 
-// $(function(){
-//   $(window).scroll(function(){
-//     var winTop = $(window).scrollTop();
-//     if(winTop >= 30){
-//       $("body").addClass("sticky-header");
-//     }else{
-//       $("body").removeClass("sticky-header");
-//     }//if-else
-//   });//win func.
-// });//ready func.
 
 
 //fixes jumpy scroll over fixed backround in ie11

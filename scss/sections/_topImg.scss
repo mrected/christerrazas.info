@@ -2,7 +2,7 @@
 	border-bottom: solid .25rem $accent-color2;
 	border-top: solid .25rem $accent-color2;
 	display: block;
-
+	margin-bottom: 160px;
 	&Div{
 		width:100%;
 		height: 200px;
@@ -32,7 +32,7 @@
 
 
 #selectedTopImg{   
-	background-image: url(../images/nyc.jpg);
+	background-image: url(../images/arches.jpg);
 	/*background-position:is set via scripts*/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
