@@ -9,8 +9,9 @@ $(".navBrandPanelSticky").find('.brandDiv').html('<img src="images/brand-logoOnl
 //opens menu via hamburger
   $('.navToggle').click(function(){
     $('.navToggle').toggleClass('open');
-    $('.navBrandPanelSticky').toggleClass('open');
-    $('.navBrandPanelSticky .nav').toggleClass('open');
+    
+    // $('.navBrandPanelSticky').toggleClass('open');
+    // $('.navBrandPanelSticky .nav').toggleClass('open');
     $(".nav").slideToggle("slow");
   });
 
@@ -25,28 +26,35 @@ function xsmallReset(){
 function smallReset(){
 	$('.navToggle').removeClass('open');
 	$('.nav').css("display","none");
-	offset = 0;
+	offset = 30;
 }
 
-$(window).resize(function(){
+function offsetResets(){
 	if($(window).width()>475){
 		xsmallReset();
 	}
 	else{
 		smallReset();
 	}
+}
+
+$(window).resize(function(){
+	offsetResets()
 });
 
 //click a link and page scrolls to anchor
 
-$('.nav a').click(function(event) {
-	xsmallReset();
+$('.navLink a').click(function(event) {
+	offsetResets()
     const id = $(this).attr("href");
-    const target = $(id).offset().top - offset;
+
+    let target = $(id).offset().top - offset;
+    
     $('html, body').animate({
         scrollTop: target
     }, 1500);
     event.preventDefault();
+    console.log(`target: ${target} | offset: ${offset}`);
 });
 
 

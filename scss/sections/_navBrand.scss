@@ -96,7 +96,7 @@
 //sticky states
 
 .sticky{
-	display: block;
+	display: hidden;
 	opacity: 1;
 	top: 0px;
 	ul{
@@ -108,7 +108,7 @@
 }
 
 .navBrandPanelSticky{
-	display: flex;
+	/*display: flex;*/
 	flex-direction: row;
 	background-color: $nav-color;
 	position: fixed;
@@ -124,7 +124,7 @@
 }
 
 .navBrandPanelSticky.unstuck{
-	display: hidden;
+	
 	top: -100px;
 	opacity: 0;
 	background: none;
