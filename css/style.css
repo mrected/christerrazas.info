@@ -245,6 +245,9 @@ h1, h2 {
 h1 {
   font-size: 2.5rem; }
 
+h2 {
+  font-size: 1.85rem; }
+
 p {
   font-size: 1rem; }
 
@@ -257,15 +260,43 @@ p {
   /*	border-top: .05rem solid $accent-color3;*/
   border-bottom: 0.05rem solid #86bbd8; }
 
+.sectionSubTitle {
+  color: #f6ae2d;
+  /*background-color: $title-bg-color;*/
+  text-align: center;
+  padding: 3rem 0 1rem;
+  margin: 2rem 1rem 1rem; }
+
 .heading-description {
+  text-align: center;
   font-size: .85rem;
-  margin: 0;
   font-family: "Comfortaa", cursive;
   letter-spacing: initial;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: normal;
   text-transform: none;
   color: #86bbd8; }
+
+.big-text {
+  font-size: 1.75rem;
+  display: inline-block;
+  /*@media(min-width: )*/ }
+
+.liSeperator {
+  border-left: none;
+  width: 100%;
+  height: 1px; }
+  .liSeperator hr {
+    display: block;
+    width: 80%;
+    border: solid 1px #86bbd8; }
+  @media (min-width: 475px) {
+    .liSeperator {
+      width: 2px;
+      height: 25px;
+      border-left: solid 1px #86bbd8; }
+      .liSeperator hr {
+        display: none; } }
 
 .code {
   font-family: monospace;
@@ -276,6 +307,63 @@ p {
     .code {
       padding: .15rem .35rem;
       border: solid 0.15rem #f6ae2d; } }
+
+.subPage {
+  padding: 0 1rem;
+  color: #E6E8E6;
+  /*@include big-text;*/ }
+  @media (min-width: 475px) {
+    .subPage {
+      line-height: 1.5rem; } }
+  @media (min-width: 768px) {
+    .subPage {
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+  .subPage .titleImage {
+    display: block;
+    margin: 1rem auto;
+    max-width: 300px; }
+  .subPage img {
+    width: 50%; }
+  .subPage #patsyColorChangeDiv {
+    background-color: black;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    margin: 0 auto; }
+    .subPage #patsyColorChangeDiv img {
+      display: block;
+      height: 100%;
+      margin: 0 auto; }
+  .subPage .tutorialSteps img {
+    margin: 0 auto;
+    padding: 5px; }
+  .subPage .captionBox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px; }
+    .subPage .captionBox p {
+      margin: 0 auto;
+      width: 60%;
+      padding: 0 1rem;
+      /*font-size: .85rem;*/
+      text-align: center; }
+  .subPage li {
+    margin-top: 2rem;
+    background-color: #353535;
+    padding: 1rem 0 1rem .5rem;
+    border-radius: .5rem; }
+  .subPage li img {
+    width: 90%;
+    display: block;
+    margin: 1rem 0; }
+    @media (min-width: 475px) {
+      .subPage li img {
+        width: initial;
+        margin: .5rem 0; } }
 
 /*.stickyNav {
   position: fixed;
@@ -640,8 +728,7 @@ nav {
 	height: inherit;
 }*/
 #selectedTopImg {
-  background-image: url(../images/arches.jpg);
-  /*background-position:is set via scripts*/
+  background-image: url(../images/patsy.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-origin: padding-box;
@@ -649,6 +736,15 @@ nav {
   margin-bottom: 6rem;
   box-shadow: 0 0.5rem 1rem rgba(4, 42, 43, 0.8);
   height: 60rem; }
+
+#selectedTopImg.main {
+  background-image: url(../images/arches.jpg); }
+
+#selectedTopImg.patsy {
+  background-image: url(../images/patsy.jpg); }
+
+#selectedTopImg.adobe {
+  background-image: url(../images/adobeBg.jpg); }
 
 #about p {
   padding: 0 1rem;
@@ -661,11 +757,6 @@ nav {
       font-size: 1rem;
       padding-bottom: 1rem;
       line-height: 2rem; } }
-
-.big-text {
-  font-size: 1.75rem;
-  display: inline-block;
-  /*@media(min-width: )*/ }
 
 .articleInfo {
   display: inline-flex;
