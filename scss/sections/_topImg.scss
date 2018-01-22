@@ -2,7 +2,10 @@
 	border-bottom: solid .25rem $accent-color2;
 	border-top: solid .25rem $accent-color2;
 	display: block;
-	margin-bottom: 160px;
+	margin-bottom: 0;
+	@media(min-width: $bp-xsmall){
+		margin-bottom: 160px;
+	}
 	&Div{
 		width:100%;
 		height: 200px;
