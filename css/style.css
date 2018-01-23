@@ -916,7 +916,34 @@ nav {
   margin: 0 1rem; }
   @media (min-width: 475px) {
     .siteDescription {
-      font-size: 1.25rem; } }
+      font-size: 1.1rem; } }
+
+.languageIcons {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  /*width:100%;*/
+  font-size: 2rem;
+  color: rgba(230, 232, 230, 0.3); }
+  @media (min-width: 768px) {
+    .languageIcons {
+      justify-content: flex-start; } }
+  .languageIcons li {
+    margin: 0 .2rem;
+    align-self: center;
+    line-height: 0; }
+    @media (min-width: 475px) {
+      .languageIcons li {
+        margin: 0 .5rem; } }
+  .languageIcons img {
+    width: 30px; }
+  .languageIcons .languageIconDescription {
+    font-size: .45rem;
+    text-align: center;
+    width: 100%; }
 
 #photoBlock {
   width: 95%;
