@@ -264,6 +264,11 @@ p {
   /*	border-top: .05rem solid $accent-color3;*/
   border-bottom: 0.05rem solid #86bbd8; }
 
+.sectionSubHeading {
+  color: #f6ae2d;
+  margin: 1rem;
+  text-align: center; }
+
 .sectionSubTitle {
   color: #f6ae2d;
   /*background-color: $title-bg-color;*/
@@ -771,6 +776,41 @@ nav {
       font-size: 1rem;
       padding-bottom: 1rem;
       line-height: 2rem; } }
+
+#skillBlock {
+  /*@include skillBlock-border;*/
+  margin: 0 20px; }
+  #skillBlock ul {
+    font-size: 1.25rem;
+    list-style-type: none;
+    width: 100%;
+    margin: 25px 0; }
+    #skillBlock ul li {
+      margin: 10px 0; }
+
+.skillIcon {
+  display: inline-block;
+  font-size: 2rem;
+  color: #E6E8E6;
+  width: 40px;
+  text-align: center; }
+  .skillIcon img {
+    margin: 0 auto;
+    width: 30px; }
+
+.skillLevel {
+  background-color: #f6ae2d;
+  display: inline-block;
+  margin: 5px;
+  font-size: .75rem;
+  line-height: 1;
+  padding: 0 0 2px 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: solid 2px #fffaff; }
+  @media (min-width: 475px) {
+    .skillLevel {
+      font-size: 1rem; } }
 
 .articleInfo {
   display: inline-flex;

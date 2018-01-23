@@ -2,3 +2,44 @@
 	@include main-body-font;
 }
 
+#skillBlock{
+	/*@include skillBlock-border;*/
+	margin: 0 20px;
+	ul{
+		font-size: 1.25rem;
+		list-style-type: none;
+		width:100%;
+		margin:25px 0;
+		li{
+			margin:10px 0;
+		}
+	}
+}
+
+.skillIcon{
+	display: inline-block;
+	font-size: 2rem;
+	color:$main-font-color;
+	width:40px;
+	text-align: center;
+	img{
+		margin:0 auto;
+		width:30px;
+	}
+}
+
+.skillLevel{
+	background-color: $accent-color2;
+	display: inline-block;
+	margin:5px;
+	font-size: .75rem;
+	line-height: 1;
+	padding:0 0 2px 10px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-right: solid 2px $white;
+	@media(min-width:$bp-xsmall){
+		font-size: 1rem;
+	}
+}
+

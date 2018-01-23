@@ -79,6 +79,11 @@ $bp-large:1200px;
 	border-bottom-left-radius: 5px;
 }
 
+@mixin skillBlock-border{
+	border: solid .08rem $accent-color3;
+	border-radius: 5px;
+}
+
 @mixin main-body-font{
 	padding:0 1rem;
 	color:$main-font-color;

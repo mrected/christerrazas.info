@@ -60,9 +60,13 @@ $('.navLink a').click(function(event) {
     
 });
 
+$(".skillLevel").each(function(){
+	$(this).css('width',$(this).attr('data-width'));
+	// console.log($(this).attr('data-width'));
+});
 
 
-
+// $("#skillBlock ul").children().find(attr('data-width').css('width'))
 
 
 
