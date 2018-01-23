@@ -229,7 +229,8 @@ $heading-font-color:#575841;*/
   color: #555555; }
 
 #photoBlock {
-  margin: 0 auto; }
+  margin: 0 auto;
+  data-height: 100%; }
 
 * {
   box-sizing: border-box; }
