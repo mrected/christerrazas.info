@@ -20,51 +20,40 @@
 <body>
 	<div id="wrapper-head">
 
-		<section id="brand">
-			<div id="brand-logo-div">
-				<img src="images/brand-darkBg.svg" id="brand-logo">
+		<div id="navBrand">
+			<div class="navBrandPanelSticky unstuck">
+				
 			</div>
-		</section>
-
-
-
-		<nav id="nav">
-
-			<div id="menuOpen">
+			<div class="navBrandPanel">
+				<div class="brandDiv unstuck">
+					<a href="index.html">
+						<img src="images/brand-darkBg.svg" class="brand">
+					</a>
+				</div><!-- brandDiv -->
+				<div class="navToggle">
 					<span></span>
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
+				<nav class="nav unstuck">
+					<ul>
+						<li class="navLink"><div class="liSeperator"><hr></div></li>
+						<li class="navLink"><a href="#problem">Problem</a></li>
+						<li class="navLink"><a href="#solution">Solution</a></li>
+						<li class="navLink"><div class="liSeperator"><hr></div></li>
+						<li class="navLink"><a href="index.html">Home</a></li>
+						<li class="navLink"><a href="index.html#articles">Other Articles</a></li>
+					</ul>
+				</nav><!-- nav -->
+			</div><!-- navBrandPanel -->
 
-			<div id="navbarLinks">
-				<ul>
-					<li class="navLink"><a href="#">About</a></li>
-					<li class="navLink"><a href="#">Web Work</a></li>
-					<li class="navLink"><a href="#">Photo</a></li>
-					<li class="navLink"><a href="#">Graphics</a></li>
-					<li class="navLink"><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-
-			<div id="navbarLinks-mobile">
-				<ul>
-					<li class="navLink"><a href="#">About</a></li>
-					<li class="navLink"><a href="#">Web Work</a></li>
-					<li class="navLink"><a href="#">Photo</a></li>
-					<li class="navLink"><a href="#">Graphics</a></li>
-					<li class="navLink"><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-
-		</nav>
-
+		</div><!-- navBrand -->
 
 
 		<div id="topImg">
 			<div id="topImgDiv">
-				<!-- <img src="images/arches.jpg" id="selectedTopImg"/> -->
-				<div id="selectedTopImg"></div>
+				<div id="selectedTopImg" class="patsy"></div>
 			</div>
 		</div>
 
@@ -73,16 +62,17 @@
 	<div id="wrapper-body-sub">
 
 		<section id="main-body" class="subPage">
+			<h1 class="sectionTitle">Don't Fall to Pieces</h1>
 			<img src="images/colorChange_titleImage.png" class="titleImage" alt="image of patsy cline">
-			<h1 class="sectionTitle">Don't Fall to Pieces <br><span class="heading-description">With a little help from Patsy Cline, an explaination of why you can't just switch ink colors when you're dealing with 1 color art.</span></h1>
+			<p class="heading-description">With a little help from Patsy Cline, an explaination of why you can't always just switch ink colors when you're dealing with 1 color art.</p>
 
-			<h2>Problem</h2>
+			<h2 id="problem" class="sectionSubTitle">Problem</h2>
 
-			<p>"Why can’t I just switch white ink to black ink when there's a image of someone's face in my art?" If you have 1 color art and it's light ink on something dark, you’re client will almost always say they want to change the background color and do something lighter than you intended, or vice versa, leaving you with nothing but heartaches.</p>
+			<p><span class="big-text">Why can’t I just switch white ink to black ink when there's a face in my art?"</span> If you have 1 color art and it's light ink on something dark, you’ll almost always need to change the background color to something lighter than you intended, or vice versa, leaving you with nothing but heartaches.</p>
 
-			<p>Most of the time if you’re dealing with a logo or something more than 1 color, this is fine. The problems typically start to arise when you do this with something that has a face, but really anything that should be 2 colors and to save on costs, 1 of those colors is the backgound, 1 is what you're printing.</p>
+			<p>Most of the time, if you’re dealing with a logo or something more than 1 color, this is fine. The problems typically start to arise when you do this with something that has a face. Really anything that should be 2 colors and, 1 of those colors is the backgound, might cause some problems if you change the background color.</p>
 
-			<p>Take this image of Patsy Cline. With Patsy on the left, we’re printing her in ink lighter than her surroundings, and she looks ok. The white ink makes up her skin tones, whites of her eyes and the highlights of the image, the dark background makes up the rest of her.</p>
+			<p>Take this image of Patsy Cline. With Patsy on the left, we’re printing her lighter than her surroundings, and she looks ok. The white makes up her skin tones, whites of her eyes and the highlights of the image, the darker background makes up the rest of her.</p>
 
 			<p>Patsy on the right is the exact same imprint, except now she’s darker than her surroundings, and looks a little… crazy.</p>
 
@@ -97,7 +87,7 @@
 				</div>
 			</div>
 
-			<p>For a better example of this, drag the slider below the image to see what I'm talking about. Patsy stays the same shade of grey, only the background changes color. Right around 50, things start to get a little </p>
+			<p>For a better example of this, drag the slider below the image to see what I'm talking about. Patsy stays the same shade of grey, only the background changes color. Right around 50, things start to get a little off.</p>
 
 			<div id="patsyColorChangeDiv">
 				<img src="images/articles/patsy.svg">
@@ -106,30 +96,29 @@
 			  <div id="custom-handle" class="ui-slider-handle"></div>
 			</div>
 
-			<p>What's happening is when the shade of the background shifts beyond the shade of the art, it ends up making the image look more like a negative. If you're satisfied knowing the answer, you're done here. If you want to know how to fix this, read on...</p>
+			<p>What's happening is when the shade of the background shifts beyond the shade of the art, it ends up making the image look more like a negative. If you're satisfied knowing the answer, you're done here. If you want to know how to fix it, read on...</p>
 
-			<h2>Solution</h2>
+			<h2 id="solution" class="sectionSubTitle">Solution</h2>
 
-			<p>The only real way to resolve this problem is to reverse what prints so the background color(s) show thru where the ink was and prints where it wasn’t. You can usually resolve this by putting an outline around the profile of your art, filling in where the negative space was and deleting what printed before, flipping what prints the highlights or shadows and makes up the image. Assuming your art is vector based (if you’re screen printing chances are it is anyway), here’s an easy way to get this to work before you go all to pieces.</p>
+			<p>The only real way to resolve this problem is to reverse what prints so the background color(s) show thru where the ink was and prints where it wasn’t. You can usually resolve this by putting an outline around the profile of your art, filling in where the negative space was and deleting the original, flipping the highlights and shadows and correcting the image. Assuming your art is vector based (if you’re screen printing chances are it is anyway), here’s an easy way to get this to work before you go all to pieces.</p>
 
-			<p>I'm using illustrator cc so all instructions will be based on that, but I'm guessing other vector programs like CorelDraw have similar tools. Assuming your working with art that's in a vector format:</p>
-			<ol>
+			<p>I'm using illustrator cc so all instructions will be based on that, but I'm guessing other vector programs like CorelDraw have similar tools.</p>
+			<ol class="tutorialSteps">
 				<li><img src="images/articles/patsy-step1.png" alt="original art of Patsy">Starting with this...<br>
-					<strong>Note - </strong><em>Notice this art has a complete solid line around it. For this to work, your's will too</em></li>
+					<strong>Note - </strong><em>Notice this art has a complete solid line around it. For this to work, your's will need one too. You'll essentially be making a cookie cutter, and it's got to completely enclose what you're "cutting" out.</em></li>
 				<li><img src="images/articles/selected.png" alt="image of all art selected">Select all your art and copy it. <span class="code">ctrl/cmd+c</span></li>
-				<li><img src="images/articles/layers.png" alt="original art of Patsy">Paste in front <span class="code">ctrl/cmd+f</span> and move it to a new layer over the current 1 and hide or lock the layer. <br><strong>Note - </strong><em>The "in front" is important. It makes sure your art aligns directly overtop of the original</em></li>
-				<li><img src="images/articles/patsy-step2.png" alt="silhouette of Patsy"><img src="images/articles/release.png" alt="image showing how to release compound paths">Select only the original art, change the fill to a different color and release the compound path. This can be found under the "Object" tab.<br>What you're going for is a silhouette of the image, so you may need to get your pen tool and make the shape a solid</li>
+				<li><img src="images/articles/layers.png" alt="original art of Patsy">Paste in front <span class="code">ctrl/cmd+f</span> and move it to a new layer over the current 1 and hide or lock the layer. <br><strong>Note - </strong><em>The "in front" is important. It makes sure your art aligns directly overtop of the original, so don't change it's position once you've pasted it.</em></li>
+				<li><img src="images/articles/patsy-step2.png" alt="silhouette of Patsy"><img src="images/articles/release.png" alt="image showing how to release compound paths">Select only the art on the original layer, change the fill to any different color and release any compound paths while everything is selected. This can be found under the "Object" tab.<br>What you're going for is a solid, silhouette of the image, so you may need to get your pen tool and make the shape a solid.</li>
 				<li><img src="images/articles/patsy-step3.png" alt="silhouette of Patsy">Turn on your hidden layer or unlock it. (again, stressing the importance of the original being in front of the solid shape).</li>
-				<li>Select all paths in both of these</li>
+				<li>Select everything in both of these layers.</li>
 				<li><img src="images/articles/pathfinders.png" alt="screen capture of pathfinder pallete">In your Pathfinder pallete (if you don't see it, Window>Pathfinder), click "Trim".</li>
 				<li>Select all the color you don't want and delete it<img src="images/articles/patsy-step4.png" alt="reverse of original art"></li>
 				<li><img src="images/articles/cleanup.png" alt="screen capture of where clean up is located in illustrator">It's probably also a good idea to do a quick cleanup of this while it's selected as well. This can be found under Object>Path>Cleanup. This just runs thru your art and removes any stray points and empty paths that might have shown up after using "Trim".</li>
-				<li><img src="images/articles/patsy-step5.png" alt="final image of Patsy for use on lighter colors">You now have the reverse of your art that works on a lighter background!</li>
+				<li>
+					<img src="images/articles/patsy-step5.png" alt="final image of Patsy for use on lighter colors">Imagine that, you now have the reverse of your art that works on a lighter background!</li>
 			</ol>
 
-			<p>Of course it might be easier to put your image in photoshop, invert it and Image Trace the result in illustrator, but given that Image Trace isn't very precise, keeping your vector art vector thru the whole process will keep the end result true to what you started with.</p>
-
-			<p>That's pretty much it. Sometimes you may need to add an outline to seperate your art from the background, but for the most part this is all that's needed to switch colors. This will obviously make it impossible to do things like have 1 print for every color background, but at least you won't be left with the lovesick blues.</p>
+			<p>That's pretty much it. Sometimes you may need to add an outline to seperate your art from the background, but for the most part this is all that's needed to switch colors. This will obviously make it so you'll need 2 images for all backgrounds, but at least you won't be left feeling like you've loved and lost again.</p>
 		</section>
 
 
@@ -143,6 +132,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/sticky.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>

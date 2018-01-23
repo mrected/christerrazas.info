@@ -19,6 +19,10 @@ h1{
 	font-size:2.5rem;
 }
 
+h2{
+	font-size: 1.85rem;
+}
+
 p{
 	font-size: 1rem;
 }
@@ -33,16 +37,50 @@ p{
 	border-bottom: .05rem solid $accent-color3;
 }
 
-.heading-description{
-	font-size: .85rem;
-	margin: 0;
-	font-family: $article-font;
-	letter-spacing: initial;
-	line-height: 1;
-	font-weight: normal;
-	text-transform: none;
-	color:$accent-color3;
+.sectionSubTitle{
+	color:$title-font-color;
+	/*background-color: $title-bg-color;*/
+	text-align: center;
+	padding:3rem 0 1rem;
+	margin:2rem 1rem 1rem;
+}
 
+.heading-description{
+		text-align: center;
+		font-size: .85rem;
+		font-family: $article-font;
+		letter-spacing: initial;
+		line-height: 1.5;
+		font-weight: normal;
+		text-transform: none;
+		color:$accent-color3;
+		@media(min-width:$bp-xsmall){
+
+		}
+	}
+
+
+.big-text{
+	@include big-text;
+}
+
+.liSeperator{
+	border-left: none;
+	width:100%;
+	height:1px;
+	hr{
+		display: block;
+		width:80%;
+		border:solid 1px $accent-color3;
+	}
+	@media(min-width: $bp-xsmall){
+		width:2px;
+		height:25px;
+		border-left: solid 1px $accent-color3;
+		hr{
+			display: none;
+		}
+	}
 }
 
 .code{

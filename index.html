@@ -22,12 +22,20 @@
 	<div id="wrapper-head">
 
 		<div id="navBrand">
-
-			<div id="navBrandPanel">
-				<div id="brandDiv">
-					<img src="images/brand-darkBg.svg" id="brand-logo">
+			<div class="navBrandPanelSticky unstuck">
+				
+			</div>
+			<div class="navBrandPanel">
+				<div class="brandDiv unstuck">
+					<img src="images/brand-darkBg.svg" class="brand">
 				</div><!-- brandDiv -->
-				<nav id="nav">
+				<div class="navToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="nav unstuck">
 					<ul>
 						<li class="navLink"><a href="#about">About</a></li>
 						<li class="navLink"><a href="#articles">Articles</a></li>
@@ -37,12 +45,6 @@
 						<li class="navLink"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav><!-- nav -->
-				<div id="navToggle">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
 			</div><!-- navBrandPanel -->
 
 		</div><!-- navBrand -->
@@ -50,7 +52,7 @@
 
 		<div id="topImg">
 			<div id="topImgDiv">
-				<div id="selectedTopImg"></div>
+				<div id="selectedTopImg" class="main"></div>
 			</div>
 		</div>
 
@@ -81,12 +83,12 @@
 				</div>
 			</div>
 			<div class="articleBlock">
-				<h3 class="articleTitle">Photoshop. What has become of you.</h3>
+				<h3 class="articleTitle">Look be for you revert</h3>
 				<div class="articleInfo">
 					<div>
-						<img class="articleImg imgGlow" src="images/adobe_articleImage.png">
+						<a href="adobe.html"><img class="articleImg imgGlow" src="images/adobe_articleImage.png"></a>
 					</div>
-					<p class="articleDescription">A long winded rant on why I rolled back Adobe Photoshop CC 2018 when I couldn't take it anymore.</p>
+					<p class="articleDescription">Why you should maybe take a second or two when your software doesn't work instead of going all "let's just burn the room' when things don't go 100% the way you expect".</p>
 				</div>
 			</div>
 		</section>
@@ -101,7 +103,16 @@
 					<img class="siteImg" src="images/cascSite.png">
 				</div>
 				<div>
-					<p class="siteDescription">Central Ave Shirt Co makes use of bootstrap 3, updates price lists and color charts based on user interaction, has a plugin apparel designer, the ability to chat with a representative and a number of other features. <a href="cascsite.html">Details about Central Ave Shirt Co</a></p>
+					<ul class="languageIcons">
+						<li><i class="fab fa-html5" alt="html5"></i><br><span class="languageIconDescription">HTML5</span></li>
+						<li><i class="fab fa-css3-alt" alt="css"></i><br><span class="languageIconDescription">CSS3</span></li>
+						<li><i class="fab fa-js-square" alt="javascript"></i><br><span class="languageIconDescription">JavaScript</span></li>
+						<li><img src="images/bootstrapIcon.png" alt="bootstrap"><br><span class="languageIconDescription">bootstrap</span></li>
+						<li><img src="images/jqueryIcon.png" alt="jquery"><br><span class="languageIconDescription">jQuery</span></li>
+						<li><img src="images/photoshopIcon.png" alt="photoshop"><br><span class="languageIconDescription">Photoshop</span></li>
+						<li><img src="images/illustratorIcon.png" alt="illustrator"><br><span class="languageIconDescription">Illustrator</span></li>
+					</ul>
+					<p class="siteDescription">Central Ave. Shirt Company was supposed to be a local based, apparel website that focused on custom printing and embroidery. Sadly, the company itself never got off the ground so it sits quietly on my testing domain. I added a lot of features like sharing info between pages and calculating costs on the fly, plugin apparel designer, plus I did all the cool photography work for the banners so I just like it.<br><a href="http://centralaveshirt.202dev.com/" target="_blank">Check out Central Ave Shirt Co</a></p>
 				</div>
 			</div>
 			<h3 class="siteTitle">AutoPlate.net</h3>
@@ -110,7 +121,17 @@
 					<img class="siteImg" src="images/autoplateSite.png">
 				</div>
 				<div>
-					<p class="siteDescription">Based on bootstrap 3, AutoPlate.net is a fully responsive website I built for a custom license plate &amp; frame distributor. <a href="autoplatesite.html">Details about AutoPlate.net</a></p>
+					<ul class="languageIcons">
+						<li><i class="fab fa-html5" alt="html5"></i><br><span class="languageIconDescription">HTML5</span></li>
+						<li><i class="fab fa-css3-alt" alt="css"></i><br><span class="languageIconDescription">CSS3</span></li>
+						<li><i class="fab fa-js-square" alt="javascript"></i><br><span class="languageIconDescription">JavaScript</span></li>
+						<li><img src="images/bootstrapIcon.png" alt="bootstrap"><br><span class="languageIconDescription">bootstrap</span></li>
+						<li><img src="images/jqueryIcon.png" alt="jquery"><br><span class="languageIconDescription">jQuery</span></li>
+						<li><img src="images/photoshopIcon.png" alt="photoshop"><br><span class="languageIconDescription">Photoshop</span></li>
+						<li><img src="images/illustratorIcon.png" alt="illustrator"><br><span class="languageIconDescription">Illustrator</span></li>
+						<li><i class="fas fa-camera"></i><br><span class="languageIconDescription">Photography</span></li>
+					</ul>
+					<p class="siteDescription">AutoPlate is a promotional product distributor that specializes in automotive accessories thru organizations like ASI, Sage and UPIC. The site is mainly information only, all contact is handled thru the membership organization. It’s focus is to provide base pricing, product information and art templates to consumers and suppliers.<br><a href="http://www.autoplate/net" target="_blank">Check out AutoPlate</a></p>
 				</div>
 			</div>
 		</section>
@@ -120,7 +141,7 @@
 		<section class="gridItem" id="photo" name="photo">
 			<h1 class="sectionTitle">Photos</h1>
 			<div id="photos">
-				<div id="photoBlock" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="100%">
+				<div id="photoBlock" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="50%">
 				  <a href="images/photo/reflective.jpg"><img src="images/photo/reflective-thumb.jpg"></a>
 				  <a href="images/photo/guy.jpg"><img src="images/photo/guy-thumb.jpg"></a>
 				  <a href="images/photo/kids.jpg"><img src="images/photo/kids-thumb.jpg"></a>
@@ -143,7 +164,7 @@
 			<h1 class="sectionTitle">Graphic Work</h1>
 			<div id="graphicWork">
 				
-				<div id="photoBlock" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="100%">
+				<div id="photoBlock" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true" data-trackpad="true" data-width="%100" data-height="50%">
 					<a href="images/art/bbcs16.png"><img src="images/art/bbcs16-thumb.jpg"></a>
 					<a href="images/art/breweryPrints.png"><img src="images/art/breweryPrints-thumb.jpg"></a>
 					<a href="images/art/bbbs15.png"><img src="images/art/bbbs15-thumb.jpg"></a>
@@ -167,15 +188,15 @@
 			<h1 class="sectionTitle">Contact</h1>
 			<p>Your best bet in getting in touch with me is probably thru <a href="mailto:chris.terrazas@gmail.com">email</a>, but I'm available at these other places too.</p>
 			<ul id="contactList">
-				<li><a href="#" alt=""><i class="fab fa-behance" aria-hidden="true"></i><br><span class="contactDesc">behance</span></a></li>
-				<li><a href="#" alt=""><i class="fab fa-github" aria-hidden="true"></i><br><span class="contactDesc">github</span></a></li>
-				<li><a href="#" alt=""><i class="fab fa-codepen" aria-hidden="true"></i><br><span class="contactDesc">codepen</span></a></li>
-				<li><a href="#" alt=""><i class="fab fa-linkedin-in" aria-hidden="true"></i><br><span class="contactDesc">LinkedIn</span></a></li>
-				<li><a href="#" alt=""><i class="fab fa-facebook-f" aria-hidden="true"></i><br><span class="contactDesc">Facebook</span></a></li>
-				<li><a href="#" alt=""><i class="fas fa-envelope" aria-hidden="true"></i><br><span class="contactDesc">Email</span></a></li>
-				<li><a href="#" alt=""><i class="fab fa-twitter" aria-hidden="true"></i><br><span class="contactDesc">twitter</span></a></li>
-				<li><a href="#" alt=""><i class="fab fa-google-plus-g" aria-hidden="true"></i><br><span class="contactDesc">Google+</span></a></li>
-				<li><a href="#" alt=""><i class="fab fa-instagram" aria-hidden="true"></i><br><span class="contactDesc">Instagram</span></a></li>
+				<li><a href="#" alt=""><i class="fab fa-behance" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fab fa-github" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fab fa-codepen" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fab fa-linkedin-in" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fab fa-facebook-f" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fas fa-envelope" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fab fa-twitter" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fab fa-google-plus-g" aria-hidden="true"></i><br></a></li>
+				<li><a href="#" alt=""><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
 			</ul>
 			<p>I'm gonna go ahead and apologize now for not being as active on these as I should. Hence try the email 1st.</p>
 		</section>

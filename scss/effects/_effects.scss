@@ -17,9 +17,16 @@
 
 }
 
-//hamburger
+//navToggle
 
-#navToggle{
+.navToggle{
+    
+  }
+
+.navToggle{
+  z-index: 999;
+  order:1;
+  padding:15px;
   display: block;
   width: 30px;
   height: 35px;
@@ -38,7 +45,7 @@
   }
 }
 
-#navToggle span{
+.navToggle span{
   display: block;
   position: absolute;
   height: 1px;
@@ -59,24 +66,24 @@
 }
 
 
-.menuOpen.open span{
+.navToggle.open span{
   background-color: $accent-color3;
 }
 /* Icon 3 */
 
-.menuOpen span:nth-child(1) {
+.navToggle span:nth-child(1) {
   top: 0px;
 }
 
-.menuOpen span:nth-child(2),.menuOpen span:nth-child(3) {
+.navToggle span:nth-child(2),.navToggle span:nth-child(3) {
   top: 10px;
 }
 
-.menuOpen span:nth-child(4) {
+.navToggle span:nth-child(4) {
   top: 20px;
 }
 
-.menuOpen.open span:nth-child(1) {
+.navToggle.open span:nth-child(1) {
   top: 10px;
   width: 0%;
   left: 50%;
@@ -86,21 +93,21 @@
   height:300px;
 }
 */
-.menuOpen.open span:nth-child(2) {
+.navToggle.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.menuOpen.open span:nth-child(3) {
+.navToggle.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.menuOpen.open span:nth-child(4) {
+.navToggle.open span:nth-child(4) {
   top: 10px;
   width: 0%;
   left: 50%;

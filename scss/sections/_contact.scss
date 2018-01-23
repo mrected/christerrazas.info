@@ -13,12 +13,12 @@
 		li{
 			@include link;
 			display: inline;
-			font-size: 2rem;
+			font-size: 1rem;
 			text-align: center;
 			line-height: 10px;
-			.contactDesc{
+			/*.contactDesc{
 				font-size: .6rem;
-			}
+			}*/
 		}
 	}
 }

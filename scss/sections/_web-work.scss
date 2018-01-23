@@ -35,6 +35,41 @@
 	color:$main-font-color;
 	margin: 0 1rem;
 	@media(min-width: $bp-xsmall){
-		font-size: 1.25rem;
+		font-size: 1.1rem;
 	}
 }
+
+
+
+.languageIcons{
+	padding:0;
+	list-style-type: none;
+	display: flex;
+	flex:row wrap;
+	justify-content: space-around;
+	text-align: center;	
+	/*width:100%;*/
+	font-size: 2rem;
+	color:$code-bg-color;
+	@media(min-width:$bp-small){
+		justify-content: flex-start;
+	}
+	li{
+		margin:0 .2rem;
+		align-self: center;
+		line-height: 0;
+		@media(min-width:$bp-xsmall){
+			margin:0 .5rem;
+		}
+	}
+	img{
+		width:30px;
+	}
+	.languageIconDescription{
+		font-size: .45rem;
+		text-align: center;
+		width:100%;
+	}
+}
+
+

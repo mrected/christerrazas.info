@@ -2,7 +2,10 @@
 	border-bottom: solid .25rem $accent-color2;
 	border-top: solid .25rem $accent-color2;
 	display: block;
-
+	margin-bottom: 0;
+	@media(min-width: $bp-xsmall){
+		margin-bottom: 160px;
+	}
 	&Div{
 		width:100%;
 		height: 200px;
@@ -31,9 +34,8 @@
 
 
 
-#selectedTopImg{   
-	background-image: url(../images/nyc.jpg);
-	/*background-position:is set via scripts*/
+#selectedTopImg{  
+	background-image: url(../images/patsy.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-origin: padding-box;
@@ -41,4 +43,19 @@
 	margin-bottom: 6rem;
 	box-shadow: 0 .5rem 1rem rgba(4,42,43,.8);
 	height:60rem;
+	
+	
 }
+	
+
+	#selectedTopImg.main{
+		background-image: url(../images/arches.jpg);
+	}
+
+	#selectedTopImg.patsy{
+			background-image: url(../images/patsy.jpg);
+	}
+
+	#selectedTopImg.adobe{
+			background-image: url(../images/adobeBg.jpg);
+	}
