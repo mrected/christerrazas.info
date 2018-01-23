@@ -805,9 +805,9 @@ nav {
   font-size: .75rem;
   line-height: 1;
   padding: 0 0 2px 10px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-right: solid 2px #fffaff; }
+  border-radius: 25px;
+  /*border-bottom-left-radius: 25px;*/
+  border-right: solid 5px #f26419; }
   @media (min-width: 475px) {
     .skillLevel {
       font-size: 1rem; } }
