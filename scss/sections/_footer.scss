@@ -1,4 +1,8 @@
 #footer{
 	background-color: $footer-color;
-	height: $standard-height;
+	height:400px;
+	p{
+		color:$main-font-color;
+		text-align: center;
+	}
 }

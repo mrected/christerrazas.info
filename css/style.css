@@ -40,42 +40,36 @@ $heading-font-color:#575841;*/
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(100px auto);
-  grid-template-areas: "navBrand navBrand navBrand" "topImg topImg topImg";
-  /*	@media (min-width: $bp-small){
-  		grid-template-columns: repeat(2,1fr) 300px;
-  		grid-auto-rows: minmax($standard-height, auto);
-  		grid-template-areas: 
-  			"navBrand navBrand navBrand"
-  			"topImg topImg topImg";
-  	}*/ }
+  grid-template-areas: "navBrand navBrand navBrand" "topImg topImg topImg"; }
 
 #wrapper-body {
-  /*height: 100vh;*/
   margin: 0 auto;
   display: grid;
   max-width: 1200px;
   grid-template-columns: repeat(2, 1fr);
-  /*grid-template-rows: minmax($standard-height $standard-height auto);*/
   grid-template-areas: "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; }
   @media (min-width: 768px) {
     #wrapper-body {
       grid-template-columns: repeat(2, 1fr) 300px;
-      /*grid-auto-rows: minmax($standard-height, auto);*/
       width: 100%;
       grid-template-areas: "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "contact contact contact" "footer footer footer"; } }
 
-#wrapper-body-sub {
+#wrapper-footer {
   /*height: 100vh;*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(100px auto);
+  grid-template-areas: "footer"; }
+
+#wrapper-body-sub {
   margin: 0 auto;
   display: grid;
   max-width: 1200px;
   grid-template-columns: 1fr;
-  /*grid-template-rows: minmax($standard-height $standard-height auto);*/
   grid-template-areas: "main-body main-body main-body" "footer footer footer"; }
   @media (min-width: 768px) {
     #wrapper-body-sub {
       grid-template-columns: repeat(2, 1fr) 300px;
-      /*grid-auto-rows: minmax($standard-height, auto);*/
       grid-template-areas: "main-body main-body main-body" "footer footer footer"; } }
 
 #custom-handle {
@@ -701,7 +695,7 @@ nav {
   margin-bottom: 0; }
   @media (min-width: 475px) {
     #topImg {
-      margin-bottom: 160px; } }
+      margin-bottom: 110px; } }
   #topImgDiv {
     width: 100%;
     height: 200px;
@@ -1061,6 +1055,9 @@ nav {
 
 #footer {
   background-color: #242325;
-  height: 100px; }
+  height: 400px; }
+  #footer p {
+    color: #E6E8E6;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

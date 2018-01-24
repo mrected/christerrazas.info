@@ -5,10 +5,10 @@
 $(window).scroll(function() {
 
         if($(window).width()>1200){
-            activateSticky(580);
+            activateSticky(500);
         }
         else if($(window).width()>970){
-            activateSticky(410);
+            activateSticky(300);
         }
         else if($(window).width()>768){
             activateSticky(340);
