@@ -1,5 +1,10 @@
+#contact p{
+	@include main-body-font;
+}
+
 #contact{
 	p{
+		@include main-body-font;
 		@include link;
 	}
 

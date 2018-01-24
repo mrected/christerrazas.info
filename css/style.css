@@ -811,15 +811,22 @@ nav {
 
 .skillLevelDiv {
   width: 75%;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #86bbd8;
+  margin: 5px;
+  border-radius: 25px;
+  line-height: 1;
+  font-size: .75rem; }
+  @media (min-width: 475px) {
+    .skillLevelDiv {
+      font-size: 1rem; } }
 
 .skillLevel {
   background-color: #f6ae2d;
   display: inline-block;
-  margin: 5px;
   font-size: .75rem;
   line-height: 1;
-  padding: 0 0 0 2px;
+  padding: 0 0 0 3px;
   border-radius: 25px;
   /*border-bottom-left-radius: 25px;*/
   border-right: solid 5px #f26419; }
@@ -1017,11 +1024,34 @@ nav {
 .photoTitle {
   text-align: center; }
 
-#contact p a:visited, #contact p a:link {
-  color: #f26419; }
-#contact p a:hover, #contact p a:active {
-  color: #f6ae2d;
-  transition: .5s; }
+#contact p {
+  padding: 0 1rem;
+  color: #E6E8E6; }
+  @media (min-width: 475px) {
+    #contact p {
+      line-height: 1.5rem; } }
+  @media (min-width: 768px) {
+    #contact p {
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+
+#contact p {
+  padding: 0 1rem;
+  color: #E6E8E6; }
+  @media (min-width: 475px) {
+    #contact p {
+      line-height: 1.5rem; } }
+  @media (min-width: 768px) {
+    #contact p {
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      line-height: 2rem; } }
+  #contact p a:visited, #contact p a:link {
+    color: #f26419; }
+  #contact p a:hover, #contact p a:active {
+    color: #f6ae2d;
+    transition: .5s; }
 #contact #contactList {
   display: inline-flex;
   justify-content: space-between;

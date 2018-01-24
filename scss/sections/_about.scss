@@ -42,15 +42,23 @@
 .skillLevelDiv{
 	width:75%;
 	display: inline-block;
+	background-color: $accent-color3;
+	margin:5px;
+	border-radius: 25px;
+	line-height: 1;
+	font-size: .75rem;
+	@media(min-width:$bp-xsmall){
+		font-size: 1rem;
+		
+	}
 }
 
 .skillLevel{
 	background-color: $accent-color2;
 	display: inline-block;
-	margin:5px;
 	font-size: .75rem;
 	line-height: 1;
-	padding:0 0 0 2px;
+	padding:0 0 0 3px;
 	
 	border-radius: 25px;
 	/*border-bottom-left-radius: 25px;*/
