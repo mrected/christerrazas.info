@@ -1,25 +1,3 @@
-/*#brand{
-	grid-area: brand;
-	justify-self: center;
-	align-self: center;
-	height: $standard-height;
-	@media(min-width: $bp-medium){
-		height: $standard-height-md;
-	}
-	width: 100%;
-}*/
-
-/*#nav{
-	grid-area: nav;
-	justify-self: center;
-	align-self: start;
-	
-	@media(min-width: $bp-medium){
-		
-	}
-	width: 100%;
-}*/
-
 #navBrand{
 	grid-area: navBrand;
 }
@@ -34,7 +12,7 @@
 
 #articles{
 	grid-area: articles;
-	justify-items:center;
+
 }
 
 #web{

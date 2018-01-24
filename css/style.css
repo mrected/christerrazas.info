@@ -5,26 +5,6 @@ $main-font-color:#3F403F;
 $btn-font-color:#CED0CE;
 $accent-color:#9FB8AD;
 $heading-font-color:#575841;*/
-/*#brand{
-	grid-area: brand;
-	justify-self: center;
-	align-self: center;
-	height: $standard-height;
-	@media(min-width: $bp-medium){
-		height: $standard-height-md;
-	}
-	width: 100%;
-}*/
-/*#nav{
-	grid-area: nav;
-	justify-self: center;
-	align-self: start;
-	
-	@media(min-width: $bp-medium){
-		
-	}
-	width: 100%;
-}*/
 #navBrand {
   grid-area: navBrand; }
 
@@ -35,8 +15,7 @@ $heading-font-color:#575841;*/
   grid-area: about; }
 
 #articles {
-  grid-area: articles;
-  justify-items: center; }
+  grid-area: articles; }
 
 #web {
   grid-area: web; }
@@ -1052,18 +1031,25 @@ nav {
   #contact p a:hover, #contact p a:active {
     color: #f6ae2d;
     transition: .5s; }
+#contact #contactListDiv {
+  display: flex;
+  justify-content: center; }
 #contact #contactList {
   display: inline-flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style-type: none;
-  margin: 0 0 30px 0;
   padding: 0;
-  width: 100%; }
+  width: 50%; }
+  @media (min-width: 1200px) {
+    #contact #contactList {
+      width: 100%; } }
   #contact #contactList li {
     display: inline;
-    font-size: 1rem;
+    font-size: 4rem;
     text-align: center;
     line-height: 10px;
+    margin: 30px;
     /*.contactDesc{
     	font-size: .6rem;
     }*/ }
