@@ -60,13 +60,14 @@ $('.navLink a').click(function(event) {
     
 });
 
+//sets length of skillLevel Div
+
 $(".skillLevel").each(function(){
 	$(this).css('width',$(this).attr('data-width'));
-	// console.log($(this).attr('data-width'));
 });
 
 
-// $("#skillBlock ul").children().find(attr('data-width').css('width'))
+
 
 
 
@@ -82,7 +83,7 @@ $(".navLink").click(function(){
 
 
 
-
+//moves background image sideways on scroll
 
 let selectedTopImgX = -70;
 let selectedTopImgY = -20;

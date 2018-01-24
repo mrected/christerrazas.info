@@ -265,7 +265,7 @@ p {
   border-bottom: 0.05rem solid #86bbd8; }
 
 .sectionSubHeading {
-  color: #f6ae2d;
+  color: #86bbd8;
   margin: 1rem;
   text-align: center; }
 
@@ -784,19 +784,34 @@ nav {
     font-size: 1.25rem;
     list-style-type: none;
     width: 100%;
-    margin: 25px 0; }
+    margin: 25px 0;
+    padding: 0; }
     #skillBlock ul li {
-      margin: 10px 0; }
+      margin: 2px 0; }
+      @media (min-width: 475px) {
+        #skillBlock ul li {
+          margin: 10px 0; } }
 
 .skillIcon {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #E6E8E6;
-  width: 40px;
+  width: 25px;
   text-align: center; }
+  @media (min-width: 475px) {
+    .skillIcon {
+      width: 40px;
+      font-size: 2rem; } }
   .skillIcon img {
     margin: 0 auto;
-    width: 30px; }
+    width: 20px; }
+    @media (min-width: 475px) {
+      .skillIcon img {
+        width: 30px; } }
+
+.skillLevelDiv {
+  width: 75%;
+  display: inline-block; }
 
 .skillLevel {
   background-color: #f6ae2d;
@@ -804,13 +819,14 @@ nav {
   margin: 5px;
   font-size: .75rem;
   line-height: 1;
-  padding: 0 0 2px 10px;
+  padding: 0 0 0 2px;
   border-radius: 25px;
   /*border-bottom-left-radius: 25px;*/
   border-right: solid 5px #f26419; }
   @media (min-width: 475px) {
     .skillLevel {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      padding: 0 0 2px 10px; } }
 
 .articleInfo {
   display: inline-flex;
