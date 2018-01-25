@@ -20,14 +20,16 @@
 	}
 		.brand{
 			height:$brand-height;
-			margin:5px;
-			max-width: 98%;
+			margin:10px;
+			max-width: 90%;
+			@media(min-width: $bp-medium){
+				margin:30px;
+			}
 		}
 
 		.miniBrand{
-			height:30px;
-			float:left;
-			padding-left: 10px;
+			height:40px;
+			padding: 10px 0 0 30px;
 		}
 
 	

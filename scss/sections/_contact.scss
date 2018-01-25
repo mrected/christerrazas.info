@@ -26,13 +26,23 @@
 		li{
 			@include link;
 			display: inline;
-			font-size: 4rem;
+			font-size: 2.5rem;
 			text-align: center;
-			line-height: 10px;
-			margin:30px;
+			margin:10px;
 			/*.contactDesc{
 				font-size: .6rem;
 			}*/
+			@media(min-width:$bp-xsmall){
+				font-size: 2.75rem;
+				margin:15px;
+			}
+			@media(min-width:$bp-small){
+				margin:20px;
+			}
+			@media(min-width:$bp-medium){
+				font-size: 3.5rem;
+				margin:30px;
+			}
 		}
 	}
 }

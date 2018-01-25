@@ -57,6 +57,16 @@
 
 }
 
+#wrapper-head-sub{
+	/*height: 100vh;*/
+
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: $standard-height;
+	grid-template-areas: 
+	"navBrand navBrand navBrand"
+}
+
 #wrapper-body{
 	margin:0 auto;
 	display:grid;
@@ -68,7 +78,6 @@
 	"web web web"
 	"photo photo photo"
 	"graphics graphics graphics"
-	"contact contact contact"
 	"footer footer footer";
 	@media (min-width: $bp-small){
 		grid-template-columns: repeat(2,1fr) 300px;
@@ -78,7 +87,6 @@
 			"web web web"
 			"photo photo photo"
 			"graphics graphics graphics"
-			"contact contact contact"
 			"footer footer footer";
 	}
 }

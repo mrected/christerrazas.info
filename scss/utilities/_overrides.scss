@@ -49,3 +49,8 @@
     margin:0 auto;
     data-height:100%;
 }
+
+// fotorama black bg
+.fotorama__wrap--slide .fotorama__stage__frame{
+    background-color: $fotorama-bg-color;
+}

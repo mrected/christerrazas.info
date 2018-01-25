@@ -37,6 +37,17 @@ p{
 	border-bottom: .05rem solid $accent-color3;
 }
 
+.overlayTitle{
+	font-size: 8rem;
+	outline-color: invert;
+	color:$title-font-color;
+	text-align: center;
+	padding:0;
+	margin:0;
+/*	border-top: .05rem solid $accent-color3;*/
+
+}
+
 .sectionSubHeading{
 	color:$section-sub-title-font-color;
 	margin:1rem;
