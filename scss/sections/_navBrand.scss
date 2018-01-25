@@ -28,8 +28,13 @@
 		}
 
 		.miniBrand{
-			height:40px;
-			padding: 10px 0 0 30px;
+			height:35px;
+			float: left;
+			padding-left: 30px;
+			@media(min-width:$bp-xsmall){
+				height:40px;
+				padding: 10px 0 0 30px;
+			}
 		}
 
 	
