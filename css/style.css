@@ -73,11 +73,11 @@ $heading-font-color:#575841;*/
   display: grid;
   max-width: 1200px;
   grid-template-columns: 1fr;
-  grid-template-areas: "main-body main-body main-body" "footer footer footer"; }
+  grid-template-areas: "main-body main-body main-body"; }
   @media (min-width: 768px) {
     #wrapper-body-sub {
       grid-template-columns: repeat(2, 1fr) 300px;
-      grid-template-areas: "main-body main-body main-body" "footer footer footer"; } }
+      grid-template-areas: "main-body main-body main-body"; } }
 
 #custom-handle {
   width: 3em;
