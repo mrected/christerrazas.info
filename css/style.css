@@ -5,6 +5,15 @@ $main-font-color:#3F403F;
 $btn-font-color:#CED0CE;
 $accent-color:#9FB8AD;
 $heading-font-color:#575841;*/
+section {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    section {
+      margin-bottom: 80px; } }
+  @media (min-width: 970px) {
+    section {
+      margin-bottom: 150px; } }
+
 #navBrand {
   grid-area: navBrand; }
 
@@ -54,12 +63,12 @@ $heading-font-color:#575841;*/
   display: grid;
   max-width: 1200px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "about about about" "articles articles articles" "web web web" "photo photo photo" "graphics graphics graphics" "footer footer footer"; }
+  grid-template-areas: "about about about" "articles articles articles" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; }
   @media (min-width: 768px) {
     #wrapper-body {
       grid-template-columns: repeat(2, 1fr) 300px;
       width: 100%;
-      grid-template-areas: "about about articles" "web web web" "photo photo photo" "graphics graphics graphics" "footer footer footer"; } }
+      grid-template-areas: "about about articles" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; } }
 
 #wrapper-footer {
   /*height: 100vh;*/

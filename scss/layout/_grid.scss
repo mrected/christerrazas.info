@@ -1,3 +1,14 @@
+section{
+	margin-bottom: 30px;
+	@media(min-width:$bp-small){
+		margin-bottom: 80px;
+	}
+	@media(min-width:$bp-medium){
+		margin-bottom: 150px;
+	}
+}
+
+
 #navBrand{
 	grid-area: navBrand;
 }
@@ -76,8 +87,8 @@
 	"about about about"
 	"articles articles articles"
 	"web web web"
-	"photo photo photo"
 	"graphics graphics graphics"
+	"photo photo photo"
 	"footer footer footer";
 	@media (min-width: $bp-small){
 		grid-template-columns: repeat(2,1fr) 300px;
@@ -85,8 +96,8 @@
 		grid-template-areas: 
 			"about about articles"
 			"web web web"
-			"photo photo photo"
 			"graphics graphics graphics"
+			"photo photo photo"
 			"footer footer footer";
 	}
 }
