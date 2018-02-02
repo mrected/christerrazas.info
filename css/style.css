@@ -755,7 +755,7 @@ nav {
 	height: inherit;
 }*/
 #selectedTopImg {
-  background-image: url(../images/patsy.jpg);
+  /*background-image: url(../images/patsy.jpg);*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-origin: padding-box;
@@ -765,13 +765,14 @@ nav {
   height: 60rem; }
 
 #selectedTopImg.main {
-  background-image: url(../images/arches.jpg); }
-
-#selectedTopImg.patsy {
-  background-image: url(../images/patsy.jpg); }
-
-#selectedTopImg.adobe {
-  background-image: url(../images/adobeBg.jpg); }
+  background-image: url(../images/arches-xs.jpg);
+  background-attachment: local; }
+  @media (min-width: 475px) {
+    #selectedTopImg.main {
+      background-image: url(../images/arches-sm.jpg); } }
+  @media (min-width: 768px) {
+    #selectedTopImg.main {
+      background-image: url(../images/arches.jpg); } }
 
 #about p {
   padding: 0 1rem;
