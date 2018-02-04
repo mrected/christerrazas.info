@@ -42,7 +42,7 @@ function offsetResets(){
 }
 
 $(window).resize(function(){
-	offsetResets()
+	offsetResets();
 });
 
 //click a link and page scrolls to anchor based on offsetReset
@@ -85,19 +85,46 @@ $(".navLink").click(function(){
 
 //moves background image sideways on scroll
 
-let selectedTopImgX = -70;
-let selectedTopImgY = -20;
-$("#selectedTopImg").css(`background-position`,`${selectedTopImgX}rem ${selectedTopImgY}rem`);
-
-$(window).scroll(function(){
-	let currentScreenPos = $(window).scrollTop();
-	let x = ($(window).scrollTop()/10)+selectedTopImgX;
-	let y = ($(window).scrollTop()/50)+selectedTopImgY;
-	$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
-	$("#selectedTopImg").children().width($(this).width()+currentScreenPos);
-	$("#selectedTopImg").children().height($(this).height()-currentScreenPos);
-
+$(window).resize(function(){
+	getTopImgSize();
 });
+
+getTopImgSize();
+
+function getTopImgSize(){
+	if($("#selectedTopImg").width()<=768 && $("#selectedTopImg").width()>475){
+		$("#selectedTopImg").css({
+			'background-image':'url(images/arches-sm.jpg)',
+			'background-attachment':'local'
+		});
+	}
+	else if($("#selectedTopImg").width()<=475){
+		$("#selectedTopImg").css({
+			'background-image':'url(images/arches-xs.jpg)',
+			'background-attachment':'local'
+		});
+	}
+	else{
+		imageSideScroll();
+	}
+}
+
+function imageSideScroll(){
+
+	let selectedTopImgX = -70;
+	let selectedTopImgY = -20;
+	$("#selectedTopImg").css(`background-position`,`${selectedTopImgX}rem ${selectedTopImgY}rem`);
+
+	$(window).scroll(function(){
+		let currentScreenPos = $(window).scrollTop();
+		let x = ($(window).scrollTop()/10)+selectedTopImgX;
+		let y = ($(window).scrollTop()/50)+selectedTopImgY;
+		$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
+		$("#selectedTopImg").children().width($(this).width()+currentScreenPos);
+		$("#selectedTopImg").children().height($(this).height()-currentScreenPos);
+
+	});
+}
 
 
 

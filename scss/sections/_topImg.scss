@@ -35,7 +35,7 @@
 
 
 #selectedTopImg{  
-	background-image: url(../images/patsy.jpg);
+	/*background-image: url(../images/patsy.jpg);*/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-origin: padding-box;
@@ -49,13 +49,15 @@
 	
 
 	#selectedTopImg.main{
-		background-image: url(../images/arches.jpg);
+		background-image: url(../images/arches-xs.jpg);
+		background-attachment: local;
+		@media(min-width:$bp-xsmall){
+			background-image: url(../images/arches-sm.jpg);
+		}
+		@media(min-width:$bp-small){
+			background-image: url(../images/arches.jpg);
+		}
+
 	}
 
-	#selectedTopImg.patsy{
-			background-image: url(../images/patsy.jpg);
-	}
 
-	#selectedTopImg.adobe{
-			background-image: url(../images/adobeBg.jpg);
-	}
