@@ -21,18 +21,11 @@ section{
 	grid-area: about;
 }
 
-#articles{
-	grid-area: articles;
-
-}
 
 #web{
 	grid-area: web;
 }
 
-#photo{
-	grid-area: photo;
-}
 
 #graphics{
 	grid-area: graphics;
@@ -85,19 +78,16 @@ section{
 	grid-template-columns: repeat(2,1fr);
 	grid-template-areas: 
 	"about about about"
-	"articles articles articles"
 	"web web web"
 	"graphics graphics graphics"
-	"photo photo photo"
 	"footer footer footer";
 	@media (min-width: $bp-small){
 		grid-template-columns: repeat(2,1fr) 300px;
 		width: 100%;
 		grid-template-areas: 
-			"about about articles"
+			"about about about"
 			"web web web"
 			"graphics graphics graphics"
-			"photo photo photo"
 			"footer footer footer";
 	}
 }

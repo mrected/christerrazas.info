@@ -65,22 +65,6 @@ $bp-large:1200px;
 
 //mixins
 
-@mixin article-title-border{
-	border-top: solid .08rem $accent-color3;
-	border-left: solid .08rem $accent-color3;
-	border-right: solid .08rem $accent-color3;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-}
-
-@mixin article-info-border{
-	border-top: solid .08rem $accent-color;
-	border-bottom: solid .08rem $accent-color3;
-	border-left: solid .08rem $accent-color3;
-	border-right: solid .08rem $accent-color3;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-}
 
 @mixin skillBlock-border{
 	border: solid .08rem $accent-color3;

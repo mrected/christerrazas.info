@@ -43,7 +43,9 @@ function offsetResets(){
 
 $(window).resize(function(){
 	offsetResets()
+	breakpoints.resize($(window.width()));
 });
+
 
 //click a link and page scrolls to anchor based on offsetReset
 
@@ -68,8 +70,21 @@ $(".skillLevel").each(function(){
 
 
 
+//detect breakpoint
 
-
+const breakpoints = {
+	bp_xsmall:475,
+	bp_small:768,
+	bp_medium:970,
+	bp_large:1200,
+	resize:function(width){
+		console.log(width);
+	},
+	onload:function(){
+		console.log("test");
+	},
+};
+breakpoints.onload();
 
 // closes menu and resets hamburger when link selected from navbarLinks-mobile
 $(".navLink").click(function(){
@@ -84,20 +99,23 @@ $(".navLink").click(function(){
 
 
 //moves background image sideways on scroll
+function topImgSideScroll(){
+	let selectedTopImgX = -70;
+	let selectedTopImgY = -20;
+	$("#selectedTopImg").css(`background-position`,`${selectedTopImgX}rem ${selectedTopImgY}rem`);
 
-let selectedTopImgX = -70;
-let selectedTopImgY = -20;
-$("#selectedTopImg").css(`background-position`,`${selectedTopImgX}rem ${selectedTopImgY}rem`);
+	$(window).scroll(function(){
+		let currentScreenPos = $(window).scrollTop();
+		let x = ($(window).scrollTop()/10)+selectedTopImgX;
+		let y = ($(window).scrollTop()/50)+selectedTopImgY;
+		$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
+		$("#selectedTopImg").children().width($(this).width()+currentScreenPos);
+		$("#selectedTopImg").children().height($(this).height()-currentScreenPos);
 
-$(window).scroll(function(){
-	let currentScreenPos = $(window).scrollTop();
-	let x = ($(window).scrollTop()/10)+selectedTopImgX;
-	let y = ($(window).scrollTop()/50)+selectedTopImgY;
-	$("#selectedTopImg").css(`background-position`,`${x}rem ${y}rem`);
-	$("#selectedTopImg").children().width($(this).width()+currentScreenPos);
-	$("#selectedTopImg").children().height($(this).height()-currentScreenPos);
+	});
 
-});
+}
+topImgSideScroll();
 
 
 

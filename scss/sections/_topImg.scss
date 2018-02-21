@@ -35,27 +35,22 @@
 
 
 #selectedTopImg{  
-	background-image: url(../images/patsy.jpg);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	height: 600px;
 	background-origin: padding-box;
-	/*padding: 5rem 0 3rem 0;*/
-	margin-bottom: 6rem;
+	margin-bottom: 60px;
 	box-shadow: 0 .5rem 1rem rgba(4,42,43,.8);
-	height:60rem;
 	
+	background-image: url(../images/arches-xs.jpg);
+		@media(min-width: $bp-xsmall){
+			background-image: url(../images/arches-sm.jpg);
+			background-attachment: scroll;
+		}
+		@media(min-width: $bp-small){
+			background-image: url(../images/arches.jpg);
+			background-attachment: fixed;
+			height:60rem;
+		}
 	
 }
 	
-
-	#selectedTopImg.main{
-		background-image: url(../images/arches.jpg);
-	}
-
-	#selectedTopImg.patsy{
-			background-image: url(../images/patsy.jpg);
-	}
-
-	#selectedTopImg.adobe{
-			background-image: url(../images/adobeBg.jpg);
-	}
