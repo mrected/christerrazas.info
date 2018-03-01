@@ -5,38 +5,14 @@ $main-font-color:#3F403F;
 $btn-font-color:#CED0CE;
 $accent-color:#9FB8AD;
 $heading-font-color:#575841;*/
-section {
-  margin-bottom: 30px; }
-  @media (min-width: 768px) {
-    section {
-      margin-bottom: 80px; } }
-  @media (min-width: 970px) {
-    section {
-      margin-bottom: 150px; } }
-
 #navBrand {
   grid-area: navBrand; }
-
-#topImg {
-  grid-area: topImg; }
 
 #about {
   grid-area: about; }
 
-#articles {
-  grid-area: articles; }
-
-#web {
+#work {
   grid-area: web; }
-
-#photo {
-  grid-area: photo; }
-
-#graphics {
-  grid-area: graphics; }
-
-#contact {
-  grid-area: contact; }
 
 #footer {
   grid-area: footer; }
@@ -47,46 +23,26 @@ section {
 #wrapper-head {
   /*height: 100vh;*/
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(100px auto);
-  grid-template-areas: "navBrand navBrand navBrand" "topImg topImg topImg"; }
+  grid-template-rows: minmax(100px);
+  grid-template-areas: "navBrand"; }
 
-#wrapper-head-sub {
-  /*height: 100vh;*/
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px;
-  grid-template-areas: "navBrand navBrand navBrand"; }
+/*#wrapper-head-sub{
 
+	display:grid;
+	grid-template-rows: $standard-height;
+	grid-template-areas: 
+	"navBrand"
+}*/
 #wrapper-body {
   margin: 0 auto;
   display: grid;
   max-width: 1200px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "about about about" "articles articles articles" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; }
-  @media (min-width: 768px) {
-    #wrapper-body {
-      grid-template-columns: repeat(2, 1fr) 300px;
-      width: 100%;
-      grid-template-areas: "about about articles" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; } }
+  grid-template-areas: "about" "work"; }
 
 #wrapper-footer {
-  /*height: 100vh;*/
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: minmax(100px auto);
   grid-template-areas: "footer"; }
-
-#wrapper-body-sub {
-  margin: 0 auto;
-  display: grid;
-  max-width: 1200px;
-  grid-template-columns: 1fr;
-  grid-template-areas: "main-body main-body main-body"; }
-  @media (min-width: 768px) {
-    #wrapper-body-sub {
-      grid-template-columns: repeat(2, 1fr) 300px;
-      grid-template-areas: "main-body main-body main-body"; } }
 
 #custom-handle {
   width: 3em;
