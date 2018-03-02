@@ -48,8 +48,8 @@ section {
   /*height: 100vh;*/
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(100px auto);
-  grid-template-areas: "navBrand navBrand navBrand" "topImg topImg topImg"; }
+  grid-template-rows: 100px;
+  grid-template-areas: "navBrand navBrand navBrand"; }
 
 #wrapper-head-sub {
   /*height: 100vh;*/
@@ -63,12 +63,12 @@ section {
   display: grid;
   max-width: 1200px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "about about about" "articles articles articles" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; }
+  grid-template-areas: "about about about" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; }
   @media (min-width: 768px) {
     #wrapper-body {
       grid-template-columns: repeat(2, 1fr) 300px;
       width: 100%;
-      grid-template-areas: "about about articles" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; } }
+      grid-template-areas: "about about about" "web web web" "graphics graphics graphics" "photo photo photo" "footer footer footer"; } }
 
 #wrapper-footer {
   /*height: 100vh;*/
