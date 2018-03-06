@@ -1,62 +1,31 @@
-#navBrand{
-	grid-area: navBrand;
-}
 
-#about{
-	grid-area: about;
-}
-
-#work{
-	grid-area: web;
-}
-
-#footer{
-	grid-area: footer;
-}
 
 
 //Subsections
-
-#main-body{
-	grid-area: main-body;
-}
-
-
-
 
 #wrapper-head{
 	/*height: 100vh;*/
 
 	display:grid;
-	grid-template-rows: minmax($standard-height);
-	grid-template-areas: 
-	"navBrand"
+	grid-template-rows: $standard-height;
 
 }
 
-/*#wrapper-head-sub{
 
-	display:grid;
-	grid-template-rows: $standard-height;
-	grid-template-areas: 
-	"navBrand"
-}*/
+
+
 
 #wrapper-body{
 	margin:0 auto;
 	display:grid;
-	max-width: 1200px;
-	grid-template-areas: 
-	"about"
-	"work";
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 1200px;
 }
 
 #wrapper-footer{
 
 	display:grid;
 	grid-template-rows: minmax($standard-height auto);
-	grid-template-areas: 
-	"footer";
 
 }
 
