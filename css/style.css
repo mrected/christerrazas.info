@@ -12,7 +12,7 @@ $heading-font-color:#575841;*/
   grid-area: about; }
 
 #work {
-  grid-area: web; }
+  grid-area: work; }
 
 #footer {
   grid-area: footer; }
@@ -26,22 +26,16 @@ $heading-font-color:#575841;*/
   grid-template-rows: minmax(100px);
   grid-template-areas: "navBrand"; }
 
-/*#wrapper-head-sub{
-
-	display:grid;
-	grid-template-rows: $standard-height;
-	grid-template-areas: 
-	"navBrand"
-}*/
 #wrapper-body {
+  max-width: 1250px;
   margin: 0 auto;
   display: grid;
-  max-width: 1200px;
-  grid-template-areas: "about" "work"; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "about about about" "work work work"; }
 
 #wrapper-footer {
   display: grid;
-  grid-template-rows: minmax(100px auto);
+  grid-template-rows: minmax(100px);
   grid-template-areas: "footer"; }
 
 #custom-handle {
@@ -729,6 +723,18 @@ nav {
   @media (min-width: 768px) {
     #selectedTopImg.main {
       background-image: url(../images/arches.jpg); } }
+
+#me-img {
+  width: 400px;
+  display: inline;
+  float: left;
+  /*display: block;*/
+  margin-right: 80px;
+  border-radius: 50%;
+  border: solid #f26419 3px; }
+
+#aboutText {
+  margin-bottom: 100px; }
 
 #about p {
   padding: 0 1rem;

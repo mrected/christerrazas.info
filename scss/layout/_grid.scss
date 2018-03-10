@@ -7,7 +7,7 @@
 }
 
 #work{
-	grid-area: web;
+	grid-area: work;
 }
 
 #footer{
@@ -31,30 +31,22 @@
 	grid-template-rows: minmax($standard-height);
 	grid-template-areas: 
 	"navBrand"
-
 }
 
-/*#wrapper-head-sub{
-
-	display:grid;
-	grid-template-rows: $standard-height;
-	grid-template-areas: 
-	"navBrand"
-}*/
 
 #wrapper-body{
+	max-width: 1250px;
 	margin:0 auto;
 	display:grid;
-	max-width: 1200px;
+	grid-template-columns: repeat(3,1fr);
 	grid-template-areas: 
-	"about"
-	"work";
+	"about about about"
+	"work work work";
 }
 
 #wrapper-footer{
-
 	display:grid;
-	grid-template-rows: minmax($standard-height auto);
+	grid-template-rows: minmax($standard-height);
 	grid-template-areas: 
 	"footer";
 
