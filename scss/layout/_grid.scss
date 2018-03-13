@@ -1,33 +1,46 @@
 
+#about{
+	grid-area: about;
+}
+
+#work{
+	grid-area: work;
+}
 
 
 //Subsections
 
-#wrapper-head{
-	/*height: 100vh;*/
-
+/*#wrapper-head{
 	display:grid;
 	grid-template-rows: $standard-height;
 
 }
-
-
-
-
-
+*/
 #wrapper-body{
 	margin:0 auto;
 	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	width: 1200px;
+	width:1200px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2,1fr);
 }
 
-#wrapper-footer{
+	#about{
+		grid-column: span 3;
+		grid-row:1/2;
+	}
+
+	#work{
+		grid-column: span 3;
+		grid-row:2/3;
+	}
+
+
+/*#wrapper-footer{
 
 	display:grid;
 	grid-template-rows: minmax($standard-height auto);
 
-}
+}*/
 
 
 

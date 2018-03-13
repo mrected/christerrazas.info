@@ -5,21 +5,39 @@ $main-font-color:#3F403F;
 $btn-font-color:#CED0CE;
 $accent-color:#9FB8AD;
 $heading-font-color:#575841;*/
-#wrapper-head {
-  /*height: 100vh;*/
-  display: grid;
-  grid-template-rows: 100px; }
+#about {
+  grid-area: about; }
 
+#work {
+  grid-area: work; }
+
+/*#wrapper-head{
+	display:grid;
+	grid-template-rows: $standard-height;
+
+}
+*/
 #wrapper-body {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px; }
+  width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
 
-#wrapper-footer {
-  display: grid;
-  grid-template-rows: minmax(100px auto); }
+#about {
+  grid-column: span 3;
+  grid-row: 1/2; }
 
+#work {
+  grid-column: span 3;
+  grid-row: 2/3; }
+
+/*#wrapper-footer{
+
+	display:grid;
+	grid-template-rows: minmax($standard-height auto);
+
+}*/
 #custom-handle {
   width: 3em;
   height: 1.6em;
