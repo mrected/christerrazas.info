@@ -8,18 +8,14 @@
 }
 
 
-//Subsections
 
-/*#wrapper-head{
-	display:grid;
-	grid-template-rows: $standard-height;
 
-}
-*/
 #wrapper-body{
+	max-width: 1250px;
 	margin:0 auto;
 	display:grid;
-	width:1200px;
+
+
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2,1fr);
 }
@@ -34,13 +30,6 @@
 		grid-row:2/3;
 	}
 
-
-/*#wrapper-footer{
-
-	display:grid;
-	grid-template-rows: minmax($standard-height auto);
-
-}*/
 
 
 

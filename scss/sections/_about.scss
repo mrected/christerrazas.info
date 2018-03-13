@@ -1,3 +1,17 @@
+#me-img{
+	width: 400px;
+	display: inline;
+	float:left;
+	/*display: block;*/
+	margin-right: 80px;
+	border-radius: 50%;
+	border:solid $accent-color 3px;
+}
+
+#aboutText{
+	margin-bottom: 100px;
+}
+
 #about p{
 	@include main-body-font;
 }

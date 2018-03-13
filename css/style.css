@@ -11,16 +11,10 @@ $heading-font-color:#575841;*/
 #work {
   grid-area: work; }
 
-/*#wrapper-head{
-	display:grid;
-	grid-template-rows: $standard-height;
-
-}
-*/
 #wrapper-body {
+  max-width: 1250px;
   margin: 0 auto;
   display: grid;
-  width: 1200px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -32,12 +26,6 @@ $heading-font-color:#575841;*/
   grid-column: span 3;
   grid-row: 2/3; }
 
-/*#wrapper-footer{
-
-	display:grid;
-	grid-template-rows: minmax($standard-height auto);
-
-}*/
 #custom-handle {
   width: 3em;
   height: 1.6em;
@@ -672,6 +660,18 @@ nav {
     /*margin-top: 80px;*/ }
     .navBrandPanelSticky .navLink a {
       font-size: 1.3rem; } }
+
+#me-img {
+  width: 400px;
+  display: inline;
+  float: left;
+  /*display: block;*/
+  margin-right: 80px;
+  border-radius: 50%;
+  border: solid #f26419 3px; }
+
+#aboutText {
+  margin-bottom: 100px; }
 
 #about p {
   padding: 0 1rem;
