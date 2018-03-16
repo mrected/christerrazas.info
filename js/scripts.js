@@ -82,33 +82,6 @@ $(".navLink").click(function(){
 });
 
 
-
-//moves background image sideways on scroll
-
-$(window).resize(function(){
-	getTopImgSize();
-});
-
-getTopImgSize();
-
-function getTopImgSize(){
-	if($("#selectedTopImg").width()<=768 && $("#selectedTopImg").width()>475){
-		$("#selectedTopImg").css({
-			'background-image':'url(images/arches-sm.jpg)',
-			'background-attachment':'local'
-		});
-	}
-	else if($("#selectedTopImg").width()<=475){
-		$("#selectedTopImg").css({
-			'background-image':'url(images/arches-xs.jpg)',
-			'background-attachment':'local'
-		});
-	}
-	else{
-		imageSideScroll();
-	}
-}
-
 function imageSideScroll(){//global
 
 let offset=0;
@@ -194,33 +167,6 @@ $(".navLink").click(function(){
 
 
 
-//moves background image sideways on scroll
-
-$(window).resize(function(){
-	getTopImgSize();
-});
-
-getTopImgSize();
-
-function getTopImgSize(){
-	if($("#selectedTopImg").width()<=768 && $("#selectedTopImg").width()>475){
-		$("#selectedTopImg").css({
-			'background-image':'url(images/arches-sm.jpg)',
-			'background-attachment':'local'
-		});
-	}
-	else if($("#selectedTopImg").width()<=475){
-		$("#selectedTopImg").css({
-			'background-image':'url(images/arches-xs.jpg)',
-			'background-attachment':'local'
-		});
-	}
-	else{
-		imageSideScroll();
-	}
-}
-
-function imageSideScroll(){
 
 
 	let selectedTopImgX = -70;

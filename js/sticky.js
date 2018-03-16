@@ -5,16 +5,16 @@
 $(window).scroll(function() {
 
         if($(window).width()>1200){
-            activateSticky(500);
+            activateSticky(50);
         }
         else if($(window).width()>970){
-            activateSticky(300);
+            activateSticky(50);
         }
         else if($(window).width()>768){
-            activateSticky(340);
+            activateSticky(120);
         }
         else{
-            activateSticky(300);
+            activateSticky(260);
         }
 
    

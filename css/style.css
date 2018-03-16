@@ -662,11 +662,11 @@ nav {
       font-size: 1.3rem; } }
 
 #me-img {
-  width: 400px;
-  display: inline;
-  float: left;
+  width: 250px;
+  display: block;
+  /*float:left;*/
   /*display: block;*/
-  margin-right: 80px;
+  margin: 0 auto;
   border-radius: 50%;
   border: solid #f26419 3px; }
 
