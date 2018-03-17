@@ -1,6 +1,6 @@
 //variables
 
-$main-text-font:'Quicksand', sans-serif;
+$main-text-font:'Comfortaa', cursive;
 $heading-font:'Arvo', serif;
 $article-font:'Comfortaa', cursive;
 
@@ -88,11 +88,10 @@ $bp-large:1200px;
 }
 
 @mixin main-body-font{
-	padding:0 1rem;
+	padding:0 20px;
 	color:$main-font-color;
-	@media(min-width: $bp-xsmall){
-		line-height: 1.5rem;
-	}
+	line-height: 1.5rem;
+
 	@media(min-width: $bp-small){
 		font-size: 1rem;
 		padding-bottom: 1rem;
@@ -101,9 +100,12 @@ $bp-large:1200px;
 }
 
 @mixin big-text{
-		font-size: 1.75rem;
+		font-size: 1.25rem;
+		margin-bottom: 10px;
 		display: inline-block;
-		/*@media(min-width: )*/
+		@media(min-width: $bp-small){
+			font-size: 1.75rem;
+		}
 }
 
 @mixin link{

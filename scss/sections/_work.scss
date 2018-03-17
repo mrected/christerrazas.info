@@ -32,11 +32,13 @@
 
 
 .siteDescription{
-	font: 1rem $main-text-font;
+	@include link;
+	font: .75rem $main-text-font;
+	line-height: 1.15;
 	color:$main-font-color;
 	margin: 0 1rem;
 	@media(min-width: $bp-xsmall){
-		font-size: 1.1rem;
+		font-size: .85rem;
 	}
 }
 
