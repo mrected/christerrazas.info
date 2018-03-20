@@ -1,0 +1,78 @@
+body {
+  background-color: #14141e;
+  font-family: "Comfortaa", cursive;
+  font-size: 10px;
+}
+
+p {
+  font-size: 1rem; 
+}
+
+#skillBlock {
+  margin: 0 20px; }
+  #skillBlock ul {
+    font-size: 1.25rem;
+    list-style-type: none;
+    width: 100%;
+    margin: 25px 0;
+    padding: 0; }
+    #skillBlock ul li {
+      margin: 2px 0; }
+      @media (min-width: 475px) {
+        #skillBlock ul li {
+          margin: 10px 0; } }
+
+#skillBlock li{
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	align-items:center;
+
+}
+
+.skillIcon {
+  padding:5px;
+  border:solid 5px #f6ae2d;
+  border-radius: 50%;
+  background:red;
+  display: inline-block;
+  font-size: 1rem;
+  color: #E6E8E6;
+  width: 25px;
+  height: 40px;
+  text-align: center; }
+  @media (min-width: 475px) {
+    .skillIcon {
+      width: 40px;
+      font-size: 2rem; } }
+  .skillIcon img {
+    margin: 0 auto;
+    width: 20px; }
+    @media (min-width: 475px) {
+      .skillIcon img {
+        width: 30px; } }
+
+.skillLevelDiv {
+  width: 75%;
+  display: inline-block;
+  background-color: #86bbd8;
+  margin: 5px;
+  border-radius: 25px;
+  line-height: 1;
+  font-size: .75rem; }
+  @media (min-width: 475px) {
+    .skillLevelDiv {
+      font-size: 1rem; } }
+
+.skillLevel {
+  background-color: #f6ae2d;
+  display: inline-block;
+  font-size: .5rem;
+  font-weight: bold;
+  line-height: 1;
+  padding: 3px 0 0 6px;
+  border-radius: 25px;
+  border-right: solid 5px #f26419; }
+  @media (min-width: 475px) {
+    .skillLevel {
+      font-size: .75rem;
+      padding: 4px 0 2px 10px; } }
