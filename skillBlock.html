@@ -2,11 +2,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,700%7CQuicksand:600,700%7CTitillium+Web%7CArvo:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,700%7CRighteous" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/skillStyle.css">
 </head>
 <body>
+
 	<div id="skillBlock">
+		<p class="title">Scalable Skill Levels</p>
 	<ul>
 		<li>
 			<div class="skillIcon">
@@ -97,9 +99,19 @@
 			</div>
 		</li>
 	</ul>
+	<p class="description">Can use img for icons or fa icons. Built with grid. Uses data- attributes to increase/decrease skill level. </p>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
-<script src="js/scripts.js"></script>
+<script>
+	const skillLevels = document.querySelectorAll('.skillLevel');
+	[].forEach.call(skillLevels, function(skillLevel){
+		console.log(skillLevel);
+	});
+	$(".skillLevel").each(function(){
+		$(this).css('width',$(this).attr('data-width'));
+	});
+
+</script>
 </body>
 </html>
