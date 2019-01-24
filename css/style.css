@@ -196,6 +196,9 @@ p {
   /*	border-top: .05rem solid $accent-color3;*/
   border-bottom: 0.05rem solid #86bbd8; }
 
+hr {
+  margin: 200px 0 50px; }
+
 .overlayTitle {
   font-size: 8rem;
   outline-color: invert;
