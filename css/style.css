@@ -153,7 +153,7 @@ $heading-font-color:#575841;*/
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
   border: 1px solid #86bbd8;
-  background: #14141e;
+  background: #33404F;
   font-weight: normal;
   color: #555555; }
 
@@ -168,7 +168,7 @@ $heading-font-color:#575841;*/
   box-sizing: border-box; }
 
 body {
-  background-color: #14141e;
+  background-color: #33404F;
   font-family: "Comfortaa", cursive;
   font-size: 10px; }
 
@@ -553,7 +553,7 @@ nav {
   order: 2;
   flex-grow: 2;
   width: 100%;
-  background-color: #14141e; }
+  background-color: #33404F; }
   @media (min-width: 475px) {
     .nav {
       display: flex;
@@ -617,7 +617,7 @@ nav {
 .navBrandPanelSticky {
   /*display: flex;*/
   flex-direction: row;
-  background-color: #14141e;
+  background-color: #33404F;
   position: fixed;
   /*max-height: 150px;*/
   z-index: 999;
