@@ -588,10 +588,12 @@ nav {
     font: 1.3rem "Arvo", serif;
     text-transform: lowercase; }
   .navLink a:visited, .navLink a:link {
-    color: #f26419; }
+    color: #f26419;
+    text-decoration: none; }
   .navLink a:hover, .navLink a:active {
     color: #f6ae2d;
-    transition: .5s; }
+    transition: .5s;
+    text-decoration: none; }
   @media (min-width: 475px) {
     .navLink {
       align-self: flex-end; }
@@ -766,10 +768,12 @@ nav {
 #web {
   padding: 15px; }
   #web a:visited, #web a:link {
-    color: #f26419; }
+    color: #f26419;
+    text-decoration: none; }
   #web a:hover, #web a:active {
     color: #f6ae2d;
-    transition: .5s; }
+    transition: .5s;
+    text-decoration: none; }
 
 .siteTitle {
   font: 1rem "Arvo", serif;
@@ -792,10 +796,12 @@ nav {
   color: #E6E8E6;
   margin: 0 1rem; }
   .siteDescription a:visited, .siteDescription a:link {
-    color: #f26419; }
+    color: #f26419;
+    text-decoration: none; }
   .siteDescription a:hover, .siteDescription a:active {
     color: #f6ae2d;
-    transition: .5s; }
+    transition: .5s;
+    text-decoration: none; }
   @media (min-width: 475px) {
     .siteDescription {
       font-size: .85rem; } }
@@ -837,6 +843,10 @@ nav {
       padding-bottom: 1rem;
       line-height: 2rem; } }
 
+.contact-title {
+  font-size: 1rem;
+  display: block; }
+
 #contact p {
   padding: 0 20px;
   color: #E6E8E6;
@@ -847,10 +857,12 @@ nav {
       padding-bottom: 1rem;
       line-height: 2rem; } }
   #contact p a:visited, #contact p a:link {
-    color: #f26419; }
+    color: #f26419;
+    text-decoration: none; }
   #contact p a:hover, #contact p a:active {
     color: #f6ae2d;
-    transition: .5s; }
+    transition: .5s;
+    text-decoration: none; }
 #contact #contactListDiv {
   display: flex;
   justify-content: center; }
@@ -873,10 +885,12 @@ nav {
     	font-size: .6rem;
     }*/ }
     #contact #contactList li a:visited, #contact #contactList li a:link {
-      color: #f26419; }
+      color: #f26419;
+      text-decoration: none; }
     #contact #contactList li a:hover, #contact #contactList li a:active {
       color: #f6ae2d;
-      transition: .5s; }
+      transition: .5s;
+      text-decoration: none; }
     @media (min-width: 475px) {
       #contact #contactList li {
         font-size: 2.75rem;
@@ -897,10 +911,12 @@ nav {
     color: #E6E8E6;
     text-align: center; }
     #footer p a:visited, #footer p a:link {
-      color: #f26419; }
+      color: #f26419;
+      text-decoration: none; }
     #footer p a:hover, #footer p a:active {
       color: #f6ae2d;
-      transition: .5s; }
+      transition: .5s;
+      text-decoration: none; }
   #footer p {
     padding: 0 20px;
     color: #E6E8E6;
@@ -932,10 +948,12 @@ nav {
       	font-size: .6rem;
       }*/ }
       #footer #contactList li a:visited, #footer #contactList li a:link {
-        color: #f26419; }
+        color: #f26419;
+        text-decoration: none; }
       #footer #contactList li a:hover, #footer #contactList li a:active {
         color: #f6ae2d;
-        transition: .5s; }
+        transition: .5s;
+        text-decoration: none; }
       @media (min-width: 475px) {
         #footer #contactList li {
           font-size: 2.75rem;

@@ -2,6 +2,11 @@
 	@include main-body-font;
 }
 
+.contact-title{
+	font-size: 1rem;
+	display: block;
+}
+
 #contact{
 	p{
 		@include main-body-font;

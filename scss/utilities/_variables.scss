@@ -111,11 +111,13 @@ $bp-large:1200px;
 @mixin link{
 	& a:visited, & a:link{
 		color:$accent-color;
+		text-decoration: none;
 	};
 
 	& a:hover, & a:active{
 		color:$accent-color2;
 		transition: .5s;
+		text-decoration: none;
 	}
 }
 
