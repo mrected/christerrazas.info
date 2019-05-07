@@ -17,8 +17,7 @@ $heading-font-color:#575841;*/
   max-width: 1250px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
 
 #about {
   grid-column: span 3;
@@ -744,7 +743,7 @@ nav {
 .skillLevel {
   background-color: #f6ae2d;
   display: inline-block;
-  font-size: .5rem;
+  font-size: .75rem;
   font-weight: bold;
   line-height: 1;
   padding: 3px 0 0 6px;
@@ -753,14 +752,14 @@ nav {
   border-right: solid 5px #f26419; }
   @media (min-width: 475px) {
     .skillLevel {
-      font-size: .75rem;
       padding: 4px 0 2px 10px; } }
 
 .siteInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  border-bottom: 1px solid rgba(230, 232, 230, 0.3); }
   @media (min-width: 768px) {
     .siteInfo {
       flex-direction: row; } }
@@ -776,7 +775,7 @@ nav {
     text-decoration: none; }
 
 .siteTitle {
-  font: 1rem "Arvo", serif;
+  font: 1.5rem "Arvo", serif;
   color: #f6ae2d;
   margin: 0;
   text-align: center; }
@@ -792,7 +791,7 @@ nav {
 
 .siteDescription {
   font: 0.75rem "Comfortaa", cursive;
-  line-height: 1.15;
+  line-height: 1.75;
   color: #E6E8E6;
   margin: 0 1rem; }
   .siteDescription a:visited, .siteDescription a:link {
@@ -810,17 +809,19 @@ nav {
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex: row wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
   /*width:100%;*/
   font-size: 2rem;
-  color: rgba(230, 232, 230, 0.3); }
+  color: #E6E8E6; }
   @media (min-width: 768px) {
     .languageIcons {
-      justify-content: flex-start; } }
+      justify-content: center; } }
   .languageIcons li {
-    margin: 0 .2rem;
+    display: block;
+    margin: 5px .2rem;
+    padding: 10px 0;
     align-self: center;
     line-height: 0; }
     @media (min-width: 475px) {
@@ -829,9 +830,10 @@ nav {
   .languageIcons img {
     width: 30px; }
   .languageIcons .languageIconDescription {
-    font-size: .45rem;
-    text-align: center;
-    width: 100%; }
+    padding-top: 15px;
+    display: block;
+    font-size: .7rem;
+    text-align: center; }
 
 #contact p {
   padding: 0 20px;

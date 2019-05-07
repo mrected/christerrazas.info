@@ -1,0 +1,118 @@
+:root{
+  --bg-color:#14141e;
+  --circle-bar:#f6ae2d;
+  --bar-end:#f26419;
+  --bar-remaining:#86bbd8;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Comfortaa", cursive;
+}
+
+.title{
+  font: 2rem 'Righteous', cursive;
+  color:var(--bar-end);
+}
+
+.description{
+  font: 1rem "Comfortaa", cursive;
+  color:var(--bar-remaining);
+}
+
+#skillBlock{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+#skillBlock ul {
+    list-style-type: none;
+    width: 80%;
+    padding: 0; 
+}
+
+  #skillBlock ul li {
+    margin: 5px 0;
+  }
+    @media (max-width: 475px) {
+      #skillBlock ul li {
+        margin: 2px 0; 
+      }
+    }
+
+#skillBlock li{
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	align-items:center;
+}
+@media (max-width: 475px) {
+  #skillBlock li{
+      grid-template-columns: 23px 1fr;
+    }
+}
+
+
+.skillIcon {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+
+  border:solid 2px var(--circle-bar);
+  border-radius: 50%;
+  background:var(--bg-color);
+  color: #E6E8E6;
+}
+  @media (max-width: 475px) {
+    .skillIcon {
+      width: 30px;
+      height: 30px;
+      font-size: 1rem;
+    } 
+  }
+
+  .skillIcon img {
+    width: 30px;
+  }
+    @media (max-width: 475px) {
+      .skillIcon img {
+        width: 20px; 
+      }
+    }
+
+.skillLevelDiv {
+  background-color: var(--bar-remaining);
+  margin: 5px;
+  border-radius: 25px;
+  border:solid 2px var(--bg-color);
+  line-height: 1;
+  font-size: 1rem;
+}
+  @media (max-width: 475px) {
+    .skillLevelDiv {
+      font-size: .75rem;
+    }
+  }
+
+.skillLevel {
+  background-color: var(--circle-bar);
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: bold;
+  line-height: 1;
+  padding: 4px 0 2px 10px;
+  border-radius: 25px;
+  border-right: solid 5px var(--bar-end); 
+}
+  @media (max-width: 475px) {
+    .skillLevel {
+      font-size: .5rem;
+      padding: 3px 0 0 6px;
+    }
+  }
+

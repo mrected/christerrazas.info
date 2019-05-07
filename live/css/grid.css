@@ -1,0 +1,55 @@
+div{
+	border:solid black 1px;
+	height:100px;
+}
+
+#container{
+	/*height: 100vh;*/
+	display: grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-auto-rows:100px;
+	align-items: stretch;
+	grid-template-areas: 
+	"brand nav nav"
+	"main-pic main-pic main-pic"
+	"about about articles"
+	"web web web"
+	"photo photo photo"
+	"footer footer footer";
+}
+
+#brand{
+	grid-area: brand;
+	align-self: center;
+	justify-self: center;
+}
+
+#nav{
+	grid-area: nav;
+	align-self: end;
+	height:20px;
+}
+
+#main-pic{
+	grid-area: main-pic;
+}
+
+#about{
+	grid-area: about;
+}
+
+#articles{
+	grid-area: articles;
+}
+
+#web{
+	grid-area: web;
+}
+
+#photo{
+	grid-area: photo;
+}
+
+#footer{
+	grid-area: footer;
+}
